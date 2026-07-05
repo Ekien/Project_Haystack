@@ -1,35 +1,40 @@
 [gd_scene format=3 uid="uid://6wh2vtvdspyc"]
 
 [ext_resource type="PackedScene" uid="uid://bq86r4yll8po" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_fullglove_low.tscn" id="1_onrkg"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="2_1jxqw"]
+[ext_resource type="PackedScene" uid="uid://fiul51tsyoop" path="res://addons/godot-xr-tools/functions/function_teleport.tscn" id="2_2hs0m"]
 [ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="2_i3pqv"]
 [ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="2_sweqy"]
 [ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="4_1jxqw"]
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="4_2hs0m"]
-[ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="5_1jxqw"]
 
 [node name="Player" type="XROrigin3D" unique_id=502423357]
 
 [node name="XRCamera3D" type="XRCamera3D" parent="." unique_id=444882621]
 
-[node name="LeftHand" type="XRController3D" parent="." unique_id=1907383901]
+[node name="LeftHandController" type="XRController3D" parent="." unique_id=1907383901]
 tracker = &"left_hand"
 
-[node name="LeftHand" parent="LeftHand" unique_id=1331620579 instance=ExtResource("1_onrkg")]
+[node name="LeftHand" parent="LeftHandController" unique_id=1331620579 instance=ExtResource("1_onrkg")]
 
-[node name="MovementDirect" parent="LeftHand" unique_id=1274652722 instance=ExtResource("2_sweqy")]
+[node name="MovementDirect" parent="LeftHandController" unique_id=1274652722 instance=ExtResource("2_sweqy")]
 strafe = true
 
-[node name="RightHand" type="XRController3D" parent="." unique_id=1221122852]
+[node name="FunctionTeleport" parent="LeftHandController" unique_id=2069995396 instance=ExtResource("2_2hs0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.1)
+teleport_button_action = "primary_click"
+player_radius = 0.25
+
+[node name="FunctionPickup" parent="LeftHandController" unique_id=950817124 instance=ExtResource("2_1jxqw")]
+
+[node name="RightHandController" type="XRController3D" parent="." unique_id=1221122852]
 tracker = &"right_hand"
 
-[node name="RightHand" parent="RightHand" unique_id=2072860729 instance=ExtResource("2_i3pqv")]
+[node name="RightHand" parent="RightHandController" unique_id=2072860729 instance=ExtResource("2_i3pqv")]
 
-[node name="MovementTurn" parent="RightHand" unique_id=1504505302 instance=ExtResource("4_1jxqw")]
+[node name="MovementTurn" parent="RightHandController" unique_id=1504505302 instance=ExtResource("4_1jxqw")]
 
-[node name="PlayerBody" type="CharacterBody3D" parent="." unique_id=619610624 groups=["player_body"] instance=ExtResource("4_2hs0m")]
-process_priority = -100
-process_physics_priority = -100
-collision_layer = 524288
-collision_mask = 1023
-script = ExtResource("5_1jxqw")
+[node name="FunctionPickup" parent="RightHandController" unique_id=1852225636 instance=ExtResource("2_1jxqw")]
+
+[node name="PlayerBody" parent="." unique_id=619610624 instance=ExtResource("4_2hs0m")]
 player_height_max = 1.5

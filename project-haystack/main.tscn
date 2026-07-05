@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dd3ork4o8f7ix" path="res://Scripts/main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://6wh2vtvdspyc" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://frndya3mmnse" path="res://Objects/cube.tscn" id="4_1bvp3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -21,6 +22,12 @@ size = Vector3(5, 0.1, 5)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ig7tw"]
 points = PackedVector3Array(-2.5, -0.05, -2.5, -2.5, 0.05, -2.5, 2.5, -0.05, -2.5, -2.5, -0.05, 2.5, -2.5, 0.05, 2.5, 2.5, 0.05, -2.5, 2.5, -0.05, 2.5, 2.5, 0.05, 2.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h2yge"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h2yge"]
+size = Vector3(0.5, 0.5, 0.5)
 
 [node name="Main" type="Node3D" unique_id=1994117052]
 script = ExtResource("1_0xm2m")
@@ -45,3 +52,21 @@ mesh = SubResource("BoxMesh_7dm0k")
 shape = SubResource("ConvexPolygonShape3D_ig7tw")
 
 [node name="XROrigin3D" parent="." unique_id=502423357 instance=ExtResource("1_ig7tw")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=342952252]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.54351664, -0.72876453)
+mesh = SubResource("BoxMesh_h2yge")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=1933124233]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=270787647]
+shape = SubResource("BoxShape3D_h2yge")
+
+[node name="Cube" parent="." unique_id=192508180 instance=ExtResource("4_1bvp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07221837, 0.8587289, -0.7334125)
+
+[node name="Cube2" parent="." unique_id=1909832278 instance=ExtResource("4_1bvp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09826307, 0.8587289, -0.7334125)
+
+[node name="Cube3" parent="." unique_id=1817843924 instance=ExtResource("4_1bvp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004510276, 0.8587289, -0.5758836)
