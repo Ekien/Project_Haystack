@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cqwpt6xtr1j3f"]
+
+[ext_resource type="PackedScene" uid="uid://bj7p7qreo3ban" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Straight_Door_Narrow_Hole.prefab.scn" id="1_l51j0"]
+[ext_resource type="Material" uid="uid://bmuiaiow2r1xe" path="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Old.material" id="2_bgit3"]
+[ext_resource type="PackedScene" uid="uid://qw0200rjukr1" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/WarpStorage.prefab.scn" id="3_uvdyn"]
+
+[node name="StableDoorInteriorWarped" type="Node3D" unique_id=1110258618]
+
+[node name="Pen_01_Straight_Door_Narrow_Hole" parent="." unique_id=1738788354 instance=ExtResource("1_l51j0")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 0, 0, 0)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Pen_01_Straight_Door_Narrow_Hole" index="0" unique_id=1811914474]
+surface_material_override/0 = ExtResource("2_bgit3")
+
+[node name="WarpStorage" parent="." unique_id=57113433 instance=ExtResource("3_uvdyn")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 0.75, 1.065, 0.05)
+metadata/_edit_group_ = true
+
+[editable path="Pen_01_Straight_Door_Narrow_Hole"]
+[editable path="WarpStorage"]
