@@ -1,3 +1,898 @@
 [gd_scene format=3 uid="uid://dr7mjryqe4omr"]
 
+[ext_resource type="Material" uid="uid://d1ou1ka7m28ao" path="res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Soil_01.material" id="1_e7ni1"]
+[ext_resource type="PackedScene" uid="uid://dijfxjtjxx18j" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Structure/Roof_End.prefab.scn" id="2_dphmp"]
+[ext_resource type="Material" uid="uid://ciiuwe1r0lhyn" path="res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Planks_01_Old.material" id="3_kost4"]
+[ext_resource type="PackedScene" uid="uid://dhxcjjt0rt5r" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Straight.prefab.scn" id="4_mengk"]
+[ext_resource type="Material" uid="uid://bmuiaiow2r1xe" path="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Old.material" id="5_1vxo2"]
+[ext_resource type="PackedScene" uid="uid://cy3rvhu45g5uq" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Frame_Narrow.prefab.scn" id="6_60wnw"]
+[ext_resource type="PackedScene" uid="uid://bj7p7qreo3ban" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Straight_Door_Narrow_Hole.prefab.scn" id="7_xvrq7"]
+[ext_resource type="PackedScene" uid="uid://dky4cfi2l0qml" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Wall_Window_Alt.prefab.scn" id="8_igeyl"]
+[ext_resource type="Material" uid="uid://n84fc72e5lsx" path="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Wall_Old.material" id="9_qmgg6"]
+[ext_resource type="PackedScene" uid="uid://fryu7p756sbq" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Wall.prefab.scn" id="10_n5ye2"]
+[ext_resource type="PackedScene" uid="uid://b13031nonvo4l" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Structure/Frame_01.prefab.scn" id="11_du5hh"]
+[ext_resource type="PackedScene" uid="uid://bssqfgvdhwg5h" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Wall_Door_Alt.prefab.scn" id="12_anl5u"]
+[ext_resource type="PackedScene" uid="uid://c7ojwj6s6iq1f" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/Hays.prefab.scn" id="13_t4xdl"]
+[ext_resource type="PackedScene" uid="uid://cgmsodae7xkjw" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/Balestack.prefab.scn" id="14_5lokp"]
+[ext_resource type="PackedScene" uid="uid://d1olksh8ilanf" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/Wheelbarrow.prefab.scn" id="15_jcpv2"]
+[ext_resource type="PackedScene" uid="uid://c2gu5hd21cytx" path="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Roof_End.fbx" id="16_ox0ow"]
+[ext_resource type="PackedScene" uid="uid://bly2f4w5xq0is" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Wall_Alt.prefab.scn" id="17_ahkni"]
+[ext_resource type="PackedScene" uid="uid://bdm5tbbp2rlou" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/Fork.prefab.scn" id="18_q7ihi"]
+[ext_resource type="PackedScene" uid="uid://boqjl48dlumrn" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/HayBale.prefab.scn" id="19_vlr38"]
+[ext_resource type="PackedScene" uid="uid://ddbt5kclgt5yc" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Structure/Roof_02_Windows_Closed.prefab.scn" id="20_hjq3p"]
+[ext_resource type="PackedScene" uid="uid://qw0200rjukr1" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/WarpStorage.prefab.scn" id="21_xyjny"]
+[ext_resource type="PackedScene" uid="uid://b51hnvtxtbq15" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/WaterBucket_01.prefab.scn" id="22_6d2k5"]
+[ext_resource type="PackedScene" uid="uid://cq70nvwfyxgl7" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/Saltstone.prefab.scn" id="23_m51fd"]
+[ext_resource type="PackedScene" uid="uid://laabhy8k85y6" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/Bucket.prefab.scn" id="24_2h71i"]
+[ext_resource type="PackedScene" uid="uid://et2tyi1uyp1q" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/HookedHalter.prefab.scn" id="25_3c8r5"]
+[ext_resource type="PackedScene" uid="uid://di0fjjfektgp2" path="res://Scenes/Stable/Stable_Door.tscn" id="26_dxeg1"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_u8tbp"]
+resource_name = "Default-Skybox"
+sky_top_color = Color(0.454902, 0.678431, 0.87451, 1)
+sky_horizon_color = Color(0.894118, 0.952941, 1, 1)
+sky_curve = 0.0731028
+ground_bottom_color = Color(0.454902, 0.470588, 0.490196, 1)
+ground_horizon_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Sky" id="Sky_wn751"]
+sky_material = SubResource("ProceduralSkyMaterial_u8tbp")
+
+[sub_resource type="Environment" id="Environment_xpa75"]
+background_mode = 2
+sky = SubResource("Sky_wn751")
+fog_light_color = Color(0.5, 0.5, 0.5, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_84yh7"]
+resource_name = "Plane"
+lightmap_size_hint = Vector2i(52, 52)
+add_uv2 = true
+size = Vector2(10, 10)
+subdivide_width = 10
+subdivide_depth = 10
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fxg5p"]
+data = PackedVector3Array(5, 0, 5, 4.0909, 0, 5, 5, 0, 4.0909, 4.0909, 0, 5, 4.0909, 0, 4.0909, 5, 0, 4.0909, 4.0909, 0, 5, 3.1818, 0, 5, 4.0909, 0, 4.0909, 3.1818, 0, 5, 3.1818, 0, 4.0909, 4.0909, 0, 4.0909, 3.1818, 0, 5, 2.2726998, 0, 5, 3.1818, 0, 4.0909, 2.2726998, 0, 5, 2.2726998, 0, 4.0909, 3.1818, 0, 4.0909, 2.2726998, 0, 5, 1.3636, 0, 5, 2.2726998, 0, 4.0909, 1.3636, 0, 5, 1.3636, 0, 4.0909, 2.2726998, 0, 4.0909, 1.3636, 0, 5, 0.4545, 0, 5, 1.3636, 0, 4.0909, 0.4545, 0, 5, 0.4545, 0, 4.0909, 1.3636, 0, 4.0909, 0.4545, 0, 5, -0.4545, 0, 5, 0.4545, 0, 4.0909, -0.4545, 0, 5, -0.4545, 0, 4.0909, 0.4545, 0, 4.0909, -0.4545, 0, 5, -1.3636, 0, 5, -0.4545, 0, 4.0909, -1.3636, 0, 5, -1.3636, 0, 4.0909, -0.4545, 0, 4.0909, -1.3636, 0, 5, -2.2726998, 0, 5, -1.3636, 0, 4.0909, -2.2726998, 0, 5, -2.2726998, 0, 4.0909, -1.3636, 0, 4.0909, -2.2726998, 0, 5, -3.1818, 0, 5, -2.2726998, 0, 4.0909, -3.1818, 0, 5, -3.1818, 0, 4.0909, -2.2726998, 0, 4.0909, -3.1818, 0, 5, -4.0909, 0, 5, -3.1818, 0, 4.0909, -4.0909, 0, 5, -4.0909, 0, 4.0909, -3.1818, 0, 4.0909, -4.0909, 0, 5, -5, 0, 5, -4.0909, 0, 4.0909, -5, 0, 5, -5, 0, 4.0909, -4.0909, 0, 4.0909, 5, 0, 4.0909, 4.0909, 0, 4.0909, 5, 0, 3.1818, 4.0909, 0, 4.0909, 4.0909, 0, 3.1818, 5, 0, 3.1818, 4.0909, 0, 4.0909, 3.1818, 0, 4.0909, 4.0909, 0, 3.1818, 3.1818, 0, 4.0909, 3.1818, 0, 3.1818, 4.0909, 0, 3.1818, 3.1818, 0, 4.0909, 2.2726998, 0, 4.0909, 3.1818, 0, 3.1818, 2.2726998, 0, 4.0909, 2.2726998, 0, 3.1818, 3.1818, 0, 3.1818, 2.2726998, 0, 4.0909, 1.3636, 0, 4.0909, 2.2726998, 0, 3.1818, 1.3636, 0, 4.0909, 1.3636, 0, 3.1818, 2.2726998, 0, 3.1818, 1.3636, 0, 4.0909, 0.4545, 0, 4.0909, 1.3636, 0, 3.1818, 0.4545, 0, 4.0909, 0.4545, 0, 3.1818, 1.3636, 0, 3.1818, 0.4545, 0, 4.0909, -0.4545, 0, 4.0909, 0.4545, 0, 3.1818, -0.4545, 0, 4.0909, -0.4545, 0, 3.1818, 0.4545, 0, 3.1818, -0.4545, 0, 4.0909, -1.3636, 0, 4.0909, -0.4545, 0, 3.1818, -1.3636, 0, 4.0909, -1.3636, 0, 3.1818, -0.4545, 0, 3.1818, -1.3636, 0, 4.0909, -2.2726998, 0, 4.0909, -1.3636, 0, 3.1818, -2.2726998, 0, 4.0909, -2.2726998, 0, 3.1818, -1.3636, 0, 3.1818, -2.2726998, 0, 4.0909, -3.1818, 0, 4.0909, -2.2726998, 0, 3.1818, -3.1818, 0, 4.0909, -3.1818, 0, 3.1818, -2.2726998, 0, 3.1818, -3.1818, 0, 4.0909, -4.0909, 0, 4.0909, -3.1818, 0, 3.1818, -4.0909, 0, 4.0909, -4.0909, 0, 3.1818, -3.1818, 0, 3.1818, -4.0909, 0, 4.0909, -5, 0, 4.0909, -4.0909, 0, 3.1818, -5, 0, 4.0909, -5, 0, 3.1818, -4.0909, 0, 3.1818, 5, 0, 3.1818, 4.0909, 0, 3.1818, 5, 0, 2.2726998, 4.0909, 0, 3.1818, 4.0909, 0, 2.2726998, 5, 0, 2.2726998, 4.0909, 0, 3.1818, 3.1818, 0, 3.1818, 4.0909, 0, 2.2726998, 3.1818, 0, 3.1818, 3.1818, 0, 2.2726998, 4.0909, 0, 2.2726998, 3.1818, 0, 3.1818, 2.2726998, 0, 3.1818, 3.1818, 0, 2.2726998, 2.2726998, 0, 3.1818, 2.2726998, 0, 2.2726998, 3.1818, 0, 2.2726998, 2.2726998, 0, 3.1818, 1.3636, 0, 3.1818, 2.2726998, 0, 2.2726998, 1.3636, 0, 3.1818, 1.3636, 0, 2.2726998, 2.2726998, 0, 2.2726998, 1.3636, 0, 3.1818, 0.4545, 0, 3.1818, 1.3636, 0, 2.2726998, 0.4545, 0, 3.1818, 0.4545, 0, 2.2726998, 1.3636, 0, 2.2726998, 0.4545, 0, 3.1818, -0.4545, 0, 3.1818, 0.4545, 0, 2.2726998, -0.4545, 0, 3.1818, -0.4545, 0, 2.2726998, 0.4545, 0, 2.2726998, -0.4545, 0, 3.1818, -1.3636, 0, 3.1818, -0.4545, 0, 2.2726998, -1.3636, 0, 3.1818, -1.3636, 0, 2.2726998, -0.4545, 0, 2.2726998, -1.3636, 0, 3.1818, -2.2726998, 0, 3.1818, -1.3636, 0, 2.2726998, -2.2726998, 0, 3.1818, -2.2726998, 0, 2.2726998, -1.3636, 0, 2.2726998, -2.2726998, 0, 3.1818, -3.1818, 0, 3.1818, -2.2726998, 0, 2.2726998, -3.1818, 0, 3.1818, -3.1818, 0, 2.2726998, -2.2726998, 0, 2.2726998, -3.1818, 0, 3.1818, -4.0909, 0, 3.1818, -3.1818, 0, 2.2726998, -4.0909, 0, 3.1818, -4.0909, 0, 2.2726998, -3.1818, 0, 2.2726998, -4.0909, 0, 3.1818, -5, 0, 3.1818, -4.0909, 0, 2.2726998, -5, 0, 3.1818, -5, 0, 2.2726998, -4.0909, 0, 2.2726998, 5, 0, 2.2726998, 4.0909, 0, 2.2726998, 5, 0, 1.3636, 4.0909, 0, 2.2726998, 4.0909, 0, 1.3636, 5, 0, 1.3636, 4.0909, 0, 2.2726998, 3.1818, 0, 2.2726998, 4.0909, 0, 1.3636, 3.1818, 0, 2.2726998, 3.1818, 0, 1.3636, 4.0909, 0, 1.3636, 3.1818, 0, 2.2726998, 2.2726998, 0, 2.2726998, 3.1818, 0, 1.3636, 2.2726998, 0, 2.2726998, 2.2726998, 0, 1.3636, 3.1818, 0, 1.3636, 2.2726998, 0, 2.2726998, 1.3636, 0, 2.2726998, 2.2726998, 0, 1.3636, 1.3636, 0, 2.2726998, 1.3636, 0, 1.3636, 2.2726998, 0, 1.3636, 1.3636, 0, 2.2726998, 0.4545, 0, 2.2726998, 1.3636, 0, 1.3636, 0.4545, 0, 2.2726998, 0.4545, 0, 1.3636, 1.3636, 0, 1.3636, 0.4545, 0, 2.2726998, -0.4545, 0, 2.2726998, 0.4545, 0, 1.3636, -0.4545, 0, 2.2726998, -0.4545, 0, 1.3636, 0.4545, 0, 1.3636, -0.4545, 0, 2.2726998, -1.3636, 0, 2.2726998, -0.4545, 0, 1.3636, -1.3636, 0, 2.2726998, -1.3636, 0, 1.3636, -0.4545, 0, 1.3636, -1.3636, 0, 2.2726998, -2.2726998, 0, 2.2726998, -1.3636, 0, 1.3636, -2.2726998, 0, 2.2726998, -2.2726998, 0, 1.3636, -1.3636, 0, 1.3636, -2.2726998, 0, 2.2726998, -3.1818, 0, 2.2726998, -2.2726998, 0, 1.3636, -3.1818, 0, 2.2726998, -3.1818, 0, 1.3636, -2.2726998, 0, 1.3636, -3.1818, 0, 2.2726998, -4.0909, 0, 2.2726998, -3.1818, 0, 1.3636, -4.0909, 0, 2.2726998, -4.0909, 0, 1.3636, -3.1818, 0, 1.3636, -4.0909, 0, 2.2726998, -5, 0, 2.2726998, -4.0909, 0, 1.3636, -5, 0, 2.2726998, -5, 0, 1.3636, -4.0909, 0, 1.3636, 5, 0, 1.3636, 4.0909, 0, 1.3636, 5, 0, 0.4545, 4.0909, 0, 1.3636, 4.0909, 0, 0.4545, 5, 0, 0.4545, 4.0909, 0, 1.3636, 3.1818, 0, 1.3636, 4.0909, 0, 0.4545, 3.1818, 0, 1.3636, 3.1818, 0, 0.4545, 4.0909, 0, 0.4545, 3.1818, 0, 1.3636, 2.2726998, 0, 1.3636, 3.1818, 0, 0.4545, 2.2726998, 0, 1.3636, 2.2726998, 0, 0.4545, 3.1818, 0, 0.4545, 2.2726998, 0, 1.3636, 1.3636, 0, 1.3636, 2.2726998, 0, 0.4545, 1.3636, 0, 1.3636, 1.3636, 0, 0.4545, 2.2726998, 0, 0.4545, 1.3636, 0, 1.3636, 0.4545, 0, 1.3636, 1.3636, 0, 0.4545, 0.4545, 0, 1.3636, 0.4545, 0, 0.4545, 1.3636, 0, 0.4545, 0.4545, 0, 1.3636, -0.4545, 0, 1.3636, 0.4545, 0, 0.4545, -0.4545, 0, 1.3636, -0.4545, 0, 0.4545, 0.4545, 0, 0.4545, -0.4545, 0, 1.3636, -1.3636, 0, 1.3636, -0.4545, 0, 0.4545, -1.3636, 0, 1.3636, -1.3636, 0, 0.4545, -0.4545, 0, 0.4545, -1.3636, 0, 1.3636, -2.2726998, 0, 1.3636, -1.3636, 0, 0.4545, -2.2726998, 0, 1.3636, -2.2726998, 0, 0.4545, -1.3636, 0, 0.4545, -2.2726998, 0, 1.3636, -3.1818, 0, 1.3636, -2.2726998, 0, 0.4545, -3.1818, 0, 1.3636, -3.1818, 0, 0.4545, -2.2726998, 0, 0.4545, -3.1818, 0, 1.3636, -4.0909, 0, 1.3636, -3.1818, 0, 0.4545, -4.0909, 0, 1.3636, -4.0909, 0, 0.4545, -3.1818, 0, 0.4545, -4.0909, 0, 1.3636, -5, 0, 1.3636, -4.0909, 0, 0.4545, -5, 0, 1.3636, -5, 0, 0.4545, -4.0909, 0, 0.4545, 5, 0, 0.4545, 4.0909, 0, 0.4545, 5, 0, -0.4545, 4.0909, 0, 0.4545, 4.0909, 0, -0.4545, 5, 0, -0.4545, 4.0909, 0, 0.4545, 3.1818, 0, 0.4545, 4.0909, 0, -0.4545, 3.1818, 0, 0.4545, 3.1818, 0, -0.4545, 4.0909, 0, -0.4545, 3.1818, 0, 0.4545, 2.2726998, 0, 0.4545, 3.1818, 0, -0.4545, 2.2726998, 0, 0.4545, 2.2726998, 0, -0.4545, 3.1818, 0, -0.4545, 2.2726998, 0, 0.4545, 1.3636, 0, 0.4545, 2.2726998, 0, -0.4545, 1.3636, 0, 0.4545, 1.3636, 0, -0.4545, 2.2726998, 0, -0.4545, 1.3636, 0, 0.4545, 0.4545, 0, 0.4545, 1.3636, 0, -0.4545, 0.4545, 0, 0.4545, 0.4545, 0, -0.4545, 1.3636, 0, -0.4545, 0.4545, 0, 0.4545, -0.4545, 0, 0.4545, 0.4545, 0, -0.4545, -0.4545, 0, 0.4545, -0.4545, 0, -0.4545, 0.4545, 0, -0.4545, -0.4545, 0, 0.4545, -1.3636, 0, 0.4545, -0.4545, 0, -0.4545, -1.3636, 0, 0.4545, -1.3636, 0, -0.4545, -0.4545, 0, -0.4545, -1.3636, 0, 0.4545, -2.2726998, 0, 0.4545, -1.3636, 0, -0.4545, -2.2726998, 0, 0.4545, -2.2726998, 0, -0.4545, -1.3636, 0, -0.4545, -2.2726998, 0, 0.4545, -3.1818, 0, 0.4545, -2.2726998, 0, -0.4545, -3.1818, 0, 0.4545, -3.1818, 0, -0.4545, -2.2726998, 0, -0.4545, -3.1818, 0, 0.4545, -4.0909, 0, 0.4545, -3.1818, 0, -0.4545, -4.0909, 0, 0.4545, -4.0909, 0, -0.4545, -3.1818, 0, -0.4545, -4.0909, 0, 0.4545, -5, 0, 0.4545, -4.0909, 0, -0.4545, -5, 0, 0.4545, -5, 0, -0.4545, -4.0909, 0, -0.4545, 5, 0, -0.4545, 4.0909, 0, -0.4545, 5, 0, -1.3636, 4.0909, 0, -0.4545, 4.0909, 0, -1.3636, 5, 0, -1.3636, 4.0909, 0, -0.4545, 3.1818, 0, -0.4545, 4.0909, 0, -1.3636, 3.1818, 0, -0.4545, 3.1818, 0, -1.3636, 4.0909, 0, -1.3636, 3.1818, 0, -0.4545, 2.2726998, 0, -0.4545, 3.1818, 0, -1.3636, 2.2726998, 0, -0.4545, 2.2726998, 0, -1.3636, 3.1818, 0, -1.3636, 2.2726998, 0, -0.4545, 1.3636, 0, -0.4545, 2.2726998, 0, -1.3636, 1.3636, 0, -0.4545, 1.3636, 0, -1.3636, 2.2726998, 0, -1.3636, 1.3636, 0, -0.4545, 0.4545, 0, -0.4545, 1.3636, 0, -1.3636, 0.4545, 0, -0.4545, 0.4545, 0, -1.3636, 1.3636, 0, -1.3636, 0.4545, 0, -0.4545, -0.4545, 0, -0.4545, 0.4545, 0, -1.3636, -0.4545, 0, -0.4545, -0.4545, 0, -1.3636, 0.4545, 0, -1.3636, -0.4545, 0, -0.4545, -1.3636, 0, -0.4545, -0.4545, 0, -1.3636, -1.3636, 0, -0.4545, -1.3636, 0, -1.3636, -0.4545, 0, -1.3636, -1.3636, 0, -0.4545, -2.2726998, 0, -0.4545, -1.3636, 0, -1.3636, -2.2726998, 0, -0.4545, -2.2726998, 0, -1.3636, -1.3636, 0, -1.3636, -2.2726998, 0, -0.4545, -3.1818, 0, -0.4545, -2.2726998, 0, -1.3636, -3.1818, 0, -0.4545, -3.1818, 0, -1.3636, -2.2726998, 0, -1.3636, -3.1818, 0, -0.4545, -4.0909, 0, -0.4545, -3.1818, 0, -1.3636, -4.0909, 0, -0.4545, -4.0909, 0, -1.3636, -3.1818, 0, -1.3636, -4.0909, 0, -0.4545, -5, 0, -0.4545, -4.0909, 0, -1.3636, -5, 0, -0.4545, -5, 0, -1.3636, -4.0909, 0, -1.3636, 5, 0, -1.3636, 4.0909, 0, -1.3636, 5, 0, -2.2726998, 4.0909, 0, -1.3636, 4.0909, 0, -2.2726998, 5, 0, -2.2726998, 4.0909, 0, -1.3636, 3.1818, 0, -1.3636, 4.0909, 0, -2.2726998, 3.1818, 0, -1.3636, 3.1818, 0, -2.2726998, 4.0909, 0, -2.2726998, 3.1818, 0, -1.3636, 2.2726998, 0, -1.3636, 3.1818, 0, -2.2726998, 2.2726998, 0, -1.3636, 2.2726998, 0, -2.2726998, 3.1818, 0, -2.2726998, 2.2726998, 0, -1.3636, 1.3636, 0, -1.3636, 2.2726998, 0, -2.2726998, 1.3636, 0, -1.3636, 1.3636, 0, -2.2726998, 2.2726998, 0, -2.2726998, 1.3636, 0, -1.3636, 0.4545, 0, -1.3636, 1.3636, 0, -2.2726998, 0.4545, 0, -1.3636, 0.4545, 0, -2.2726998, 1.3636, 0, -2.2726998, 0.4545, 0, -1.3636, -0.4545, 0, -1.3636, 0.4545, 0, -2.2726998, -0.4545, 0, -1.3636, -0.4545, 0, -2.2726998, 0.4545, 0, -2.2726998, -0.4545, 0, -1.3636, -1.3636, 0, -1.3636, -0.4545, 0, -2.2726998, -1.3636, 0, -1.3636, -1.3636, 0, -2.2726998, -0.4545, 0, -2.2726998, -1.3636, 0, -1.3636, -2.2726998, 0, -1.3636, -1.3636, 0, -2.2726998, -2.2726998, 0, -1.3636, -2.2726998, 0, -2.2726998, -1.3636, 0, -2.2726998, -2.2726998, 0, -1.3636, -3.1818, 0, -1.3636, -2.2726998, 0, -2.2726998, -3.1818, 0, -1.3636, -3.1818, 0, -2.2726998, -2.2726998, 0, -2.2726998, -3.1818, 0, -1.3636, -4.0909, 0, -1.3636, -3.1818, 0, -2.2726998, -4.0909, 0, -1.3636, -4.0909, 0, -2.2726998, -3.1818, 0, -2.2726998, -4.0909, 0, -1.3636, -5, 0, -1.3636, -4.0909, 0, -2.2726998, -5, 0, -1.3636, -5, 0, -2.2726998, -4.0909, 0, -2.2726998, 5, 0, -2.2726998, 4.0909, 0, -2.2726998, 5, 0, -3.1818, 4.0909, 0, -2.2726998, 4.0909, 0, -3.1818, 5, 0, -3.1818, 4.0909, 0, -2.2726998, 3.1818, 0, -2.2726998, 4.0909, 0, -3.1818, 3.1818, 0, -2.2726998, 3.1818, 0, -3.1818, 4.0909, 0, -3.1818, 3.1818, 0, -2.2726998, 2.2726998, 0, -2.2726998, 3.1818, 0, -3.1818, 2.2726998, 0, -2.2726998, 2.2726998, 0, -3.1818, 3.1818, 0, -3.1818, 2.2726998, 0, -2.2726998, 1.3636, 0, -2.2726998, 2.2726998, 0, -3.1818, 1.3636, 0, -2.2726998, 1.3636, 0, -3.1818, 2.2726998, 0, -3.1818, 1.3636, 0, -2.2726998, 0.4545, 0, -2.2726998, 1.3636, 0, -3.1818, 0.4545, 0, -2.2726998, 0.4545, 0, -3.1818, 1.3636, 0, -3.1818, 0.4545, 0, -2.2726998, -0.4545, 0, -2.2726998, 0.4545, 0, -3.1818, -0.4545, 0, -2.2726998, -0.4545, 0, -3.1818, 0.4545, 0, -3.1818, -0.4545, 0, -2.2726998, -1.3636, 0, -2.2726998, -0.4545, 0, -3.1818, -1.3636, 0, -2.2726998, -1.3636, 0, -3.1818, -0.4545, 0, -3.1818, -1.3636, 0, -2.2726998, -2.2726998, 0, -2.2726998, -1.3636, 0, -3.1818, -2.2726998, 0, -2.2726998, -2.2726998, 0, -3.1818, -1.3636, 0, -3.1818, -2.2726998, 0, -2.2726998, -3.1818, 0, -2.2726998, -2.2726998, 0, -3.1818, -3.1818, 0, -2.2726998, -3.1818, 0, -3.1818, -2.2726998, 0, -3.1818, -3.1818, 0, -2.2726998, -4.0909, 0, -2.2726998, -3.1818, 0, -3.1818, -4.0909, 0, -2.2726998, -4.0909, 0, -3.1818, -3.1818, 0, -3.1818, -4.0909, 0, -2.2726998, -5, 0, -2.2726998, -4.0909, 0, -3.1818, -5, 0, -2.2726998, -5, 0, -3.1818, -4.0909, 0, -3.1818, 5, 0, -3.1818, 4.0909, 0, -3.1818, 5, 0, -4.0909, 4.0909, 0, -3.1818, 4.0909, 0, -4.0909, 5, 0, -4.0909, 4.0909, 0, -3.1818, 3.1818, 0, -3.1818, 4.0909, 0, -4.0909, 3.1818, 0, -3.1818, 3.1818, 0, -4.0909, 4.0909, 0, -4.0909, 3.1818, 0, -3.1818, 2.2726998, 0, -3.1818, 3.1818, 0, -4.0909, 2.2726998, 0, -3.1818, 2.2726998, 0, -4.0909, 3.1818, 0, -4.0909, 2.2726998, 0, -3.1818, 1.3636, 0, -3.1818, 2.2726998, 0, -4.0909, 1.3636, 0, -3.1818, 1.3636, 0, -4.0909, 2.2726998, 0, -4.0909, 1.3636, 0, -3.1818, 0.4545, 0, -3.1818, 1.3636, 0, -4.0909, 0.4545, 0, -3.1818, 0.4545, 0, -4.0909, 1.3636, 0, -4.0909, 0.4545, 0, -3.1818, -0.4545, 0, -3.1818, 0.4545, 0, -4.0909, -0.4545, 0, -3.1818, -0.4545, 0, -4.0909, 0.4545, 0, -4.0909, -0.4545, 0, -3.1818, -1.3636, 0, -3.1818, -0.4545, 0, -4.0909, -1.3636, 0, -3.1818, -1.3636, 0, -4.0909, -0.4545, 0, -4.0909, -1.3636, 0, -3.1818, -2.2726998, 0, -3.1818, -1.3636, 0, -4.0909, -2.2726998, 0, -3.1818, -2.2726998, 0, -4.0909, -1.3636, 0, -4.0909, -2.2726998, 0, -3.1818, -3.1818, 0, -3.1818, -2.2726998, 0, -4.0909, -3.1818, 0, -3.1818, -3.1818, 0, -4.0909, -2.2726998, 0, -4.0909, -3.1818, 0, -3.1818, -4.0909, 0, -3.1818, -3.1818, 0, -4.0909, -4.0909, 0, -3.1818, -4.0909, 0, -4.0909, -3.1818, 0, -4.0909, -4.0909, 0, -3.1818, -5, 0, -3.1818, -4.0909, 0, -4.0909, -5, 0, -3.1818, -5, 0, -4.0909, -4.0909, 0, -4.0909, 5, 0, -4.0909, 4.0909, 0, -4.0909, 5, 0, -5, 4.0909, 0, -4.0909, 4.0909, 0, -5, 5, 0, -5, 4.0909, 0, -4.0909, 3.1818, 0, -4.0909, 4.0909, 0, -5, 3.1818, 0, -4.0909, 3.1818, 0, -5, 4.0909, 0, -5, 3.1818, 0, -4.0909, 2.2726998, 0, -4.0909, 3.1818, 0, -5, 2.2726998, 0, -4.0909, 2.2726998, 0, -5, 3.1818, 0, -5, 2.2726998, 0, -4.0909, 1.3636, 0, -4.0909, 2.2726998, 0, -5, 1.3636, 0, -4.0909, 1.3636, 0, -5, 2.2726998, 0, -5, 1.3636, 0, -4.0909, 0.4545, 0, -4.0909, 1.3636, 0, -5, 0.4545, 0, -4.0909, 0.4545, 0, -5, 1.3636, 0, -5, 0.4545, 0, -4.0909, -0.4545, 0, -4.0909, 0.4545, 0, -5, -0.4545, 0, -4.0909, -0.4545, 0, -5, 0.4545, 0, -5, -0.4545, 0, -4.0909, -1.3636, 0, -4.0909, -0.4545, 0, -5, -1.3636, 0, -4.0909, -1.3636, 0, -5, -0.4545, 0, -5, -1.3636, 0, -4.0909, -2.2726998, 0, -4.0909, -1.3636, 0, -5, -2.2726998, 0, -4.0909, -2.2726998, 0, -5, -1.3636, 0, -5, -2.2726998, 0, -4.0909, -3.1818, 0, -4.0909, -2.2726998, 0, -5, -3.1818, 0, -4.0909, -3.1818, 0, -5, -2.2726998, 0, -5, -3.1818, 0, -4.0909, -4.0909, 0, -4.0909, -3.1818, 0, -5, -4.0909, 0, -4.0909, -4.0909, 0, -5, -3.1818, 0, -5, -4.0909, 0, -4.0909, -5, 0, -4.0909, -4.0909, 0, -5, -5, 0, -4.0909, -5, 0, -5, -4.0909, 0, -5)
+
 [node name="Stable" type="Node3D" unique_id=1731673158]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=571428789]
+environment = SubResource("Environment_xpa75")
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1252192294]
+
+[node name="Main Camera" type="Node3D" parent="." unique_id=1729109917]
+transform = Transform3D(-0.35830095, 0, 0.93360615, 0, 1, 0, -0.93360615, 0, -0.35830095, 0.923, 1.5, 3.299)
+
+[node name="Camera" type="Camera3D" parent="Main Camera" unique_id=138473098]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+cull_mask = 16777215
+current = true
+fov = 60.0
+near = 0.3
+far = 1000.0
+
+[node name="Directional Light" type="Node3D" parent="." unique_id=1689902551]
+transform = Transform3D(-0.20367372, -0.3171614, -0.92624277, -0.023935916, 0.9474039, -0.319144, 0.9787462, -0.042830773, -0.20055282, 8.29, 12.778892, 1.31)
+
+[node name="Light" type="DirectionalLight3D" parent="Directional Light" unique_id=1757997515]
+transform = Transform3D(0.022188619, 0.29586783, -0.95497113, 0.34225464, 0.89524156, 0.2853147, 0.93934524, -0.33317417, -0.081397936, 0, 0, 0)
+light_energy = 2.121
+light_indirect_energy = 14.714
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_normal_bias = 0.4
+
+[node name="Scene" type="Node3D" parent="." unique_id=158560559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2789035, 2.531586, 1.4558917)
+
+[node name="Plane" type="Node3D" parent="Scene" unique_id=267349408]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 1.1110969, -2.531586, 0.5441083)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Scene/Plane" unique_id=1631871806]
+gi_lightmap_texel_scale = 2.0
+mesh = SubResource("PlaneMesh_84yh7")
+surface_material_override/0 = ExtResource("1_e7ni1")
+
+[node name="MeshCollider" type="StaticBody3D" parent="Scene/Plane" unique_id=1102745412]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Scene/Plane/MeshCollider" unique_id=867656827]
+shape = SubResource("ConcavePolygonShape3D_fxg5p")
+
+[node name="Roof_End (1)" parent="Scene" unique_id=198804397 instance=ExtResource("2_dphmp")]
+transform = Transform3D(-1.4305115e-06, 3.5527137e-15, 1, 4.3711385e-08, 1, 5.684342e-14, -1, 4.3711385e-08, -1.4305115e-06, -7.2629027, 0.65641403, 0.5941082)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Roof_End (1)" index="0" unique_id=677549987]
+surface_material_override/0 = ExtResource("3_kost4")
+
+[node name="Pen_01_Straight" parent="Scene" unique_id=368352885 instance=ExtResource("4_mengk")]
+transform = Transform3D(-8.34465e-07, 1.7763568e-15, 1, 4.371139e-08, 1, 3.0198066e-14, -1, 4.371139e-08, -8.34465e-07, -3.7789035, -2.531586, -1.4558917)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight2" parent="Scene" unique_id=680229493 instance=ExtResource("4_mengk")]
+transform = Transform3D(-8.34465e-07, 1.7763568e-15, 1, 4.371139e-08, 1, 3.0198066e-14, -1, 4.371139e-08, -8.34465e-07, -3.7789052, -2.531586, -3.4558916)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight2" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight3" parent="Scene" unique_id=84027317 instance=ExtResource("4_mengk")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -3.7789037, -2.531586, -1.4558917)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight3" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Frame_Narrow (1)" parent="Scene" unique_id=856194284 instance=ExtResource("6_60wnw")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -1.7789035, -2.531586, -1.4558917)
+
+[node name="Pen_01_Straight4" parent="Scene" unique_id=546554832 instance=ExtResource("4_mengk")]
+transform = Transform3D(-8.34465e-07, 1.7763568e-15, 1, 4.371139e-08, 1, 3.0198066e-14, -1, 4.371139e-08, -8.34465e-07, -0.27890348, -2.531586, -1.4558917)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight4" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight5" parent="Scene" unique_id=1585725364 instance=ExtResource("4_mengk")]
+transform = Transform3D(-8.34465e-07, 1.7763568e-15, 1, 4.371139e-08, 1, 3.0198066e-14, -1, 4.371139e-08, -8.34465e-07, -0.2789054, -2.531586, -3.4558916)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight5" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight_Door_Narrow_Hole (1)" parent="Scene" unique_id=1738788354 instance=ExtResource("7_xvrq7")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -1.7999034, -2.531586, -1.3968917)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight_Door_Narrow_Hole (1)" index="0" unique_id=1811914474]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight_Door_Narrow_Hole (2)" parent="Scene" unique_id=604879313 instance=ExtResource("7_xvrq7")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 4.5270963, -2.531586, -1.3968976)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight_Door_Narrow_Hole (2)" index="0" unique_id=1811914474]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight6" parent="Scene" unique_id=911321363 instance=ExtResource("4_mengk")]
+transform = Transform3D(-8.34465e-07, 1.7763568e-15, 1, 4.371139e-08, 1, 3.0198066e-14, -1, 4.371139e-08, -8.34465e-07, 6.7210946, -2.531586, -3.4558973)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight6" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight7" parent="Scene" unique_id=2106179360 instance=ExtResource("4_mengk")]
+transform = Transform3D(-8.34465e-07, 1.7763568e-15, 1, 4.371139e-08, 1, 3.0198066e-14, -1, 4.371139e-08, -8.34465e-07, 6.7210965, -2.531586, -1.4558976)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight7" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Frame_Narrow (2)" parent="Scene" unique_id=220734389 instance=ExtResource("6_60wnw")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 5.2210965, -2.531586, -1.4558976)
+
+[node name="Pen_01_Straight8" parent="Scene" unique_id=1783596244 instance=ExtResource("4_mengk")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 3.2210965, -2.531586, -1.4558976)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight8" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight9" parent="Scene" unique_id=1606194554 instance=ExtResource("4_mengk")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 6.7210965, -2.531586, -1.4558976)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight9" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Frame_Narrow (3)" parent="Scene" unique_id=400287223 instance=ExtResource("6_60wnw")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 8.721096, -2.531586, -1.4558976)
+
+[node name="Pen_01_Straight_Door_Narrow_Hole (3)" parent="Scene" unique_id=1398525581 instance=ExtResource("7_xvrq7")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 8.027096, -2.531586, -1.3968976)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight_Door_Narrow_Hole (3)" index="0" unique_id=1811914474]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight10" parent="Scene" unique_id=932676506 instance=ExtResource("4_mengk")]
+transform = Transform3D(-8.34465e-07, 1.7763568e-15, 1, 4.371139e-08, 1, 3.0198066e-14, -1, 4.371139e-08, -8.34465e-07, 3.2210965, -2.531586, -1.4558947)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight10" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight11" parent="Scene" unique_id=443864849 instance=ExtResource("4_mengk")]
+transform = Transform3D(-8.34465e-07, 1.7763568e-15, 1, 4.371139e-08, 1, 3.0198066e-14, -1, 4.371139e-08, -8.34465e-07, 3.2210946, -2.531586, -3.4558945)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight11" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Wall_Window_Alt (1)" parent="Scene" unique_id=1620557356 instance=ExtResource("8_igeyl")]
+transform = Transform3D(-1, -5.923823e-15, -1.4901161e-06, -7.1058875e-14, 1, 4.3711392e-08, 1.4901161e-06, 4.3711392e-08, -1, 6.721091, -2.5315857, -5.455892)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Window_Alt (1)" index="0" unique_id=319110990]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall_Window_Alt (2)" parent="Scene" unique_id=2055626639 instance=ExtResource("8_igeyl")]
+transform = Transform3D(-1, -5.923823e-15, -1.4901161e-06, -7.1058875e-14, 1, 4.3711392e-08, 1.4901161e-06, 4.3711392e-08, -1, -0.2789092, -2.5315857, -5.4558816)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Window_Alt (2)" index="0" unique_id=319110990]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall_Window_Alt (3)" parent="Scene" unique_id=412293912 instance=ExtResource("8_igeyl")]
+transform = Transform3D(-1, -5.923823e-15, -1.4901161e-06, -7.1058875e-14, 1, 4.3711392e-08, 1.4901161e-06, 4.3711392e-08, -1, -3.7789092, -2.5315857, -5.4558764)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Window_Alt (3)" index="0" unique_id=319110990]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall (1)" parent="Scene" unique_id=1897582879 instance=ExtResource("10_n5ye2")]
+transform = Transform3D(-1.6953562e-06, 5.4633964e-15, 1, 5.0268092e-08, 1, 5.8976925e-14, -1.15, 4.3711385e-08, -1.4742228e-06, -7.2789054, -2.531586, -1.4558725)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall (1)" index="0" unique_id=1286401093]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Straight12" parent="Scene" unique_id=2089958350 instance=ExtResource("4_mengk")]
+transform = Transform3D(-8.34465e-07, 1.7763568e-15, 1, 4.371139e-08, 1, 3.0198066e-14, -1, 4.371139e-08, -8.34465e-07, -3.7789035, -2.531586, -1.4558917)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight12" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Frame_01 (1)" parent="Scene" unique_id=708939023 instance=ExtResource("11_du5hh")]
+transform = Transform3D(5.9604645e-08, 1.7763568e-15, -1, -4.371139e-08, 1, -1.7763568e-15, 1, 4.371139e-08, 5.9604645e-08, -3.7789035, -2.531586, -1.4558915)
+metadata/_edit_group_ = true
+
+[node name="Frame_01 (2)" parent="Scene" unique_id=1792439779 instance=ExtResource("11_du5hh")]
+transform = Transform3D(5.9604645e-08, 1.7763568e-15, -1, -4.371139e-08, 1, -1.7763568e-15, 1, 4.371139e-08, 5.9604645e-08, -7.2789035, -2.531586, -1.4558914)
+metadata/_edit_group_ = true
+
+[node name="Frame_01 (3)" parent="Scene" unique_id=783254733 instance=ExtResource("11_du5hh")]
+transform = Transform3D(5.9604645e-08, 1.7763568e-15, -1, -4.371139e-08, 1, -1.7763568e-15, 1, 4.371139e-08, 5.9604645e-08, 3.2210965, -2.531586, -1.455892)
+metadata/_edit_group_ = true
+
+[node name="Frame_01 (4)" parent="Scene" unique_id=780833413 instance=ExtResource("11_du5hh")]
+transform = Transform3D(5.9604645e-08, 1.7763568e-15, -1, -4.371139e-08, 1, -1.7763568e-15, 1, 4.371139e-08, 5.9604645e-08, 6.7210965, -2.531586, -1.4558921)
+metadata/_edit_group_ = true
+
+[node name="Frame_01 (5)" parent="Scene" unique_id=1134766565 instance=ExtResource("11_du5hh")]
+transform = Transform3D(5.9604645e-08, 1.7763568e-15, -1, -4.371139e-08, 1, -1.7763568e-15, 1, 4.371139e-08, 5.9604645e-08, 10.221096, -2.531586, -1.4558923)
+metadata/_edit_group_ = true
+
+[node name="Pen_01_Straight13" parent="Scene" unique_id=332257549 instance=ExtResource("4_mengk")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, 10.271091, -2.5315862, 2.6251526)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight13" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Frame_Narrow (4)" parent="Scene" unique_id=282406887 instance=ExtResource("6_60wnw")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, 8.271093, -2.5315862, 2.6251545)
+
+[node name="Pen_01_Straight14" parent="Scene" unique_id=1832641488 instance=ExtResource("4_mengk")]
+transform = Transform3D(7.1525574e-07, 3.5527137e-15, -1, -4.3711392e-08, 1, -2.842171e-14, 1, 4.3711392e-08, 7.1525574e-07, 6.771094, -2.531586, 2.6251554)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight14" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight15" parent="Scene" unique_id=1105451230 instance=ExtResource("4_mengk")]
+transform = Transform3D(7.1525574e-07, 3.5527137e-15, -1, -4.3711392e-08, 1, -2.842171e-14, 1, 4.3711392e-08, 7.1525574e-07, 6.7710977, -2.5315862, 4.625157)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight15" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight_Door_Narrow_Hole (4)" parent="Scene" unique_id=386748545 instance=ExtResource("7_xvrq7")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, 8.965094, -2.5315862, 2.5661545)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight_Door_Narrow_Hole (4)" index="0" unique_id=1811914474]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight_Door_Narrow_Hole (5)" parent="Scene" unique_id=57983550 instance=ExtResource("7_xvrq7")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, 5.465093, -2.5315862, 2.5661583)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight_Door_Narrow_Hole (5)" index="0" unique_id=1811914474]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight16" parent="Scene" unique_id=401685586 instance=ExtResource("4_mengk")]
+transform = Transform3D(7.1525574e-07, 3.5527137e-15, -1, -4.3711392e-08, 1, -2.842171e-14, 1, 4.3711392e-08, 7.1525574e-07, 3.2710977, -2.5315862, 4.62516)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight16" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight17" parent="Scene" unique_id=680519360 instance=ExtResource("4_mengk")]
+transform = Transform3D(7.1525574e-07, 3.5527137e-15, -1, -4.3711392e-08, 1, -2.842171e-14, 1, 4.3711392e-08, 7.1525574e-07, 3.2710938, -2.5315862, 2.6251616)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight17" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Frame_Narrow (5)" parent="Scene" unique_id=2143818506 instance=ExtResource("6_60wnw")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, 4.771093, -2.5315862, 2.6251597)
+
+[node name="Pen_01_Straight18" parent="Scene" unique_id=1894629203 instance=ExtResource("4_mengk")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, 6.771094, -2.531586, 2.6251554)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight18" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight19" parent="Scene" unique_id=1014363183 instance=ExtResource("4_mengk")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, -0.22890663, -2.5315862, 2.6251707)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight19" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Frame_Narrow (6)" parent="Scene" unique_id=1168241028 instance=ExtResource("6_60wnw")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, -2.2289062, -2.5315862, 2.6251736)
+
+[node name="Pen_01_Straight20" parent="Scene" unique_id=1562212144 instance=ExtResource("4_mengk")]
+transform = Transform3D(7.1525574e-07, 3.5527137e-15, -1, -4.3711392e-08, 1, -2.842171e-14, 1, 4.3711392e-08, 7.1525574e-07, -3.7289062, -2.531586, 2.625177)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight20" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight21" parent="Scene" unique_id=1886022311 instance=ExtResource("4_mengk")]
+transform = Transform3D(7.1525574e-07, 3.5527137e-15, -1, -4.3711392e-08, 1, -2.842171e-14, 1, 4.3711392e-08, 7.1525574e-07, -3.7289023, -2.5315862, 4.6251755)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight21" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight_Door_Narrow_Hole (6)" parent="Scene" unique_id=874457435 instance=ExtResource("7_xvrq7")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, -1.5349069, -2.5315862, 2.5661726)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight_Door_Narrow_Hole (6)" index="0" unique_id=1811914474]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight_Door_Narrow_Hole (7)" parent="Scene" unique_id=1165221391 instance=ExtResource("7_xvrq7")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, -5.034906, -2.5315862, 2.5661774)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight_Door_Narrow_Hole (7)" index="0" unique_id=1811914474]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Frame_Narrow (7)" parent="Scene" unique_id=512108106 instance=ExtResource("6_60wnw")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, -5.7289066, -2.5315862, 2.6251774)
+
+[node name="Pen_01_Straight22" parent="Scene" unique_id=431189764 instance=ExtResource("4_mengk")]
+transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, -3.7289062, -2.531586, 2.625177)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight22" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight23" parent="Scene" unique_id=1436547902 instance=ExtResource("4_mengk")]
+transform = Transform3D(7.1525574e-07, 3.5527137e-15, -1, -4.3711392e-08, 1, -2.842171e-14, 1, 4.3711392e-08, 7.1525574e-07, -0.22890377, -2.5315862, 4.625168)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight23" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Straight24" parent="Scene" unique_id=435254846 instance=ExtResource("4_mengk")]
+transform = Transform3D(7.1525574e-07, 3.5527137e-15, -1, -4.3711392e-08, 1, -2.842171e-14, 1, 4.3711392e-08, 7.1525574e-07, -0.22890711, -2.5315862, 2.6251678)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight24" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Wall (2)" parent="Scene" unique_id=762346838 instance=ExtResource("10_n5ye2")]
+transform = Transform3D(1.3206387e-06, -9.963428e-15, -1, -5.0268095e-08, 1, -6.016078e-14, 1.15, 4.371139e-08, 1.1483816e-06, -7.228905, -2.5315862, 2.6251802)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall (2)" index="0" unique_id=1286401093]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall_Window_Alt (4)" parent="Scene" unique_id=1644630467 instance=ExtResource("8_igeyl")]
+transform = Transform3D(1, 1.0073844e-14, 1.6987321e-06, 6.4180086e-14, 1, -4.371138e-08, -1.6987321e-06, 4.371138e-08, 1, -7.2288966, -2.5315864, 6.6251783)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Window_Alt (4)" index="0" unique_id=319110990]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall_Window_Alt (5)" parent="Scene" unique_id=457939824 instance=ExtResource("8_igeyl")]
+transform = Transform3D(1, 1.0073844e-14, 1.6987321e-06, 6.4180086e-14, 1, -4.371138e-08, -1.6987321e-06, 4.371138e-08, 1, -3.7288966, -2.5315866, 6.6251698)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Window_Alt (5)" index="0" unique_id=319110990]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall_Window_Alt (6)" parent="Scene" unique_id=1100426358 instance=ExtResource("8_igeyl")]
+transform = Transform3D(1, 1.0073844e-14, 1.6987321e-06, 6.4180086e-14, 1, -4.371138e-08, -1.6987321e-06, 4.371138e-08, 1, 3.2711034, -2.5315862, 6.6251507)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Window_Alt (6)" index="0" unique_id=319110990]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall_Window_Alt (7)" parent="Scene" unique_id=1125488088 instance=ExtResource("8_igeyl")]
+transform = Transform3D(1, 1.0073844e-14, 1.6987321e-06, 6.4180086e-14, 1, -4.371138e-08, -1.6987321e-06, 4.371138e-08, 1, 6.7711034, -2.5315866, 6.625141)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Window_Alt (7)" index="0" unique_id=319110990]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall (3)" parent="Scene" unique_id=1227429251 instance=ExtResource("10_n5ye2")]
+transform = Transform3D(1.3206387e-06, -9.963428e-15, -1, -5.0268095e-08, 1, -6.016078e-14, 1.15, 4.371139e-08, 1.1483816e-06, 10.271095, -2.5315862, 2.6251326)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall (3)" index="0" unique_id=1286401093]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall_Door_Alt (1)" parent="Scene" unique_id=1500770302 instance=ExtResource("12_anl5u")]
+transform = Transform3D(1, 1.0073844e-14, 1.6987321e-06, 6.4180086e-14, 1, -4.371138e-08, -1.6987321e-06, 4.371138e-08, 1, -0.22889566, -2.5315862, 6.625161)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Door_Alt (1)" index="0" unique_id=762845767]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Straight25" parent="Scene" unique_id=987672729 instance=ExtResource("4_mengk")]
+transform = Transform3D(7.1525574e-07, 3.5527137e-15, -1, -4.3711392e-08, 1, -2.842171e-14, 1, 4.3711392e-08, 7.1525574e-07, 6.771094, -2.531586, 2.6251554)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight25" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Hays (1)" parent="Scene" unique_id=1144275674 instance=ExtResource("13_t4xdl")]
+transform = Transform3D(0.8776929, 0, 0, 0, 1, -4.5645482e-08, 0, 4.371139e-08, 1.0442469, -2.0019035, -2.531586, -3.470192)
+
+[node name="Hays (2)" parent="Scene" unique_id=144419222 instance=ExtResource("13_t4xdl")]
+transform = Transform3D(0.8776929, 0, 0, 0, 1, -4.5645482e-08, 0, 4.371139e-08, 1.0442469, 4.998097, -2.531586, -3.470192)
+
+[node name="Hays (3)" parent="Scene" unique_id=483309098 instance=ExtResource("13_t4xdl")]
+transform = Transform3D(0.8776929, 0, 0, 0, 1, -4.5645482e-08, 0, 4.371139e-08, 1.0442469, 8.498096, -2.531586, -3.470192)
+
+[node name="Hays (4)" parent="Scene" unique_id=37757242 instance=ExtResource("13_t4xdl")]
+transform = Transform3D(0.8776929, 0, 0, 0, 1, -4.5645482e-08, 0, 4.371139e-08, 1.0442469, -5.5019035, -2.531586, 4.6221085)
+
+[node name="Hays (5)" parent="Scene" unique_id=983545934 instance=ExtResource("13_t4xdl")]
+transform = Transform3D(0.8776929, 0, 0, 0, 1, -4.5645482e-08, 0, 4.371139e-08, 1.0442469, -2.0019035, -2.531586, 4.6221085)
+
+[node name="Hays (6)" parent="Scene" unique_id=687146035 instance=ExtResource("13_t4xdl")]
+transform = Transform3D(0.8776929, 0, 0, 0, 1, -4.5645482e-08, 0, 4.371139e-08, 1.0442469, 4.998097, -2.531586, 4.6221085)
+
+[node name="Hays (7)" parent="Scene" unique_id=1983809605 instance=ExtResource("13_t4xdl")]
+transform = Transform3D(0.8776929, 0, 0, 0, 1, -4.5645482e-08, 0, 4.371139e-08, 1.0442469, 8.498096, -2.531586, 4.6221085)
+
+[node name="Balestack" parent="Scene" unique_id=87607667 instance=ExtResource("14_5lokp")]
+transform = Transform3D(-0.5034511, 0, 0.86402386, 3.776768e-08, 1, 2.2006542e-08, -0.86402386, 4.3711392e-08, -0.5034511, -2.1039033, -2.531586, -0.8368917)
+
+[node name="Wheelbarrow (1)" parent="Scene" unique_id=1263042036 instance=ExtResource("15_jcpv2")]
+transform = Transform3D(-0.8053955, 2.6645353e-15, -0.5927379, -2.5909404e-08, 1, 3.5204963e-08, 0.5927379, 4.3711402e-08, -0.8053955, 6.4400964, -2.211586, -1.0348917)
+
+[node name="Roof_End" parent="Scene" unique_id=1034360677 instance=ExtResource("16_ox0ow")]
+transform = Transform3D(-1.4742228e-06, 5.4633964e-15, 1, 4.3711385e-08, 1, 5.8976925e-14, -1, 4.3711385e-08, -1.4742228e-06, 10.237097, 0.65641403, 0.5941082)
+metadata/_edit_group_ = true
+
+[node name="Pen_01_Wall_Alt" parent="Scene" unique_id=555994514 instance=ExtResource("17_ahkni")]
+transform = Transform3D(-1.6953562e-06, 5.4633964e-15, 1, 5.0268092e-08, 1, 5.8976925e-14, -1.15, 4.3711385e-08, -1.4742228e-06, -7.2788997, -2.531586, 2.6061335)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Alt" index="0" unique_id=324444910]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Hays" parent="Scene" unique_id=508153556 instance=ExtResource("13_t4xdl")]
+transform = Transform3D(0.8776929, 0, 0, 0, 1, -4.5645482e-08, 0, 4.371139e-08, 1.0442469, -5.5019035, -2.531586, -3.470192)
+
+[node name="Fork" parent="Scene" unique_id=1652446 instance=ExtResource("18_q7ihi")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -2.0472865, -6.1278105, -4.1067557)
+
+[node name="HayBale" parent="Scene" unique_id=1924221437 instance=ExtResource("19_vlr38")]
+transform = Transform3D(0.21318775, 1.7763568e-15, 0.9770112, 4.2706517e-08, 1, -9.3187325e-09, -0.9770112, 4.3711385e-08, 0.21318775, -3.1129036, -2.531586, -0.95389175)
+
+[node name="Wheelbarrow" parent="Scene" unique_id=2035125928 instance=ExtResource("15_jcpv2")]
+transform = Transform3D(-0.6327553, -4.3525716e-08, -0.7743517, -2.442438e-08, 1, -3.6251045e-08, 0.7743517, -4.0249812e-09, -0.6327553, -1.299, -2.237586, -0.524)
+
+[node name="Pen_01_Wall_Door_Alt" parent="Scene" unique_id=587380299 instance=ExtResource("12_anl5u")]
+transform = Transform3D(-1.6953562e-06, 5.4633964e-15, 1, 5.0268092e-08, 1, 5.8976925e-14, -1.15, 4.3711385e-08, -1.4742228e-06, 10.221102, -2.531586, 2.6061082)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Door_Alt" index="0" unique_id=762845767]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Roof_02_Windows_Closed" parent="Scene" unique_id=347451679 instance=ExtResource("20_hjq3p")]
+transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, -0.2889037, -2.531586, -1.3958923)
+visible = false
+metadata/_edit_group_ = true
+
+[node name="Roof_02_Windows_Closed2" parent="Scene" unique_id=39209442 instance=ExtResource("20_hjq3p")]
+transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, 6.7110963, -2.531586, -1.3958913)
+visible = false
+metadata/_edit_group_ = true
+
+[node name="Frame_01" parent="Scene" unique_id=581464067 instance=ExtResource("11_du5hh")]
+transform = Transform3D(5.9604645e-08, 1.7763568e-15, -1, -4.371139e-08, 1, -1.7763568e-15, 1, 4.371139e-08, 5.9604645e-08, -0.27890348, -2.531586, -1.4558917)
+metadata/_edit_group_ = true
+
+[node name="Pen_01_Wall_Door_Alt2" parent="Scene" unique_id=2078834477 instance=ExtResource("12_anl5u")]
+transform = Transform3D(-1, -5.923823e-15, -1.4901161e-06, -7.1058875e-14, 1, 4.3711392e-08, 1.4901161e-06, 4.3711392e-08, -1, 3.2210908, -2.5315857, -5.455887)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Door_Alt2" index="0" unique_id=762845767]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Roof_02_Windows_Closed3" parent="Scene" unique_id=1722662769 instance=ExtResource("20_hjq3p")]
+transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, 3.2110963, -2.531586, -1.3958918)
+visible = false
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" parent="Scene/Roof_02_Windows_Closed3/MeshCollider" parent_id_path=PackedInt32Array(1722662769, 1608225929) index="0" unique_id=1121993005]
+transform = Transform3D(0.9999997, 0.000642468, 0.0004061838, -0.00064239034, 0.99999976, -0.00019786303, -0.00040630656, 0.00019761085, 0.9999999, 0, 0, 0)
+
+[node name="Pen_01_Wall_Window_Alt" parent="Scene" unique_id=2043485918 instance=ExtResource("8_igeyl")]
+transform = Transform3D(-1, -5.923823e-15, -1.4901161e-06, -7.1058875e-14, 1, 4.3711392e-08, 1.4901161e-06, 4.3711392e-08, -1, 10.22109, -2.5315857, -5.4558973)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall_Window_Alt" index="0" unique_id=319110990]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Wall" parent="Scene" unique_id=772493766 instance=ExtResource("10_n5ye2")]
+transform = Transform3D(-1.6953562e-06, 5.4633964e-15, 1, 5.0268092e-08, 1, 5.8976925e-14, -1.15, 4.3711385e-08, -1.4742228e-06, 10.221096, -2.531586, -1.4558976)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Wall" index="0" unique_id=1286401093]
+surface_material_override/0 = ExtResource("9_qmgg6")
+
+[node name="Pen_01_Straight_Door_Narrow_Hole" parent="Scene" unique_id=1726803327 instance=ExtResource("7_xvrq7")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -5.9729033, -2.531586, -1.3968917)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight_Door_Narrow_Hole" index="0" unique_id=1811914474]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="Pen_01_Frame_Narrow" parent="Scene" unique_id=1316801816 instance=ExtResource("6_60wnw")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -5.2789035, -2.531586, -1.4558917)
+
+[node name="Roof_02_Windows_Closed4" parent="Scene" unique_id=1184685254 instance=ExtResource("20_hjq3p")]
+transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, 10.211098, -2.531586, -1.3958908)
+visible = false
+metadata/_edit_group_ = true
+
+[node name="Roof_02_Windows_Closed5" parent="Scene" unique_id=478301407 instance=ExtResource("20_hjq3p")]
+transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, -3.7889037, -2.531586, -1.3958925)
+visible = false
+metadata/_edit_group_ = true
+
+[node name="Pen_01_Straight26" parent="Scene" unique_id=730446292 instance=ExtResource("4_mengk")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -7.2789035, -2.531586, -1.4558917)
+
+[node name="MeshRenderer" parent="Scene/Pen_01_Straight26" index="0" unique_id=1957747468]
+surface_material_override/0 = ExtResource("5_1vxo2")
+
+[node name="HayBale (1)" parent="Scene" unique_id=183887624 instance=ExtResource("19_vlr38")]
+transform = Transform3D(0.0110865235, 3.5527137e-15, 0.99993855, 4.37087e-08, 1, -4.8461146e-10, -0.99993855, 4.3711385e-08, 0.0110865235, 7.479097, -2.531586, -1.1068918)
+
+[node name="HayBale2" parent="Scene" unique_id=1864549331 instance=ExtResource("19_vlr38")]
+transform = Transform3D(0.09116399, -5.3290705e-15, -0.99583596, -4.352937e-08, 1, -3.9849084e-09, 0.99583596, 4.371139e-08, 0.09116399, -1.7509036, -2.531586, 2.0851083)
+
+[node name="Balestack (2)" parent="Scene" unique_id=1666639034 instance=ExtResource("14_5lokp")]
+transform = Transform3D(-0.060140014, 0, 0.99819, 0, 1, 0, -0.99819, 0, -0.060140014, 6.2110963, -2.5315857, 2.1761084)
+
+[node name="Balestack (1)" parent="Scene" unique_id=1272904270 instance=ExtResource("14_5lokp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9094567, -2.5315855, 6.036488)
+
+[node name="Balestack2" parent="Scene" unique_id=1226829082 instance=ExtResource("14_5lokp")]
+transform = Transform3D(-0.92124283, 0, 0.3889878, 0, 1, 0, -0.3889878, 0, -0.92124283, -6.2679033, -2.531586, -0.81189173)
+
+[node name="WarpStorage" parent="Scene" unique_id=57113433 instance=ExtResource("21_xyjny")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -1.048399, -1.4863136, -1.3527696)
+
+[node name="WaterBucket_01" parent="Scene" unique_id=1878358638 instance=ExtResource("22_6d2k5")]
+transform = Transform3D(-4.7683716e-07, -1.7763568e-15, 0.99999994, 4.371139e-08, 1, 2.3092639e-14, -0.99999994, 4.371139e-08, -4.7683716e-07, -7.2289057, -1.3954946, -1.4726387)
+
+[node name="Saltstone (1)" parent="Scene" unique_id=1897260620 instance=ExtResource("23_m51fd")]
+transform = Transform3D(-1, -8.742278e-08, 8.940696e-08, -8.742278e-08, 1, 1.19249e-08, -8.940696e-08, 1.1924893e-08, -1, -5.420664, -0.9994885, -1.4442453)
+
+[node name="Fork2" parent="Scene" unique_id=1431947087 instance=ExtResource("18_q7ihi")]
+transform = Transform3D(-0.758585, 0.4063353, 0.5093529, 0.10513133, 0.8478137, -0.5197684, -0.6430367, -0.34073958, -0.6858574, -3.3919034, -2.554586, 0.020108223)
+
+[node name="Bucket" parent="Scene" unique_id=1641448556 instance=ExtResource("24_2h71i")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -3.6139035, -2.531586, -0.63989174)
+
+[node name="HookedHalter" parent="Scene" unique_id=9727108 instance=ExtResource("25_3c8r5")]
+transform = Transform3D(1, 0, 0, 0, 1, 7.54979e-08, 0, -7.54979e-08, 1, -3.5510993, -1.2340269, -1.4117696)
+
+[node name="Saltstone" parent="Scene" unique_id=1343414329 instance=ExtResource("23_m51fd")]
+transform = Transform3D(1, -8.742278e-08, 1.509958e-07, 8.742278e-08, 1, -1.1924881e-08, -1.509958e-07, 1.1924893e-08, 1, -1.7410431, -2.531586, 0.354923)
+
+[node name="HookedHalter (1)" parent="Scene" unique_id=626776074 instance=ExtResource("25_3c8r5")]
+transform = Transform3D(1, 0, 0, 0, 1, 7.54979e-08, 0, -7.54979e-08, 1, -7.0510993, -1.2340269, -1.4117696)
+
+[node name="HookedHalter (2)" parent="Scene" unique_id=66657777 instance=ExtResource("25_3c8r5")]
+transform = Transform3D(1, 0, 0, 0, 1, 7.54979e-08, 0, -7.54979e-08, 1, 3.4489007, -1.2340269, -1.4117696)
+
+[node name="HookedHalter (3)" parent="Scene" unique_id=173555840 instance=ExtResource("25_3c8r5")]
+transform = Transform3D(1, 0, 0, 0, 1, 7.54979e-08, 0, -7.54979e-08, 1, 6.9489007, -1.2340269, -1.4117696)
+
+[node name="HookedHalter (4)" parent="Scene" unique_id=658915066 instance=ExtResource("25_3c8r5")]
+transform = Transform3D(-1, -4.5124999e-13, 5.9306612e-06, -3.497311e-15, 1, 7.549794e-08, -5.9306612e-06, 7.549794e-08, -1, -4.0510993, -1.2340269, 2.5882306)
+
+[node name="HookedHalter (5)" parent="Scene" unique_id=1160775027 instance=ExtResource("25_3c8r5")]
+transform = Transform3D(-1, -4.5124999e-13, 5.9306612e-06, -3.497311e-15, 1, 7.549794e-08, -5.9306612e-06, 7.549794e-08, -1, -0.5510993, -1.2340269, 2.5882306)
+
+[node name="HookedHalter (6)" parent="Scene" unique_id=305179202 instance=ExtResource("25_3c8r5")]
+transform = Transform3D(-1, -4.5124999e-13, 5.9306612e-06, -3.497311e-15, 1, 7.549794e-08, -5.9306612e-06, 7.549794e-08, -1, 6.4489007, -1.2340269, 2.5882306)
+
+[node name="HookedHalter (7)" parent="Scene" unique_id=1673493813 instance=ExtResource("25_3c8r5")]
+transform = Transform3D(-1, -4.5124999e-13, 5.9306612e-06, -3.497311e-15, 1, 7.549794e-08, -5.9306612e-06, 7.549794e-08, -1, 9.9489, -1.2340269, 2.5882306)
+
+[node name="Saltstone (2)" parent="Scene" unique_id=745653231 instance=ExtResource("23_m51fd")]
+transform = Transform3D(-1, -8.742278e-08, 8.940696e-08, -8.742278e-08, 1, 1.19249e-08, -8.940696e-08, 1.1924893e-08, -1, -2.1706634, -0.99948823, -1.4442451)
+
+[node name="WaterBucket_01 (1)" parent="Scene" unique_id=657773526 instance=ExtResource("22_6d2k5")]
+transform = Transform3D(-4.7683716e-07, -1.7763568e-15, 0.99999994, 4.371139e-08, 1, 2.3092639e-14, -0.99999994, 4.371139e-08, -4.7683716e-07, -3.7289057, -1.3954946, -1.4726404)
+
+[node name="WaterBucket_01 (2)" parent="Scene" unique_id=1984010551 instance=ExtResource("22_6d2k5")]
+transform = Transform3D(-4.7683716e-07, -1.7763568e-15, 0.99999994, 4.371139e-08, 1, 2.3092639e-14, -0.99999994, 4.371139e-08, -4.7683716e-07, 3.2710938, -1.3954946, -1.4726437)
+
+[node name="WaterBucket_01 (3)" parent="Scene" unique_id=1054719906 instance=ExtResource("22_6d2k5")]
+transform = Transform3D(-4.7683716e-07, -1.7763568e-15, 0.99999994, 4.371139e-08, 1, 2.3092639e-14, -0.99999994, 4.371139e-08, -4.7683716e-07, 6.771094, -1.3954946, -1.4726454)
+
+[node name="WarpStorage (1)" parent="Scene" unique_id=1366183948 instance=ExtResource("21_xyjny")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -5.2079034, -1.4863136, -1.3527696)
+
+[node name="WarpStorage (2)" parent="Scene" unique_id=21984040 instance=ExtResource("21_xyjny")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 5.265096, -1.4863136, -1.3527696)
+
+[node name="WarpStorage (3)" parent="Scene" unique_id=985339838 instance=ExtResource("21_xyjny")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 8.794096, -1.4863136, -1.3527696)
+
+[node name="HayBale (2)" parent="Scene" unique_id=1774176139 instance=ExtResource("19_vlr38")]
+transform = Transform3D(0.0110865235, 3.5527137e-15, 0.99993855, 4.37087e-08, 1, -4.8461146e-10, -0.99993855, 4.3711385e-08, 0.0110865235, 7.479097, -2.143586, -1.1068918)
+
+[node name="Doors" type="Node3D" parent="Scene" unique_id=1570377316]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2743487, -2.532, 6.654256)
+
+[node name="Exterior Doors" type="Node3D" parent="Scene/Doors" unique_id=1199740455]
+
+[node name="StableDoor" parent="Scene/Doors/Exterior Doors" unique_id=995651868 instance=ExtResource("26_dxeg1")]
+
+[node name="Pen_01_Wall_Door_Door" parent="Scene/Doors/Exterior Doors/StableDoor" index="0" unique_id=2008211422]
+transform = Transform3D(-1.15, 4.371139e-08, 1.5815073e-06, 5.0268095e-08, 1, 5.210538e-14, -1.8187333e-06, 1.2123526e-13, -1, 0.98800564, 0, 0)
+
+[node name="Pen_02_Wall_Door_Door2" parent="Scene/Doors/Exterior Doors/StableDoor" index="1" unique_id=140939931]
+transform = Transform3D(1.15, -4.3711395e-08, -7.480382e-06, 5.0268103e-08, 1, 5.544698e-14, 8.602439e-06, -3.8242494e-13, 1, 0.023550034, 0, 0)
+
+[node name="StableDoor2" parent="Scene/Doors/Exterior Doors" unique_id=1470857966 instance=ExtResource("26_dxeg1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42288017, 0.00041413307, -12.128592)
+
+[node name="Pen_02_Wall_Door_Door2" parent="Scene/Doors/Exterior Doors/StableDoor2" index="1" unique_id=140939931]
+transform = Transform3D(1.15, -4.3711395e-08, -7.480382e-06, 5.0268103e-08, 1, 5.544698e-14, 8.602439e-06, -3.8242494e-13, 1, -0.82052803, 0, 0)
+
+[node name="StableDoor3" parent="Scene/Doors/Exterior Doors" unique_id=2034166543 instance=ExtResource("26_dxeg1")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8.960452, 0.00041413307, -6.130933)
+
+[node name="Pen_02_Wall_Door_Door2" parent="Scene/Doors/Exterior Doors/StableDoor3" index="1" unique_id=140939931]
+transform = Transform3D(1.15, -4.3711395e-08, -7.480382e-06, 5.0268103e-08, 1, 5.544698e-14, 8.602439e-06, -3.8242494e-13, 1, -0.8811302, 0, 0)
+
+[node name="Interior Doors" type="Node3D" parent="Scene/Doors" unique_id=628957968]
+
+[node name="Probes" type="Node3D" parent="." unique_id=1677956008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.059826, 2.5578616, 1.923476)
+
+[node name="Reflection Probe" type="Node3D" parent="Probes" unique_id=742519726]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0638256, -0.19786167, 0.14652395)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe" unique_id=723611517]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (1)" type="Node3D" parent="Probes" unique_id=226112213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0638256, -0.19786167, 4.6465235)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (1)" unique_id=2138827955]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (2)" type="Node3D" parent="Probes" unique_id=744304553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0638256, -0.19786167, -4.3534765)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (2)" unique_id=1593172406]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (3)" type="Node3D" parent="Probes" unique_id=1040515422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, -0.19786167, 0.14652395)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (3)" unique_id=1203108973]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (4)" type="Node3D" parent="Probes" unique_id=2122522796]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3999996, -0.19786167, 4.6465235)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (4)" unique_id=1654049139]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (5)" type="Node3D" parent="Probes" unique_id=1104848204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.231, -0.19786167, -4.3534765)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (5)" unique_id=1330212181]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (8)" type="Node3D" parent="Probes" unique_id=1069913233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4361744, -0.19786167, -4.3534765)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (8)" unique_id=1951115595]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (7)" type="Node3D" parent="Probes" unique_id=831105912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4361744, -0.19786167, 4.6465235)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (7)" unique_id=783601281]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (6)" type="Node3D" parent="Probes" unique_id=906987295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4361744, -0.19786167, 0.14652395)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (6)" unique_id=872613353]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (11)" type="Node3D" parent="Probes" unique_id=1505363543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.936174, -0.19786167, 0.14652395)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (11)" unique_id=1272269834]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (10)" type="Node3D" parent="Probes" unique_id=1178341531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.936174, -0.19786167, 4.6465235)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (10)" unique_id=2025313362]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (9)" type="Node3D" parent="Probes" unique_id=714049766]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.936174, -0.19786167, -4.3534765)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (9)" unique_id=1183728723]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (12)" type="Node3D" parent="Probes" unique_id=1329063137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0638256, -0.19786167, 0.14652395)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (12)" unique_id=1258683958]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (13)" type="Node3D" parent="Probes" unique_id=166851558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0638256, -0.19786167, 4.6465235)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (13)" unique_id=471276792]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Reflection Probe (14)" type="Node3D" parent="Probes" unique_id=1819809789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0638256, -0.19786167, -4.3534765)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Probes/Reflection Probe (14)" unique_id=81323310]
+max_distance = 1000.0
+size = Vector3(5, 5, 5)
+cull_mask = 16777215
+
+[node name="Post Processign" type="Node3D" parent="." unique_id=1761091554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.442, 2.069, 2.046)
+
+[editable path="Scene/Roof_End (1)"]
+[editable path="Scene/Pen_01_Straight"]
+[editable path="Scene/Pen_01_Straight2"]
+[editable path="Scene/Pen_01_Straight3"]
+[editable path="Scene/Pen_01_Frame_Narrow (1)"]
+[editable path="Scene/Pen_01_Straight4"]
+[editable path="Scene/Pen_01_Straight5"]
+[editable path="Scene/Pen_01_Straight_Door_Narrow_Hole (1)"]
+[editable path="Scene/Pen_01_Straight_Door_Narrow_Hole (2)"]
+[editable path="Scene/Pen_01_Straight6"]
+[editable path="Scene/Pen_01_Straight7"]
+[editable path="Scene/Pen_01_Frame_Narrow (2)"]
+[editable path="Scene/Pen_01_Straight8"]
+[editable path="Scene/Pen_01_Straight9"]
+[editable path="Scene/Pen_01_Frame_Narrow (3)"]
+[editable path="Scene/Pen_01_Straight_Door_Narrow_Hole (3)"]
+[editable path="Scene/Pen_01_Straight10"]
+[editable path="Scene/Pen_01_Straight11"]
+[editable path="Scene/Pen_01_Wall_Window_Alt (1)"]
+[editable path="Scene/Pen_01_Wall_Window_Alt (2)"]
+[editable path="Scene/Pen_01_Wall_Window_Alt (3)"]
+[editable path="Scene/Pen_01_Wall (1)"]
+[editable path="Scene/Pen_01_Straight12"]
+[editable path="Scene/Frame_01 (1)"]
+[editable path="Scene/Frame_01 (2)"]
+[editable path="Scene/Frame_01 (3)"]
+[editable path="Scene/Frame_01 (4)"]
+[editable path="Scene/Frame_01 (5)"]
+[editable path="Scene/Pen_01_Straight13"]
+[editable path="Scene/Pen_01_Frame_Narrow (4)"]
+[editable path="Scene/Pen_01_Straight14"]
+[editable path="Scene/Pen_01_Straight15"]
+[editable path="Scene/Pen_01_Straight_Door_Narrow_Hole (4)"]
+[editable path="Scene/Pen_01_Straight_Door_Narrow_Hole (5)"]
+[editable path="Scene/Pen_01_Straight16"]
+[editable path="Scene/Pen_01_Straight17"]
+[editable path="Scene/Pen_01_Frame_Narrow (5)"]
+[editable path="Scene/Pen_01_Straight18"]
+[editable path="Scene/Pen_01_Straight19"]
+[editable path="Scene/Pen_01_Frame_Narrow (6)"]
+[editable path="Scene/Pen_01_Straight20"]
+[editable path="Scene/Pen_01_Straight21"]
+[editable path="Scene/Pen_01_Straight_Door_Narrow_Hole (6)"]
+[editable path="Scene/Pen_01_Straight_Door_Narrow_Hole (7)"]
+[editable path="Scene/Pen_01_Frame_Narrow (7)"]
+[editable path="Scene/Pen_01_Straight22"]
+[editable path="Scene/Pen_01_Straight23"]
+[editable path="Scene/Pen_01_Straight24"]
+[editable path="Scene/Pen_01_Wall (2)"]
+[editable path="Scene/Pen_01_Wall_Window_Alt (4)"]
+[editable path="Scene/Pen_01_Wall_Window_Alt (5)"]
+[editable path="Scene/Pen_01_Wall_Window_Alt (6)"]
+[editable path="Scene/Pen_01_Wall_Window_Alt (7)"]
+[editable path="Scene/Pen_01_Wall (3)"]
+[editable path="Scene/Pen_01_Wall_Door_Alt (1)"]
+[editable path="Scene/Pen_01_Straight25"]
+[editable path="Scene/Hays (1)"]
+[editable path="Scene/Hays (2)"]
+[editable path="Scene/Hays (3)"]
+[editable path="Scene/Hays (4)"]
+[editable path="Scene/Hays (5)"]
+[editable path="Scene/Hays (6)"]
+[editable path="Scene/Hays (7)"]
+[editable path="Scene/Balestack"]
+[editable path="Scene/Wheelbarrow (1)"]
+[editable path="Scene/Roof_End"]
+[editable path="Scene/Pen_01_Wall_Alt"]
+[editable path="Scene/Hays"]
+[editable path="Scene/Fork"]
+[editable path="Scene/HayBale"]
+[editable path="Scene/Wheelbarrow"]
+[editable path="Scene/Pen_01_Wall_Door_Alt"]
+[editable path="Scene/Roof_02_Windows_Closed"]
+[editable path="Scene/Roof_02_Windows_Closed2"]
+[editable path="Scene/Frame_01"]
+[editable path="Scene/Pen_01_Wall_Door_Alt2"]
+[editable path="Scene/Roof_02_Windows_Closed3"]
+[editable path="Scene/Pen_01_Wall_Window_Alt"]
+[editable path="Scene/Pen_01_Wall"]
+[editable path="Scene/Pen_01_Straight_Door_Narrow_Hole"]
+[editable path="Scene/Pen_01_Frame_Narrow"]
+[editable path="Scene/Roof_02_Windows_Closed4"]
+[editable path="Scene/Roof_02_Windows_Closed5"]
+[editable path="Scene/Pen_01_Straight26"]
+[editable path="Scene/HayBale (1)"]
+[editable path="Scene/HayBale2"]
+[editable path="Scene/Balestack (2)"]
+[editable path="Scene/Balestack (1)"]
+[editable path="Scene/Balestack2"]
+[editable path="Scene/WarpStorage"]
+[editable path="Scene/WaterBucket_01"]
+[editable path="Scene/Saltstone (1)"]
+[editable path="Scene/Fork2"]
+[editable path="Scene/Bucket"]
+[editable path="Scene/HookedHalter"]
+[editable path="Scene/Saltstone"]
+[editable path="Scene/HookedHalter (1)"]
+[editable path="Scene/HookedHalter (2)"]
+[editable path="Scene/HookedHalter (3)"]
+[editable path="Scene/HookedHalter (4)"]
+[editable path="Scene/HookedHalter (5)"]
+[editable path="Scene/HookedHalter (6)"]
+[editable path="Scene/HookedHalter (7)"]
+[editable path="Scene/Saltstone (2)"]
+[editable path="Scene/WaterBucket_01 (1)"]
+[editable path="Scene/WaterBucket_01 (2)"]
+[editable path="Scene/WaterBucket_01 (3)"]
+[editable path="Scene/WarpStorage (1)"]
+[editable path="Scene/WarpStorage (2)"]
+[editable path="Scene/WarpStorage (3)"]
+[editable path="Scene/HayBale (2)"]
+[editable path="Scene/Doors/Exterior Doors/StableDoor"]
+[editable path="Scene/Doors/Exterior Doors/StableDoor/Pen_01_Wall_Door_Door"]
+[editable path="Scene/Doors/Exterior Doors/StableDoor/Pen_02_Wall_Door_Door2"]
+[editable path="Scene/Doors/Exterior Doors/StableDoor2"]
+[editable path="Scene/Doors/Exterior Doors/StableDoor2/Pen_01_Wall_Door_Door"]
+[editable path="Scene/Doors/Exterior Doors/StableDoor2/Pen_02_Wall_Door_Door2"]
+[editable path="Scene/Doors/Exterior Doors/StableDoor3"]
+[editable path="Scene/Doors/Exterior Doors/StableDoor3/Pen_01_Wall_Door_Door"]
+[editable path="Scene/Doors/Exterior Doors/StableDoor3/Pen_02_Wall_Door_Door2"]
