@@ -38,6 +38,7 @@ closed_pose = ExtResource("7_uu67p")
 metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
 
 [node name="Cube" unique_id=192508180 instance=ExtResource("1_tr4cj")]
+collision_layer = 5242884
 
 [node name="CollisionShape3D" parent="." index="0"]
 shape = SubResource("BoxShape3D_oayol")

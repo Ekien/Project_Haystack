@@ -144,7 +144,6 @@ func _ready():
 	# Update the colliders
 	_update_colliders()
 
-
 # Called when we're added to the tree
 func _enter_tree():
 	super._enter_tree()
