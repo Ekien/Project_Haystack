@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://di0fjjfektgp2"]
+
+[ext_resource type="PackedScene" uid="uid://bqu2brfhtbiwc" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Wall_Door_Door.prefab.scn" id="1_yfy6t"]
+[ext_resource type="Material" uid="uid://bmuiaiow2r1xe" path="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Old.material" id="2_ox7rb"]
+
+[node name="StableDoor" type="Node3D" unique_id=995651868]
+
+[node name="Pen_01_Wall_Door_Door" parent="." unique_id=2008211422 instance=ExtResource("1_yfy6t")]
+transform = Transform3D(-1.15, 4.371139e-08, 1.5815073e-06, 5.0268095e-08, 1, 5.210538e-14, -1.8187333e-06, 1.2123526e-13, -1, 0, 0, 0)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Pen_01_Wall_Door_Door" index="0" unique_id=1434728913]
+surface_material_override/0 = ExtResource("2_ox7rb")
+
+[node name="Pen_02_Wall_Door_Door2" parent="." unique_id=140939931 instance=ExtResource("1_yfy6t")]
+transform = Transform3D(1.15, -4.3711395e-08, -7.480382e-06, 5.0268103e-08, 1, 5.544698e-14, 8.602439e-06, -3.8242494e-13, 1, 0, 0, 0)
+metadata/_edit_group_ = true
+
+[node name="MeshRenderer" parent="Pen_02_Wall_Door_Door2" index="0" unique_id=1434728913]
+surface_material_override/0 = ExtResource("2_ox7rb")
+
+[editable path="Pen_01_Wall_Door_Door"]
+[editable path="Pen_02_Wall_Door_Door2"]
