@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dbse2xt7athxv"]
+
+[ext_resource type="PackedScene" uid="uid://dm87vy4ujml3q" path="res://Scenes/Stable/Stable_Hay_Bale.tscn" id="1_eleyp"]
+
+[node name="StableBalestack" type="Node3D" unique_id=1859645046]
+
+[node name="StableHayBale" parent="." unique_id=1635338174 instance=ExtResource("1_eleyp")]
+
+[node name="StableHayBale2" parent="." unique_id=872994154 instance=ExtResource("1_eleyp")]
+transform = Transform3D(0.87098235, 0, -0.49131432, 0, 1, 0, 0.49131432, 0, 0.87098235, -0.12648563, 0, 0.9784298)
+
+[node name="StableHayBale3" parent="." unique_id=1285710832 instance=ExtResource("1_eleyp")]
+transform = Transform3D(-0.12181747, 0, -0.9925526, 0, 1, 0, 0.9925526, 0, -0.12181747, -0.28483725, 0.38017786, 0.7896334)
+
+[node name="MeshInstance3D" parent="StableHayBale3" index="0" unique_id=1037945568]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014113665, 0, -0.11499709)
+
+[node name="StableHayBale4" parent="." unique_id=229900363 instance=ExtResource("1_eleyp")]
+transform = Transform3D(-0.9759739, 0, -0.21788765, 0, 1, 0, 0.21788765, 0, -0.9759739, -0.165815, 0.3652405, 0.073405415)
+
+[node name="MeshInstance3D" parent="StableHayBale4" index="0" unique_id=1037945568]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05245252, 0, -0.011710104)
+
+[node name="StableHayBale5" parent="." unique_id=721242446 instance=ExtResource("1_eleyp")]
+transform = Transform3D(-0.96539074, 0, -0.2608077, 0, 1, 0, 0.2608077, 0, -0.96539074, -0.1404062, 0.7393181, 0.46141246)
+
+[editable path="StableHayBale"]
+[editable path="StableHayBale2"]
+[editable path="StableHayBale3"]
+[editable path="StableHayBale4"]
+[editable path="StableHayBale5"]

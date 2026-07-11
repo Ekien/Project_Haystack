@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dm87vy4ujml3q"]
+
+[ext_resource type="ArrayMesh" uid="uid://dickl1idcn4bg" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayBale.HayBale.mesh" id="1_6qa1i"]
+[ext_resource type="Material" uid="uid://nlo66bvkmuek" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Haybale.material" id="2_sntct"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sntct"]
+size = Vector3(0.5132686, 0.4025151, 0.95118755)
+
+[node name="StableHaybale" type="Node3D" unique_id=1635338174]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1037945568]
+mesh = ExtResource("1_6qa1i")
+surface_material_override/0 = ExtResource("2_sntct")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=449083781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.020382196, 0.18776214, -0.019533277)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=273559940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010344356, 0.0039919466, 0.010293156)
+shape = SubResource("BoxShape3D_sntct")
