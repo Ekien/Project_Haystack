@@ -28,6 +28,17 @@ project/assembly_name="Project_Haystack"
 
 enabled=PackedStringArray("res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/unidot_importer/plugin.cfg", "res://addons/vrm/plugin.cfg")
 
+[global_group]
+
+Hay=""
+
+[layer_names]
+
+3d_physics/layer_1="static world"
+3d_physics/layer_2="dynamic world"
+3d_physics/layer_17="held object"
+3d_physics/layer_20="player body"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

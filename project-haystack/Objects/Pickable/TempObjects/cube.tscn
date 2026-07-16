@@ -23,9 +23,9 @@ size = Vector3(0.1, 0.1, 0.1)
 flip_faces = true
 size = Vector3(0.11, 0.11, 0.11)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oayol"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gg1tr"]
 shading_mode = 0
-albedo_color = Color(0.85784006, 0.83976555, 0, 1)
+albedo_color = Color(0.85882354, 0.8392157, 0, 1)
 
 [sub_resource type="Resource" id="Resource_uu67p"]
 script = ExtResource("5_lgwuo")
@@ -52,7 +52,7 @@ metadata/_custom_type_script = "uid://0b7wkxi4vymb"
 
 [node name="HighlightMesh" type="MeshInstance3D" parent="XRToolsHighlightVisible" index="0" unique_id=11170753]
 mesh = SubResource("BoxMesh_oayol")
-surface_material_override/0 = SubResource("StandardMaterial3D_oayol")
+surface_material_override/0 = SubResource("StandardMaterial3D_gg1tr")
 
 [node name="GrabPointHandLeft" parent="." index="3" unique_id=1793626326 instance=ExtResource("3_s704e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02996505, 0.061367806, -0.1116389)

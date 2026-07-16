@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dr7mjryqe4omr"]
 
 [ext_resource type="Material" uid="uid://d1ou1ka7m28ao" path="res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Soil_01.material" id="1_e7ni1"]
+[ext_resource type="PackedScene" uid="uid://6wh2vtvdspyc" path="res://Scenes/Player/player.tscn" id="1_kost4"]
 [ext_resource type="PackedScene" uid="uid://dijfxjtjxx18j" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Structure/Roof_End.prefab.scn" id="2_dphmp"]
 [ext_resource type="Material" uid="uid://ciiuwe1r0lhyn" path="res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Planks_01_Old.material" id="3_kost4"]
 [ext_resource type="PackedScene" uid="uid://dhxcjjt0rt5r" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Straight.prefab.scn" id="4_mengk"]
@@ -65,18 +66,11 @@ environment = SubResource("Environment_xpa75")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1252192294]
 
-[node name="Main Camera" type="Node3D" parent="." unique_id=1729109917]
-transform = Transform3D(-0.35830095, 0, 0.93360615, 0, 1, 0, -0.93360615, 0, -0.35830095, 0.923, 1.5, 3.299)
-visible = false
+[node name="Player" type="Node3D" parent="." unique_id=1729109917]
+transform = Transform3D(0.19751847, 0, -0.9802992, 0, 1, 0, 0.9802992, 0, 0.19751847, 0.923, 1.5, 3.299)
 
-[node name="Camera" type="Camera3D" parent="Main Camera" unique_id=138473098]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
-visible = false
-cull_mask = 16777215
-current = true
-fov = 60.0
-near = 0.3
-far = 1000.0
+[node name="Player" parent="Player" unique_id=502423357 instance=ExtResource("1_kost4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.34632897, 0)
 
 [node name="Directional Light" type="Node3D" parent="." unique_id=1689902551]
 transform = Transform3D(-0.20367372, -0.3171614, -0.92624277, -0.023935916, 0.9474039, -0.319144, 0.9787462, -0.042830773, -0.20055282, 8.29, 12.778892, 1.31)

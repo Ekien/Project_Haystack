@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://dn2ek86qeqflv"]
 
 [ext_resource type="Script" uid="uid://dd3ork4o8f7ix" path="res://Scripts/main.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://6wh2vtvdspyc" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://6wh2vtvdspyc" path="res://Scenes/Player/player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="2_h2yge"]
-[ext_resource type="PackedScene" uid="uid://frndya3mmnse" path="res://Objects/cube.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://frndya3mmnse" path="res://Objects/Pickable/TempObjects/cube.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://db2to4m5t6bmj" path="res://Scenes/Testing/hay_snap_zone.tscn" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://b1viv1ygi2ocf" path="res://Objects/Pickable/TempObjects/hay.tscn" id="5_lquwl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -56,10 +58,34 @@ shape = SubResource("ConvexPolygonShape3D_ig7tw")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=342952252]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.54351664, -0.72876453)
 mesh = SubResource("BoxMesh_h2yge")
+metadata/_edit_group_ = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=1933124233]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=270787647]
+shape = SubResource("BoxShape3D_h2yge")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=562112090]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6001242, 0.54351664, -0.72876453)
+mesh = SubResource("BoxMesh_h2yge")
+metadata/_edit_group_ = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2" unique_id=306586023]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D" unique_id=1218863005]
+shape = SubResource("BoxShape3D_h2yge")
+
+[node name="HaySnapZone" parent="MeshInstance3D2" unique_id=1890319466 instance=ExtResource("4_7mycd")]
+transform = Transform3D(0.4424139, 0, 0.89681107, 0, 1, 0, -0.89681107, 0, 0.4424139, 0, 0.31651402, 0)
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=215293732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5724176, 0.54351664, -0.72876453)
+mesh = SubResource("BoxMesh_h2yge")
+metadata/_edit_group_ = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D3" unique_id=875475694]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D" unique_id=1349391004]
 shape = SubResource("BoxShape3D_h2yge")
 
 [node name="Cube" parent="." unique_id=192508180 instance=ExtResource("4_1bvp3")]
@@ -70,3 +96,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09826307, 0.8587289, -0.733
 
 [node name="Cube3" parent="." unique_id=1817843924 instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004510276, 0.8587289, -0.5758836)
+
+[node name="Hay" parent="." unique_id=1528068358 instance=ExtResource("5_lquwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.56274533, 0.8808396, -0.6911403)

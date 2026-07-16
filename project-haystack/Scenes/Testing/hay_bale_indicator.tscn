@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dhnkxel4mc2pr"]
+
+[ext_resource type="PackedScene" uid="uid://bdwn3ldm1gtn3" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/HayBale.fbx" id="1_kof0e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_047o8"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="HayBale" unique_id=60173256 instance=ExtResource("1_kof0e")]
+
+[node name="HayBale" parent="." index="0" unique_id=912561552]
+surface_material_override/0 = SubResource("StandardMaterial3D_047o8")
