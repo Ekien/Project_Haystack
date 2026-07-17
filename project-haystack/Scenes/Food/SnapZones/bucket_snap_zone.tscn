@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://clx0uipop4bsb"]
+
+[ext_resource type="PackedScene" uid="uid://ce7vysyvondf8" path="res://addons/godot-xr-tools/objects/snap_zone.tscn" id="1_4v412"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jrevh"]
+resource_local_to_scene = true
+radius = 0.21882609
+
+[node name="BucketSnapZone" unique_id=722567211 instance=ExtResource("1_4v412")]
+snap_mode = 1
+snap_require = "Hay"
+
+[node name="CollisionShape3D" parent="." index="0"]
+shape = SubResource("SphereShape3D_jrevh")

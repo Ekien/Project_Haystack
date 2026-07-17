@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dq5n1ye1w61br"]
+
+[ext_resource type="Script" uid="uid://bg83bd0rc6y4x" path="res://Scripts/Food/food_bucket.gd" id="1_fuwct"]
+[ext_resource type="ArrayMesh" uid="uid://bcnsrvjcbf67h" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Bucket.Bucket.mesh" id="1_jdxcd"]
+[ext_resource type="Material" uid="uid://bjx1gyfyovllg" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Bucket_01.material" id="2_krj5y"]
+[ext_resource type="ArrayMesh" uid="uid://cnspltdadjqwi" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.HayStack_01.mesh" id="3_2036a"]
+[ext_resource type="Material" uid="uid://bjacaaefh0qg6" path="res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Hay_01.material" id="4_fuwct"]
+[ext_resource type="PackedScene" uid="uid://clx0uipop4bsb" path="res://Scenes/Food/SnapZones/bucket_snap_zone.tscn" id="6_81l67"]
+
+[node name="FoodBucket" type="Node3D" unique_id=1895514048 node_paths=PackedStringArray("bucket_snap_zone")]
+script = ExtResource("1_fuwct")
+bucket_snap_zone = NodePath("BucketSnapZone")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=362583744]
+transform = Transform3D(1.478664, 0, 0, 0, 0.49303132, 0, 0, 0, 1.478664, 0, 0, 0)
+mesh = ExtResource("1_jdxcd")
+surface_material_override/0 = ExtResource("2_krj5y")
+
+[node name="Hay_Third" type="Node3D" parent="." unique_id=1470379905]
+transform = Transform3D(0.27499866, 0, 0, 0, 0.6050413, 0, 0, 0, 0.3, 0, 0, 0)
+visible = false
+
+[node name="Hay" type="MeshInstance3D" parent="Hay_Third" unique_id=1504057972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0, 0)
+mesh = ExtResource("3_2036a")
+surface_material_override/0 = ExtResource("4_fuwct")
+
+[node name="Hay_Half" type="Node3D" parent="." unique_id=1975006465]
+transform = Transform3D(-0.023961756, 0, 0.32479066, 0, 0.6050413, 0, -0.30257252, 0, -0.025721285, 0.007471703, 0.049497157, -0.007238906)
+visible = false
+
+[node name="Hay2" type="MeshInstance3D" parent="Hay_Half" unique_id=366033011]
+transform = Transform3D(1, 0, -7.450581e-09, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("3_2036a")
+surface_material_override/0 = ExtResource("4_fuwct")
+
+[node name="Hay_Full" type="Node3D" parent="." unique_id=252008493]
+visible = false
+
+[node name="Hay3" type="MeshInstance3D" parent="Hay_Full" unique_id=1569280876]
+transform = Transform3D(-0.3325841, 0, -0.04018297, 0, 0.60504127, 0, 0.036617737, 0, -0.36496568, -0.0042565987, 0.13074213, -0.003914777)
+mesh = ExtResource("3_2036a")
+surface_material_override/0 = ExtResource("4_fuwct")
+
+[node name="Hay4" type="MeshInstance3D" parent="Hay_Full" unique_id=11559751]
+transform = Transform3D(0.01090676, 0, 0.366976, 0, 0.60504127, 0, -0.334416, 0, 0.011968672, -0.0042565987, 0.13074213, -0.003914777)
+mesh = ExtResource("3_2036a")
+surface_material_override/0 = ExtResource("4_fuwct")
+
+[node name="BucketSnapZone" parent="." unique_id=722567211 instance=ExtResource("6_81l67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19241256, 0)
+
+[connection signal="has_picked_up" from="BucketSnapZone" to="." method="_on_bucket_snap_zone_has_picked_up"]

@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="2_jbxrf"]
 [ext_resource type="PackedScene" uid="uid://dhnkxel4mc2pr" path="res://Scenes/Testing/hay_bale_indicator.tscn" id="3_ecoxk"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_pltqn"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_cqn5q"]
 resource_local_to_scene = true
 radius = 0.3
 
@@ -13,7 +13,7 @@ snap_mode = 1
 snap_require = "Hay"
 
 [node name="CollisionShape3D" parent="." index="0"]
-shape = SubResource("SphereShape3D_pltqn")
+shape = SubResource("SphereShape3D_cqn5q")
 
 [node name="HighlightRing" parent="." index="2" unique_id=209273289 instance=ExtResource("2_jbxrf")]
 

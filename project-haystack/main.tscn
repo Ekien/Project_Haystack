@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://frndya3mmnse" path="res://Objects/Pickable/TempObjects/cube.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://db2to4m5t6bmj" path="res://Scenes/Testing/hay_snap_zone.tscn" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://dq5n1ye1w61br" path="res://Scenes/Food/Food_Bucket.tscn" id="5_272bh"]
 [ext_resource type="PackedScene" uid="uid://b1viv1ygi2ocf" path="res://Objects/Pickable/TempObjects/hay.tscn" id="5_lquwl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
@@ -87,6 +88,19 @@ metadata/_edit_group_ = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D" unique_id=1349391004]
 shape = SubResource("BoxShape3D_h2yge")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1222242054]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1937484, 0.54351664, -0.72876453)
+mesh = SubResource("BoxMesh_h2yge")
+metadata/_edit_group_ = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4" unique_id=1077283321]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D" unique_id=179353303]
+shape = SubResource("BoxShape3D_h2yge")
+
+[node name="FoodBucket" parent="MeshInstance3D4" unique_id=1895514048 instance=ExtResource("5_272bh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25825977, 0)
 
 [node name="Cube" parent="." unique_id=192508180 instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07221837, 0.8587289, -0.7334125)
