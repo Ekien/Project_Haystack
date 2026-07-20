@@ -5,8 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://frndya3mmnse" path="res://Objects/Pickable/TempObjects/cube.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://db2to4m5t6bmj" path="res://Scenes/Testing/hay_snap_zone.tscn" id="4_7mycd"]
-[ext_resource type="PackedScene" uid="uid://dq5n1ye1w61br" path="res://Scenes/Food/Food_Bucket.tscn" id="5_272bh"]
+[ext_resource type="PackedScene" uid="uid://dq5n1ye1w61br" path="res://Scenes/Food/food_bucket.tscn" id="5_272bh"]
 [ext_resource type="PackedScene" uid="uid://b1viv1ygi2ocf" path="res://Objects/Pickable/TempObjects/hay.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://dpfc34m3wgxv6" path="res://Objects/Pickable/pickable_food_bucket.tscn" id="6_5vw27"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -102,6 +103,19 @@ shape = SubResource("BoxShape3D_h2yge")
 [node name="FoodBucket" parent="MeshInstance3D4" unique_id=1895514048 instance=ExtResource("5_272bh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25825977, 0)
 
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=217965733]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1743023, 0.54351664, -0.72876453)
+mesh = SubResource("BoxMesh_h2yge")
+metadata/_edit_group_ = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D5" unique_id=1804061740]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D5/StaticBody3D" unique_id=1614572122]
+shape = SubResource("BoxShape3D_h2yge")
+
+[node name="Food_Bucket" parent="MeshInstance3D5" unique_id=1959919718 instance=ExtResource("6_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25748694, 0)
+
 [node name="Cube" parent="." unique_id=192508180 instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07221837, 0.8587289, -0.7334125)
 
@@ -112,4 +126,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09826307, 0.8587289, -0.733
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004510276, 0.8587289, -0.5758836)
 
 [node name="Hay" parent="." unique_id=1528068358 instance=ExtResource("5_lquwl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.56274533, 0.8808396, -0.6911403)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5704267, 0.8808396, -0.6911403)
+
+[node name="Hay2" parent="." unique_id=2127535043 instance=ExtResource("5_lquwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7212275, 0.8808396, -0.6911403)
+
+[node name="Hay3" parent="." unique_id=935564116 instance=ExtResource("5_lquwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.41462475, 0.8808396, -0.6911403)

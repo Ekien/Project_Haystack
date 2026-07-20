@@ -7,7 +7,11 @@
 [ext_resource type="Material" uid="uid://bjacaaefh0qg6" path="res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Hay_01.material" id="4_fuwct"]
 [ext_resource type="PackedScene" uid="uid://clx0uipop4bsb" path="res://Scenes/Food/SnapZones/bucket_snap_zone.tscn" id="6_81l67"]
 
-[node name="FoodBucket" type="Node3D" unique_id=1895514048 node_paths=PackedStringArray("bucket_snap_zone")]
+[sub_resource type="SphereShape3D" id="SphereShape3D_tk6at"]
+resource_local_to_scene = true
+radius = 0.3
+
+[node name="foodbucket" type="Node3D" unique_id=1895514048 node_paths=PackedStringArray("bucket_snap_zone")]
 script = ExtResource("1_fuwct")
 bucket_snap_zone = NodePath("BucketSnapZone")
 
@@ -50,4 +54,10 @@ surface_material_override/0 = ExtResource("4_fuwct")
 [node name="BucketSnapZone" parent="." unique_id=722567211 instance=ExtResource("6_81l67")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19241256, 0)
 
+[node name="CollisionShape3D" parent="BucketSnapZone" index="0"]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, -0.010077387, 0)
+shape = SubResource("SphereShape3D_tk6at")
+
 [connection signal="has_picked_up" from="BucketSnapZone" to="." method="_on_bucket_snap_zone_has_picked_up"]
+
+[editable path="BucketSnapZone"]
