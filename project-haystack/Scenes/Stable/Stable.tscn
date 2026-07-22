@@ -27,7 +27,9 @@
 [ext_resource type="PackedScene" uid="uid://dm87vy4ujml3q" path="res://Scenes/Stable/Stable_Hay_Bale.tscn" id="27_mengk"]
 [ext_resource type="PackedScene" uid="uid://dbse2xt7athxv" path="res://Scenes/Stable/Stable_Balestack.tscn" id="28_kost4"]
 [ext_resource type="PackedScene" uid="uid://csxbli4w80vit" path="res://Scenes/Stable/Stable_Hay_Floor.tscn" id="28_mengk"]
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="29_1vxo2"]
 [ext_resource type="PackedScene" uid="uid://dkvq7h45clldi" path="res://Scenes/Stable/Stable_Bucket.tscn" id="29_mengk"]
+[ext_resource type="PackedScene" uid="uid://b52b1vcl0451y" path="res://Objects/Interactable/interactable_stable_door_interior.scn" id="30_1vxo2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_u8tbp"]
 resource_name = "Default-Skybox"
@@ -278,12 +280,6 @@ transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.37
 [node name="MeshRenderer" parent="Scene/Pen_01_Straight18" index="0" unique_id=1957747468]
 surface_material_override/0 = ExtResource("5_1vxo2")
 
-[node name="Pen_01_Straight19" parent="Scene" unique_id=1014363183 instance=ExtResource("4_mengk")]
-transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, -0.22890663, -2.5315862, 2.6251707)
-
-[node name="MeshRenderer" parent="Scene/Pen_01_Straight19" index="0" unique_id=1957747468]
-surface_material_override/0 = ExtResource("5_1vxo2")
-
 [node name="Pen_01_Frame_Narrow (6)" parent="Scene" unique_id=1168241028 instance=ExtResource("6_60wnw")]
 transform = Transform3D(-1, 5.8094733e-15, 1.2697007e-22, 5.8094733e-15, 1, 4.371139e-08, 1.2697007e-22, 4.371139e-08, -1, -2.2289062, -2.5315862, 2.6251736)
 
@@ -493,9 +489,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 7.54979e-08, 0, -7.54979e-08, 1, 6.948900
 [node name="HookedHalter (4)" parent="Scene" unique_id=658915066 instance=ExtResource("25_3c8r5")]
 transform = Transform3D(-1, -4.5124999e-13, 5.9306612e-06, -3.497311e-15, 1, 7.549794e-08, -5.9306612e-06, 7.549794e-08, -1, -4.0510993, -1.2340269, 2.5882306)
 
-[node name="HookedHalter (5)" parent="Scene" unique_id=1160775027 instance=ExtResource("25_3c8r5")]
-transform = Transform3D(-1, -4.5124999e-13, 5.9306612e-06, -3.497311e-15, 1, 7.549794e-08, -5.9306612e-06, 7.549794e-08, -1, -0.5510993, -1.2340269, 2.5882306)
-
 [node name="HookedHalter (6)" parent="Scene" unique_id=305179202 instance=ExtResource("25_3c8r5")]
 transform = Transform3D(-1, -4.5124999e-13, 5.9306612e-06, -3.497311e-15, 1, 7.549794e-08, -5.9306612e-06, 7.549794e-08, -1, 6.4489007, -1.2340269, 2.5882306)
 
@@ -561,9 +554,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.688531, 0, -4.0753846)
 
 [node name="StableDoorInterior2" parent="Doors/Interior Doors" unique_id=982089916 instance=ExtResource("27_kost4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1786146, 0, -4.077271)
-
-[node name="StableDoorInterior3" parent="Doors/Interior Doors" unique_id=1778367669 instance=ExtResource("27_kost4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.821722, 0, -4.077992)
 
 [node name="StableDoorInterior4" parent="Doors/Interior Doors" unique_id=502818285 instance=ExtResource("27_kost4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.322684, 0, -4.077366)
@@ -775,6 +765,11 @@ cull_mask = 16777215
 [node name="Post Processign" type="Node3D" parent="." unique_id=1761091554]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.442, 2.069, 2.046)
 
+[node name="StartXR" parent="." unique_id=658192820 instance=ExtResource("29_1vxo2")]
+
+[node name="Interactable_Stable_Door_Interior" parent="." unique_id=1802199284 instance=ExtResource("30_1vxo2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.050216, 1.0269e-17, 4.031335)
+
 [editable path="Scene/Roof_End (1)"]
 [editable path="Scene/Pen_01_Straight"]
 [editable path="Scene/Pen_01_Straight2"]
@@ -808,7 +803,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.442, 2.069, 2.046)
 [editable path="Scene/Pen_01_Straight17"]
 [editable path="Scene/Pen_01_Frame_Narrow (5)"]
 [editable path="Scene/Pen_01_Straight18"]
-[editable path="Scene/Pen_01_Straight19"]
 [editable path="Scene/Pen_01_Frame_Narrow (6)"]
 [editable path="Scene/Pen_01_Straight20"]
 [editable path="Scene/Pen_01_Straight21"]
@@ -849,7 +843,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.442, 2.069, 2.046)
 [editable path="Scene/HookedHalter (2)"]
 [editable path="Scene/HookedHalter (3)"]
 [editable path="Scene/HookedHalter (4)"]
-[editable path="Scene/HookedHalter (5)"]
 [editable path="Scene/HookedHalter (6)"]
 [editable path="Scene/HookedHalter (7)"]
 [editable path="Scene/Saltstone (2)"]

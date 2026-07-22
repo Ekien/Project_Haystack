@@ -56,4 +56,3 @@ show_target = true
 target_radius = 0.02
 
 [node name="PlayerBody" parent="." unique_id=619610624 instance=ExtResource("4_2hs0m")]
-player_height_max = 1.5
