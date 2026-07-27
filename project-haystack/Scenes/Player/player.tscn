@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bq86r4yll8po" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_fullglove_low.tscn" id="1_onrkg"]
 [ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="2_1jxqw"]
 [ext_resource type="PackedScene" uid="uid://fiul51tsyoop" path="res://addons/godot-xr-tools/functions/function_teleport.tscn" id="2_2hs0m"]
+[ext_resource type="Material" uid="uid://p0q2df2dmy62" path="res://addons/godot-xr-tools/hands/materials/ghost_hand.tres" id="2_gk6dx"]
 [ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="2_i3pqv"]
 [ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="2_sweqy"]
 [ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="4_1jxqw"]
@@ -17,6 +18,7 @@
 tracker = &"left_hand"
 
 [node name="LeftHand" parent="LeftHandController" unique_id=1331620579 instance=ExtResource("1_onrkg")]
+hand_material_override = ExtResource("2_gk6dx")
 
 [node name="MovementDirect" parent="LeftHandController" unique_id=1274652722 instance=ExtResource("2_sweqy")]
 strafe = true
@@ -42,6 +44,7 @@ target_radius = 0.02
 tracker = &"right_hand"
 
 [node name="RightHand" parent="RightHandController" unique_id=2072860729 instance=ExtResource("2_i3pqv")]
+hand_material_override = ExtResource("2_gk6dx")
 
 [node name="MovementTurn" parent="RightHandController" unique_id=1504505302 instance=ExtResource("4_1jxqw")]
 

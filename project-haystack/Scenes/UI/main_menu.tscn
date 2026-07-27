@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://dug01s034nxa0"]
+
+[ext_resource type="Script" uid="uid://d344yxarsoy0s" path="res://Scripts/UI/main_menu.gd" id="1_5wsvm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_36iwh"]
+resource_local_to_scene = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5wsvm"]
+bg_color = Color(0.3968397, 0.6786843, 0.40702152, 1)
+
+[node name="MainMenu" type="Control" unique_id=58343861]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5wsvm")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=319045895]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 1147.0
+offset_bottom = 643.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1933026035]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=211496142]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=151558487]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Title" unique_id=19497652]
+custom_minimum_size = Vector2(0, 39.015)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 50
+text = "VR EQUINE:
+HORSE CARE VR EXPERIENCE"
+horizontal_alignment = 1
+
+[node name="Padding" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=153753402]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Select" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1357418787]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Select" unique_id=1144421725]
+custom_minimum_size = Vector2(0, 39.015)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "PLEASE SELECT AN EXPERIENCE
+(currently only feeding works (IHOPE))"
+label_settings = SubResource("LabelSettings_36iwh")
+horizontal_alignment = 1
+
+[node name="Padding2" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1070776279]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1543905669]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Feeding" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/Buttons" unique_id=1867759431]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 8
+size_flags_stretch_ratio = 0.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_5wsvm")
+text = "Feeding"
+
+[node name="Padding" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/Buttons" unique_id=1914309657]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Grooming" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/Buttons" unique_id=273978040]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_5wsvm")
+text = "Grooming"
+
+[node name="Padding2" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/Buttons" unique_id=329809066]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Riding" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/Buttons" unique_id=1957843088]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_5wsvm")
+text = "Riding"
+
+[node name="Padding3" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1935279720]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Title2" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=920495447]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Title2" unique_id=1021057641]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 10
+text = "(UI IS WORK IN PROGRESS)"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/Buttons/Feeding" to="." method="_on_feeding_pressed"]

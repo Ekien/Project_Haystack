@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://b1viv1ygi2ocf" path="res://Objects/Pickable/TempObjects/hay.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://dpfc34m3wgxv6" path="res://Objects/Pickable/pickable_food_bucket.tscn" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://b52b1vcl0451y" path="res://Objects/Interactable/interactable_stable_door_interior.scn" id="9_kek77"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="10_4c57u"]
+[ext_resource type="PackedScene" uid="uid://dug01s034nxa0" path="res://Scenes/UI/main_menu.tscn" id="11_efxa6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -136,4 +138,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3233685, 0.8808396, -0.691
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0167658, 0.8808396, -0.6911403)
 
 [node name="Interactable_Stable_Door_Interior" parent="." unique_id=1802199284 instance=ExtResource("9_kek77")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20271015, -4.7683716e-07, 1.2966609)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46530837, 1.0269e-17, 1.9954712)
+
+[node name="Viewport2Din3D" parent="." unique_id=1710807514 instance=ExtResource("10_4c57u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.750809, -2.2750425)
+scene = ExtResource("11_efxa6")
+viewport_size = Vector2(1152, 648)
+transparent = 1
+scene_properties_keys = PackedStringArray("main_menu.gd")

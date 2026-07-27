@@ -256,7 +256,7 @@ func _property_can_revert(property : StringName) -> bool:
 
 
 # Provide revert values for custom properties
-func _property_get_revert(property : StringName): # Variant
+func _property_get_revert(property : StringName) -> Variant:
 	match property:
 		"alpha_scissor_threshold":
 			return 0.25
@@ -264,6 +264,8 @@ func _property_get_revert(property : StringName): # Variant
 			return false
 		"filter":
 			return true
+		_:
+			return null
 
 
 # When the scene_node changes, update the property list
@@ -504,7 +506,7 @@ func _update_render() -> void:
 			_screen_material = StandardMaterial3D.new()
 
 			# Disable culling
-			_screen_material.params_cull_mode = StandardMaterial3D.CULL_DISABLED
+			_screen_material.cull_mode = StandardMaterial3D.CULL_DISABLED
 
 			# Ensure local material is configured
 			_dirty |= _DIRTY_TRANSPARENCY |	\
