@@ -3,18 +3,8 @@
 [ext_resource type="ArrayMesh" uid="uid://bfq7jmy7c1dm0" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Hays.Hays.mesh" id="1_cvf70"]
 [ext_resource type="Material" uid="uid://bjacaaefh0qg6" path="res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Hay_01.material" id="2_gjrii"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_gjrii"]
-size = Vector3(4.2504864, 0.15037927, 4.224516)
-
 [node name="StableHayFloor" type="Node3D" unique_id=765973295]
 
 [node name="Hay" type="MeshInstance3D" parent="." unique_id=1178450073]
 mesh = ExtResource("1_cvf70")
 surface_material_override/0 = ExtResource("2_gjrii")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Hay" unique_id=1005842961]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00944829, 0.06642216, 0.0079061985)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hay/StaticBody3D" unique_id=30776052]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0075853765, 0)
-shape = SubResource("BoxShape3D_gjrii")

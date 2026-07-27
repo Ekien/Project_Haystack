@@ -24,6 +24,7 @@ strafe = true
 [node name="FunctionTeleport" parent="LeftHandController" unique_id=2069995396 instance=ExtResource("2_2hs0m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.1)
 teleport_button_action = "primary_click"
+rotation_action = ""
 player_radius = 0.25
 
 [node name="FunctionPickup" parent="LeftHandController" unique_id=950817124 instance=ExtResource("2_1jxqw")]

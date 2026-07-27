@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://fcnetvm1t1c2"]
+
+[ext_resource type="PackedScene" uid="uid://b0r6edl74ddo7" path="res://addons/godot-xr-tools/interactables/interactable_slider.tscn" id="1_7lvmt"]
+[ext_resource type="ArrayMesh" uid="uid://bpj88kjvhensl" path="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door_Door.Pen_01_Wall_Door_Door.mesh" id="2_5xfy8"]
+[ext_resource type="Material" uid="uid://bmuiaiow2r1xe" path="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Old.material" id="3_drqo0"]
+[ext_resource type="Material" uid="uid://b3teiemo6hfl0" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tres" id="4_lorap"]
+[ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="5_kao73"]
+[ext_resource type="Animation" uid="uid://db62hs5s4n2b3" path="res://addons/godot-xr-tools/hands/animations/left/Grip 4.res" id="6_g60pl"]
+[ext_resource type="Script" uid="uid://dvobm6vcfnqe8" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="7_7f5a3"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="8_54os8"]
+[ext_resource type="Animation" uid="uid://wcwa3p1qrhwr" path="res://addons/godot-xr-tools/hands/animations/right/Rounded.res" id="9_r765o"]
+[ext_resource type="PackedScene" uid="uid://bddj5m7ull6g0" path="res://addons/godot-xr-tools/interactables/interactable_handle.tscn" id="10_pm7te"]
+[ext_resource type="PackedScene" uid="uid://ca3daqmpo0tua" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_redirect.tscn" id="11_v1h4n"]
+[ext_resource type="Texture2D" uid="uid://8s03ra8tp0hr" path="res://addons/godot-xr-tools/images/ring.png" id="12_c5xlb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7lvmt"]
+size = Vector3(1.1650366, 2.5369291, 0.07377912)
+
+[sub_resource type="QuadMesh" id="QuadMesh_xe3x4"]
+size = Vector2(0.1, 0.1)
+
+[sub_resource type="Resource" id="Resource_nbd18"]
+script = ExtResource("7_7f5a3")
+open_pose = ExtResource("6_g60pl")
+closed_pose = ExtResource("6_g60pl")
+metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
+
+[sub_resource type="Resource" id="Resource_c3kwp"]
+script = ExtResource("7_7f5a3")
+open_pose = ExtResource("9_r765o")
+closed_pose = ExtResource("9_r765o")
+metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b6p0u"]
+size = Vector3(1.0168753, 0.0881691, 0.12976074)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5xfy8"]
+size = Vector3(1.1650366, 2.5369291, 0.07377912)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f68ng"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("12_c5xlb")
+billboard_mode = 1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f68ng"]
+size = Vector3(1.0173931, 0.0881691, 0.13928223)
+
+[node name="InteractableSmallerStableDoor" type="Node3D" unique_id=1767579955]
+
+[node name="SlideDoor" type="Node3D" parent="." unique_id=1287169884]
+
+[node name="InteractableSlider" parent="SlideDoor" unique_id=170299167 instance=ExtResource("1_7lvmt")]
+slider_limit_max = 1.05
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SlideDoor/InteractableSlider" unique_id=908878955]
+
+[node name="StableDoorMesh" type="MeshInstance3D" parent="SlideDoor/InteractableSlider/StaticBody3D" unique_id=2080838062]
+mesh = ExtResource("2_5xfy8")
+surface_material_override/0 = ExtResource("3_drqo0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SlideDoor/InteractableSlider/StaticBody3D" unique_id=585819679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58328706, 1.2684646, 0.036889385)
+shape = SubResource("BoxShape3D_7lvmt")
+
+[node name="CHighlighMesh" type="MeshInstance3D" parent="SlideDoor/InteractableSlider/StaticBody3D" unique_id=54770495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.408, 0.062)
+mesh = SubResource("QuadMesh_xe3x4")
+surface_material_override/0 = ExtResource("4_lorap")
+
+[node name="GrabPointHandLeft" parent="SlideDoor/InteractableSlider/StaticBody3D/CHighlighMesh" unique_id=1293618020 instance=ExtResource("5_kao73")]
+transform = Transform3D(-7.5668154e-08, 1, -8.137264e-08, -0.9307945, -4.0686324e-08, 0.3655428, 0.3655428, 1.0340117e-07, 0.9307945, 0, -0.009964585, -0.06932667)
+hand_pose = SubResource("Resource_nbd18")
+
+[node name="GrabPointHandRight" parent="SlideDoor/InteractableSlider/StaticBody3D/CHighlighMesh" unique_id=2049276262 instance=ExtResource("8_54os8")]
+transform = Transform3D(-4.371139e-08, -1, 7.1054274e-15, 0.9310557, -4.0697742e-08, 0.36487675, -0.36487675, 1.5949261e-08, 0.9310557, -0.0021292567, -0.010546923, -0.05353471)
+hand_pose = SubResource("Resource_c3kwp")
+
+[node name="HandleOrigin" type="Node3D" parent="SlideDoor/InteractableSlider" unique_id=759686337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.44, 0.061)
+
+[node name="InteractableHandle" parent="SlideDoor/InteractableSlider/HandleOrigin" unique_id=649962125 instance=ExtResource("10_pm7te")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SlideDoor/InteractableSlider/HandleOrigin/InteractableHandle" unique_id=942847101]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0110936165, 0, 0.050231937)
+shape = SubResource("BoxShape3D_b6p0u")
+
+[node name="GrabPointRedirectLeft" parent="SlideDoor/InteractableSlider/HandleOrigin/InteractableHandle" unique_id=2005124916 node_paths=PackedStringArray("target") instance=ExtResource("11_v1h4n")]
+target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandLeft")
+
+[node name="GrabPointRedirectRight" parent="SlideDoor/InteractableSlider/HandleOrigin/InteractableHandle" unique_id=1697509822 node_paths=PackedStringArray("target") instance=ExtResource("11_v1h4n")]
+target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandRight")
+
+[node name="SlideDoor2" type="Node3D" parent="." unique_id=526129612]
+
+[node name="InteractableSlider" parent="SlideDoor2" unique_id=615300282 instance=ExtResource("1_7lvmt")]
+slider_limit_max = 1.05
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SlideDoor2/InteractableSlider" unique_id=1166376559]
+
+[node name="StableDoorMesh2" type="MeshInstance3D" parent="SlideDoor2/InteractableSlider/StaticBody3D" unique_id=2128727767]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 1.16677, 0, -3.8526952e-05)
+mesh = ExtResource("2_5xfy8")
+surface_material_override/0 = ExtResource("3_drqo0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SlideDoor2/InteractableSlider/StaticBody3D" unique_id=756533356]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0.5834829, 1.2684646, -0.036927823)
+shape = SubResource("BoxShape3D_5xfy8")
+
+[node name="CHighlighMesh" type="MeshInstance3D" parent="SlideDoor2/InteractableSlider/StaticBody3D" unique_id=1372609883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.408, -0.077)
+mesh = SubResource("QuadMesh_xe3x4")
+surface_material_override/0 = SubResource("StandardMaterial3D_f68ng")
+
+[node name="GrabPointHandLeft2" parent="SlideDoor2/InteractableSlider/StaticBody3D/CHighlighMesh" unique_id=1731794148 instance=ExtResource("5_kao73")]
+transform = Transform3D(1.0762493e-07, -1, 1.6274527e-07, -0.9307945, -4.0686327e-08, 0.36554283, -0.36554283, -1.9082395e-07, -0.9307945, 0, -0.012649775, 0.086861335)
+hand_pose = SubResource("Resource_nbd18")
+
+[node name="GrabPointHandRight2" parent="SlideDoor2/InteractableSlider/StaticBody3D/CHighlighMesh" unique_id=291621509 instance=ExtResource("8_54os8")]
+transform = Transform3D(7.560992e-08, 1, -8.1395484e-08, 0.9310557, -4.069774e-08, 0.36487675, 0.36487675, -1.0337204e-07, -0.9310557, -0.0021292567, -0.01653552, 0.06406372)
+hand_pose = SubResource("Resource_c3kwp")
+
+[node name="HandleOrigin2" type="Node3D" parent="SlideDoor2/InteractableSlider" unique_id=1723619666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.44, -0.063)
+
+[node name="InteractableHandle" parent="SlideDoor2/InteractableSlider/HandleOrigin2" unique_id=691671894 instance=ExtResource("10_pm7te")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SlideDoor2/InteractableSlider/HandleOrigin2/InteractableHandle" unique_id=983173724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02188015, 0, -0.053894043)
+shape = SubResource("BoxShape3D_f68ng")
+
+[node name="GrabPointRedirectLeft1" parent="SlideDoor2/InteractableSlider/HandleOrigin2/InteractableHandle" unique_id=2036102932 node_paths=PackedStringArray("target") instance=ExtResource("11_v1h4n")]
+target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandLeft2")
+
+[node name="GrabPointRedirectRight2" parent="SlideDoor2/InteractableSlider/HandleOrigin2/InteractableHandle" unique_id=1548760621 node_paths=PackedStringArray("target") instance=ExtResource("11_v1h4n")]
+target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandRight2")

@@ -3,19 +3,29 @@
 [ext_resource type="PackedScene" uid="uid://ce7vysyvondf8" path="res://addons/godot-xr-tools/objects/snap_zone.tscn" id="1_cqn5q"]
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="2_jbxrf"]
 [ext_resource type="PackedScene" uid="uid://dhnkxel4mc2pr" path="res://Scenes/Testing/hay_bale_indicator.tscn" id="3_ecoxk"]
+[ext_resource type="Texture2D" uid="uid://8s03ra8tp0hr" path="res://addons/godot-xr-tools/images/ring.png" id="3_jbxrf"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_cqn5q"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_ecoxk"]
 resource_local_to_scene = true
 radius = 0.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pltqn"]
+resource_local_to_scene = true
+transparency = 1
+no_depth_test = true
+shading_mode = 0
+albedo_texture = ExtResource("3_jbxrf")
+billboard_mode = 1
 
 [node name="HaySnapZone" unique_id=1890319466 instance=ExtResource("1_cqn5q")]
 snap_mode = 1
 snap_require = "Hay"
 
 [node name="CollisionShape3D" parent="." index="0"]
-shape = SubResource("SphereShape3D_cqn5q")
+shape = SubResource("SphereShape3D_ecoxk")
 
 [node name="HighlightRing" parent="." index="2" unique_id=209273289 instance=ExtResource("2_jbxrf")]
+surface_material_override/0 = SubResource("StandardMaterial3D_pltqn")
 
 [node name="HayBale" parent="." index="3" unique_id=60173256 instance=ExtResource("3_ecoxk")]
 transform = Transform3D(-1.3113417e-08, 0.3, 0, -0.3, -1.3113417e-08, 0, 0, 0, 0.3, -0.055, 0, 0)
