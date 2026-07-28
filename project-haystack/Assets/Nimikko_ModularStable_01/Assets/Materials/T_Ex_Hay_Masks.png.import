@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://lveoj61hem4t"
 path.s3tc="res://.godot/imported/T_Ex_Hay_Masks.png-0aaef759bb34ba07ff188be0e6e4f686.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Ex_Hay_Masks.png-0aaef759bb34ba07ff188be0e6e4f686.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_Hay_Masks.png"
-dest_files=["res://.godot/imported/T_Ex_Hay_Masks.png-0aaef759bb34ba07ff188be0e6e4f686.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Ex_Hay_Masks.png-0aaef759bb34ba07ff188be0e6e4f686.s3tc.ctex", "res://.godot/imported/T_Ex_Hay_Masks.png-0aaef759bb34ba07ff188be0e6e4f686.etc2.ctex"]
 
 [params]
 

@@ -1,3 +1,86 @@
 [gd_scene format=3 uid="uid://tx6vk2ehl22r"]
 
-[node name="Feeding" type="Node3D" unique_id=160509919]
+[ext_resource type="PackedScene" uid="uid://cvtq8g8tlfiy5" path="res://Scenes/SceneBase/scene_base.tscn" id="1_s61b8"]
+[ext_resource type="PackedScene" uid="uid://dr7mjryqe4omr" path="res://Scenes/Stable/Stable.tscn" id="2_6rfcq"]
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="2_unm8g"]
+[ext_resource type="PackedScene" uid="uid://b1viv1ygi2ocf" path="res://Objects/Pickable/TempObjects/hay.tscn" id="4_wjg4x"]
+[ext_resource type="PackedScene" uid="uid://dpfc34m3wgxv6" path="res://Objects/Pickable/pickable_food_bucket.tscn" id="5_x7so3"]
+[ext_resource type="PackedScene" uid="uid://frndya3mmnse" path="res://Objects/Pickable/TempObjects/cube.tscn" id="6_01cue"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_unm8g"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wjg4x"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_01cue"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ju2j6"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ymsvx"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ccxgh"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="SceneBase" unique_id=300486180 instance=ExtResource("1_s61b8")]
+
+[node name="StartXR" parent="." index="0" unique_id=1272945676 instance=ExtResource("2_unm8g")]
+
+[node name="XROrigin3D" parent="." index="1"]
+transform = Transform3D(0.37813166, 0, 0.9257518, 0, 1, 0, -0.9257518, 0, 0.37813166, 26.928808, 0, 5.851959)
+
+[node name="Stable" parent="." index="2" unique_id=1731673158 instance=ExtResource("2_6rfcq")]
+
+[node name="HayBox" type="MeshInstance3D" parent="." index="3" unique_id=288956580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.575554, 0.54351664, 6.009809)
+mesh = SubResource("BoxMesh_unm8g")
+metadata/_edit_group_ = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="HayBox" index="0" unique_id=1244294657]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HayBox/StaticBody3D" index="0" unique_id=1248671109]
+shape = SubResource("BoxShape3D_wjg4x")
+
+[node name="Hay" parent="HayBox" index="1" unique_id=1528068358 instance=ExtResource("4_wjg4x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.3357131, 0.15668392)
+
+[node name="Hay2" parent="HayBox" index="2" unique_id=1301227187 instance=ExtResource("4_wjg4x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.3357131, 0.009674549)
+
+[node name="Hay3" parent="HayBox" index="3" unique_id=220711670 instance=ExtResource("4_wjg4x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.3357131, -0.13060808)
+
+[node name="FoodBucketBox" type="MeshInstance3D" parent="." index="4" unique_id=735261420]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 23.576, 0.544, 5.27)
+mesh = SubResource("BoxMesh_01cue")
+metadata/_edit_group_ = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FoodBucketBox" index="0" unique_id=1823561801]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FoodBucketBox/StaticBody3D" index="0" unique_id=1721802169]
+shape = SubResource("BoxShape3D_ju2j6")
+
+[node name="Food_Bucket" parent="FoodBucketBox" index="1" unique_id=1959919718 instance=ExtResource("5_x7so3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015055299, 0.25748694, 0)
+
+[node name="CubeBox" type="MeshInstance3D" parent="." index="5" unique_id=465778006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.576, 0.544, 4.4743633)
+mesh = SubResource("BoxMesh_ymsvx")
+metadata/_edit_group_ = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CubeBox" index="0" unique_id=1839913382]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CubeBox/StaticBody3D" index="0" unique_id=1182320657]
+shape = SubResource("BoxShape3D_ccxgh")
+
+[node name="Cube" parent="CubeBox" index="1" unique_id=192508180 instance=ExtResource("6_01cue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02267456, 0.3345114, 0.12825918)
+
+[node name="Cube2" parent="CubeBox" index="2" unique_id=1244585532 instance=ExtResource("6_01cue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02267456, 0.3345114, -0.14218903)
+
+[node name="Cube3" parent="CubeBox" index="3" unique_id=213443308 instance=ExtResource("6_01cue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14964104, 0.3345114, -0.013693333)

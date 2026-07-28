@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpkuw84n3v81b"
 path.s3tc="res://.godot/imported/T_Roof_01_Stained_Normal.png-2840e49247dede3c9da4a5084043f4f8.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Roof_01_Stained_Normal.png-2840e49247dede3c9da4a5084043f4f8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Textures/T_Roof_01_Stained_Normal.png"
-dest_files=["res://.godot/imported/T_Roof_01_Stained_Normal.png-2840e49247dede3c9da4a5084043f4f8.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Roof_01_Stained_Normal.png-2840e49247dede3c9da4a5084043f4f8.s3tc.ctex", "res://.godot/imported/T_Roof_01_Stained_Normal.png-2840e49247dede3c9da4a5084043f4f8.etc2.ctex"]
 
 [params]
 

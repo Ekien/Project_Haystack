@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cg7e0sd3gs06x"
 path.s3tc="res://.godot/imported/T_Fork_DefaultMaterial_Normal.png-49b952918356a2bcc3cea13d39f156cd.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Fork_DefaultMaterial_Normal.png-49b952918356a2bcc3cea13d39f156cd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Fork_DefaultMaterial_Normal.png"
-dest_files=["res://.godot/imported/T_Fork_DefaultMaterial_Normal.png-49b952918356a2bcc3cea13d39f156cd.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Fork_DefaultMaterial_Normal.png-49b952918356a2bcc3cea13d39f156cd.s3tc.ctex", "res://.godot/imported/T_Fork_DefaultMaterial_Normal.png-49b952918356a2bcc3cea13d39f156cd.etc2.ctex"]
 
 [params]
 

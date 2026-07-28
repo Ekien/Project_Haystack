@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwpmsbxj6brr5"
 path.s3tc="res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.png-ce312def90ccc66616c33cbe449d580c.s3tc.ctex"
+path.etc2="res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.png-ce312def90ccc66616c33cbe449d580c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_HookedHalter_DefaultMaterial_Masks.png"
-dest_files=["res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.png-ce312def90ccc66616c33cbe449d580c.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.png-ce312def90ccc66616c33cbe449d580c.s3tc.ctex", "res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.png-ce312def90ccc66616c33cbe449d580c.etc2.ctex"]
 
 [params]
 

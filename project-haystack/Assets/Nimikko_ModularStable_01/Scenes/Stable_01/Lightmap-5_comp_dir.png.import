@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://m06ynrvnlgrx"
 path.s3tc="res://.godot/imported/Lightmap-5_comp_dir.png-588d3af68d47a37568074a64c67f7c70.s3tc.ctex"
+path.etc2="res://.godot/imported/Lightmap-5_comp_dir.png-588d3af68d47a37568074a64c67f7c70.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Scenes/Stable_01/Lightmap-5_comp_dir.png"
-dest_files=["res://.godot/imported/Lightmap-5_comp_dir.png-588d3af68d47a37568074a64c67f7c70.s3tc.ctex"]
+dest_files=["res://.godot/imported/Lightmap-5_comp_dir.png-588d3af68d47a37568074a64c67f7c70.s3tc.ctex", "res://.godot/imported/Lightmap-5_comp_dir.png-588d3af68d47a37568074a64c67f7c70.etc2.ctex"]
 
 [params]
 

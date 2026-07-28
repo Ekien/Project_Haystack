@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://kgd5p7xlkjrr"
 path.s3tc="res://.godot/imported/T_Structure_01_Dusty_Normal.png-790e069174469eb02fe8c4b19c09ab95.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Structure_01_Dusty_Normal.png-790e069174469eb02fe8c4b19c09ab95.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Textures/T_Structure_01_Dusty_Normal.png"
-dest_files=["res://.godot/imported/T_Structure_01_Dusty_Normal.png-790e069174469eb02fe8c4b19c09ab95.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Structure_01_Dusty_Normal.png-790e069174469eb02fe8c4b19c09ab95.s3tc.ctex", "res://.godot/imported/T_Structure_01_Dusty_Normal.png-790e069174469eb02fe8c4b19c09ab95.etc2.ctex"]
 
 [params]
 

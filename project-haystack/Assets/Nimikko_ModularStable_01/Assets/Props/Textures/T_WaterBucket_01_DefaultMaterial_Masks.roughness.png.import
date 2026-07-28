@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://durtbg5tmnr4r"
 path.s3tc="res://.godot/imported/T_WaterBucket_01_DefaultMaterial_Masks.roughness.png-edb8f6b3d478466d561a25f81f62db3d.s3tc.ctex"
+path.etc2="res://.godot/imported/T_WaterBucket_01_DefaultMaterial_Masks.roughness.png-edb8f6b3d478466d561a25f81f62db3d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_WaterBucket_01_DefaultMaterial_Masks.roughness.png"
-dest_files=["res://.godot/imported/T_WaterBucket_01_DefaultMaterial_Masks.roughness.png-edb8f6b3d478466d561a25f81f62db3d.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_WaterBucket_01_DefaultMaterial_Masks.roughness.png-edb8f6b3d478466d561a25f81f62db3d.s3tc.ctex", "res://.godot/imported/T_WaterBucket_01_DefaultMaterial_Masks.roughness.png-edb8f6b3d478466d561a25f81f62db3d.etc2.ctex"]
 
 [params]
 

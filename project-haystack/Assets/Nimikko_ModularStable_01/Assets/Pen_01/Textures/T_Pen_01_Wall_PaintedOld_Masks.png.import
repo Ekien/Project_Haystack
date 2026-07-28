@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt837xa6utexi"
 path.s3tc="res://.godot/imported/T_Pen_01_Wall_PaintedOld_Masks.png-03e054aae8f579169ce24178b91d6b5d.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Pen_01_Wall_PaintedOld_Masks.png-03e054aae8f579169ce24178b91d6b5d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Textures/T_Pen_01_Wall_PaintedOld_Masks.png"
-dest_files=["res://.godot/imported/T_Pen_01_Wall_PaintedOld_Masks.png-03e054aae8f579169ce24178b91d6b5d.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Pen_01_Wall_PaintedOld_Masks.png-03e054aae8f579169ce24178b91d6b5d.s3tc.ctex", "res://.godot/imported/T_Pen_01_Wall_PaintedOld_Masks.png-03e054aae8f579169ce24178b91d6b5d.etc2.ctex"]
 
 [params]
 

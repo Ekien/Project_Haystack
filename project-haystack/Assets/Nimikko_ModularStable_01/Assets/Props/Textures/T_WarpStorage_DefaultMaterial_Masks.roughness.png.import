@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx8tk8qaurrcl"
 path.s3tc="res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.roughness.png-e3605e96883a5c348786bd851524749a.s3tc.ctex"
+path.etc2="res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.roughness.png-e3605e96883a5c348786bd851524749a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_WarpStorage_DefaultMaterial_Masks.roughness.png"
-dest_files=["res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.roughness.png-e3605e96883a5c348786bd851524749a.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.roughness.png-e3605e96883a5c348786bd851524749a.s3tc.ctex", "res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.roughness.png-e3605e96883a5c348786bd851524749a.etc2.ctex"]
 
 [params]
 

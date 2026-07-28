@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7v482b4f2o4l"
 path.s3tc="res://.godot/imported/T_Ex_Steel_Albedo.png-f6d147ea05cd3828fafaa9aec70a9d5b.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Ex_Steel_Albedo.png-f6d147ea05cd3828fafaa9aec70a9d5b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_Steel_Albedo.png"
-dest_files=["res://.godot/imported/T_Ex_Steel_Albedo.png-f6d147ea05cd3828fafaa9aec70a9d5b.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Ex_Steel_Albedo.png-f6d147ea05cd3828fafaa9aec70a9d5b.s3tc.ctex", "res://.godot/imported/T_Ex_Steel_Albedo.png-f6d147ea05cd3828fafaa9aec70a9d5b.etc2.ctex"]
 
 [params]
 

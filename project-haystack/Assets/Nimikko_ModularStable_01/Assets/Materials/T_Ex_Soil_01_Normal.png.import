@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://64j8xldgiqse"
 path.s3tc="res://.godot/imported/T_Ex_Soil_01_Normal.png-47ead2e688e238c3ddb492811c35ba90.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Ex_Soil_01_Normal.png-47ead2e688e238c3ddb492811c35ba90.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_Soil_01_Normal.png"
-dest_files=["res://.godot/imported/T_Ex_Soil_01_Normal.png-47ead2e688e238c3ddb492811c35ba90.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Ex_Soil_01_Normal.png-47ead2e688e238c3ddb492811c35ba90.s3tc.ctex", "res://.godot/imported/T_Ex_Soil_01_Normal.png-47ead2e688e238c3ddb492811c35ba90.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://w0cdp1u4rrfh"
 path.s3tc="res://.godot/imported/T_Grunge_01.bmp-e31f32dcb172fa7d3fcce6aeea4d9381.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Grunge_01.bmp-e31f32dcb172fa7d3fcce6aeea4d9381.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Materials/T_Grunge_01.bmp"
-dest_files=["res://.godot/imported/T_Grunge_01.bmp-e31f32dcb172fa7d3fcce6aeea4d9381.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Grunge_01.bmp-e31f32dcb172fa7d3fcce6aeea4d9381.s3tc.ctex", "res://.godot/imported/T_Grunge_01.bmp-e31f32dcb172fa7d3fcce6aeea4d9381.etc2.ctex"]
 
 [params]
 

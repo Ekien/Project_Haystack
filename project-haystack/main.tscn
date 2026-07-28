@@ -140,7 +140,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0167658, 0.8808396, -0.691
 [node name="Interactable_Stable_Door_Interior" parent="." unique_id=1802199284 instance=ExtResource("9_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46530837, 1.0269e-17, 1.9954712)
 
-[node name="Viewport2Din3D" parent="." unique_id=1710807514 instance=ExtResource("10_4c57u")]
+[node name="LevelSelectMenu" parent="." unique_id=1710807514 instance=ExtResource("10_4c57u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.750809, -2.2750425)
 scene = ExtResource("11_efxa6")
 viewport_size = Vector2(1152, 648)

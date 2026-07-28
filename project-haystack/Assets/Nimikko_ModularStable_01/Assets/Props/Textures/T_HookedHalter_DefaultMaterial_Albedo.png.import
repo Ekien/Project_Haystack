@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://8dfpbf5ie14h"
 path.s3tc="res://.godot/imported/T_HookedHalter_DefaultMaterial_Albedo.png-d6053c9fb82dfe93e1e3ba5045af8c58.s3tc.ctex"
+path.etc2="res://.godot/imported/T_HookedHalter_DefaultMaterial_Albedo.png-d6053c9fb82dfe93e1e3ba5045af8c58.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_HookedHalter_DefaultMaterial_Albedo.png"
-dest_files=["res://.godot/imported/T_HookedHalter_DefaultMaterial_Albedo.png-d6053c9fb82dfe93e1e3ba5045af8c58.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_HookedHalter_DefaultMaterial_Albedo.png-d6053c9fb82dfe93e1e3ba5045af8c58.s3tc.ctex", "res://.godot/imported/T_HookedHalter_DefaultMaterial_Albedo.png-d6053c9fb82dfe93e1e3ba5045af8c58.etc2.ctex"]
 
 [params]
 

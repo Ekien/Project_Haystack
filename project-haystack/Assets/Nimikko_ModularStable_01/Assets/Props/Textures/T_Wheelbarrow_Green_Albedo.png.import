@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dss6nx14h5cos"
 path.s3tc="res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-15af504efa8386a2bc7ccfdc3753b281.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-15af504efa8386a2bc7ccfdc3753b281.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Wheelbarrow_Green_Albedo.png"
-dest_files=["res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-15af504efa8386a2bc7ccfdc3753b281.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-15af504efa8386a2bc7ccfdc3753b281.s3tc.ctex", "res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-15af504efa8386a2bc7ccfdc3753b281.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b18t4htmlxme2"
 path.s3tc="res://.godot/imported/T_Ceiling_01_Stained_Normal.png-9b5aa5e9499d19030c88c9f0d4f76466.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Ceiling_01_Stained_Normal.png-9b5aa5e9499d19030c88c9f0d4f76466.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Textures/T_Ceiling_01_Stained_Normal.png"
-dest_files=["res://.godot/imported/T_Ceiling_01_Stained_Normal.png-9b5aa5e9499d19030c88c9f0d4f76466.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Ceiling_01_Stained_Normal.png-9b5aa5e9499d19030c88c9f0d4f76466.s3tc.ctex", "res://.godot/imported/T_Ceiling_01_Stained_Normal.png-9b5aa5e9499d19030c88c9f0d4f76466.etc2.ctex"]
 
 [params]
 
