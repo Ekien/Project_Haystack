@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fnuntriujix0"
-path.s3tc="res://.godot/imported/Lightmap-4_comp_dir.png-e801fd9b2748f97487d19579e7f3b704.s3tc.ctex"
-path.etc2="res://.godot/imported/Lightmap-4_comp_dir.png-e801fd9b2748f97487d19579e7f3b704.etc2.ctex"
+path.s3tc="res://.godot/imported/Lightmap-4_comp_dir.png-66b995f115ab11343b59af5b0564d7e4.s3tc.ctex"
+path.etc2="res://.godot/imported/Lightmap-4_comp_dir.png-66b995f115ab11343b59af5b0564d7e4.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Scenes/Stable_01/Lightmap-4_comp_dir.png"
-dest_files=["res://.godot/imported/Lightmap-4_comp_dir.png-e801fd9b2748f97487d19579e7f3b704.s3tc.ctex", "res://.godot/imported/Lightmap-4_comp_dir.png-e801fd9b2748f97487d19579e7f3b704.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Scenes/Stable_01/Lightmap-4_comp_dir.png"
+dest_files=["res://.godot/imported/Lightmap-4_comp_dir.png-66b995f115ab11343b59af5b0564d7e4.s3tc.ctex", "res://.godot/imported/Lightmap-4_comp_dir.png-66b995f115ab11343b59af5b0564d7e4.etc2.ctex"]
 
 [params]
 

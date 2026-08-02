@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cq1bmxscclaxo"
-path="res://.godot/imported/WaterBucket_01.fbx-ede7c62393a92ca4bda4f006f42f86d8.scn"
+path="res://.godot/imported/WaterBucket_01.fbx-3ff1f764be930e0c3af204de4a5eb369.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/WaterBucket_01.fbx"
-dest_files=["res://.godot/imported/WaterBucket_01.fbx-ede7c62393a92ca4bda4f006f42f86d8.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/WaterBucket_01.fbx"
+dest_files=["res://.godot/imported/WaterBucket_01.fbx-3ff1f764be930e0c3af204de4a5eb369.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/WaterBucket_01.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/WaterBucket_01.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://bu4a43bywfgnu",
 "settings/loop_mode": 0,
@@ -2109,7 +2109,7 @@ _subresources={
 "meshes": {
 "Root Scene_WaterBucket_01": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/WaterBucket_01.WaterBucket_01.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/WaterBucket_01.WaterBucket_01.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://dxmwyr5twco06"
 },
@@ -2119,7 +2119,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/WaterBucket_01.WaterBucket_01.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/WaterBucket_01.WaterBucket_01.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://dxmwyr5twco06"
 }

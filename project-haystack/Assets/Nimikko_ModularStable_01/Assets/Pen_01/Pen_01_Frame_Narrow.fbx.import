@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cye183lbjsyt6"
-path="res://.godot/imported/Pen_01_Frame_Narrow.fbx-274cb67a421f9cd677e1eb886690c259.scn"
+path="res://.godot/imported/Pen_01_Frame_Narrow.fbx-342c5230902d3a907e43730e7cb0428c.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Frame_Narrow.fbx"
-dest_files=["res://.godot/imported/Pen_01_Frame_Narrow.fbx-274cb67a421f9cd677e1eb886690c259.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Frame_Narrow.fbx"
+dest_files=["res://.godot/imported/Pen_01_Frame_Narrow.fbx-342c5230902d3a907e43730e7cb0428c.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Frame_Narrow.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Frame_Narrow.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://3rajln62n2nv",
 "settings/loop_mode": 0,
@@ -2099,7 +2099,7 @@ _subresources={
 "materials": {
 "Pen_01": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
 "use_external/path": "uid://d3rdfsecag2h3"
 }
 },
@@ -2110,13 +2110,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Frame_Narrow.Pen_01_Frame_Narrow.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Frame_Narrow.Pen_01_Frame_Narrow.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://ca01kbkfvs3rj"
 },
 "Root Scene_Pen_01_Frame_Narrow": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Frame_Narrow.Pen_01_Frame_Narrow.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Frame_Narrow.Pen_01_Frame_Narrow.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://ca01kbkfvs3rj"
 }

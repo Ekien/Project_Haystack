@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dkvq7h45clldi"]
 
-[ext_resource type="ArrayMesh" uid="uid://bcnsrvjcbf67h" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Bucket.Bucket.mesh" id="1_mf5g6"]
-[ext_resource type="Material" uid="uid://bjx1gyfyovllg" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Bucket_01.material" id="2_qd3xt"]
+[ext_resource type="ArrayMesh" uid="uid://bcnsrvjcbf67h" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Bucket.Bucket.mesh" id="1_mf5g6"]
+[ext_resource type="Material" uid="uid://bjx1gyfyovllg" path="res://assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Bucket_01.material" id="2_qd3xt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mf5g6"]
 size = Vector3(0.28532475, 0.3042218, 0.27787608)

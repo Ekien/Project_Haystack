@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bseilc4lvgr17"
-path="res://.godot/imported/Pen_01_Wall_Door.fbx-47b8b19ee35522583665a24e178d8197.scn"
+path="res://.godot/imported/Pen_01_Wall_Door.fbx-fb8554bd95e133419aca7dc584b9dd2a.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Wall_Door.fbx"
-dest_files=["res://.godot/imported/Pen_01_Wall_Door.fbx-47b8b19ee35522583665a24e178d8197.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Wall_Door.fbx"
+dest_files=["res://.godot/imported/Pen_01_Wall_Door.fbx-fb8554bd95e133419aca7dc584b9dd2a.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://bu0si7dq2c7ch",
 "settings/loop_mode": 0,
@@ -2099,7 +2099,7 @@ _subresources={
 "materials": {
 "Material #26": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Wall.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Wall.material",
 "use_external/path": "uid://dbolnpokv81tm"
 }
 },
@@ -2110,13 +2110,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door.Pen_01_Wall_Door.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door.Pen_01_Wall_Door.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://cherp642x10f8"
 },
 "Root Scene_Pen_01_Wall_Door": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door.Pen_01_Wall_Door.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door.Pen_01_Wall_Door.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://cherp642x10f8"
 }

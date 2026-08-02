@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgkdo7742wlk0"
-path.s3tc="res://.godot/imported/T_Pen_01_Straight_PaintedOld_Normal.png-8380001839cc5ccc270907e5ab226599.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Pen_01_Straight_PaintedOld_Normal.png-8380001839cc5ccc270907e5ab226599.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Pen_01_Straight_PaintedOld_Normal.png-35bc9e3694c83fa251b09a7349c36940.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Pen_01_Straight_PaintedOld_Normal.png-35bc9e3694c83fa251b09a7349c36940.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Textures/T_Pen_01_Straight_PaintedOld_Normal.png"
-dest_files=["res://.godot/imported/T_Pen_01_Straight_PaintedOld_Normal.png-8380001839cc5ccc270907e5ab226599.s3tc.ctex", "res://.godot/imported/T_Pen_01_Straight_PaintedOld_Normal.png-8380001839cc5ccc270907e5ab226599.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Textures/T_Pen_01_Straight_PaintedOld_Normal.png"
+dest_files=["res://.godot/imported/T_Pen_01_Straight_PaintedOld_Normal.png-35bc9e3694c83fa251b09a7349c36940.s3tc.ctex", "res://.godot/imported/T_Pen_01_Straight_PaintedOld_Normal.png-35bc9e3694c83fa251b09a7349c36940.etc2.ctex"]
 
 [params]
 

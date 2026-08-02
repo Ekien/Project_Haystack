@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yswn0rjte225"
-path.s3tc="res://.godot/imported/T_Saltstone_01_Himalyan_Masks.roughness.png-7c6f255e9b6f0356521f5c055d45214b.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Saltstone_01_Himalyan_Masks.roughness.png-7c6f255e9b6f0356521f5c055d45214b.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Saltstone_01_Himalyan_Masks.roughness.png-fbdd28013e6b2658df89be7076f50547.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Saltstone_01_Himalyan_Masks.roughness.png-fbdd28013e6b2658df89be7076f50547.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Saltstone_01_Himalyan_Masks.roughness.png"
-dest_files=["res://.godot/imported/T_Saltstone_01_Himalyan_Masks.roughness.png-7c6f255e9b6f0356521f5c055d45214b.s3tc.ctex", "res://.godot/imported/T_Saltstone_01_Himalyan_Masks.roughness.png-7c6f255e9b6f0356521f5c055d45214b.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Saltstone_01_Himalyan_Masks.roughness.png"
+dest_files=["res://.godot/imported/T_Saltstone_01_Himalyan_Masks.roughness.png-fbdd28013e6b2658df89be7076f50547.s3tc.ctex", "res://.godot/imported/T_Saltstone_01_Himalyan_Masks.roughness.png-fbdd28013e6b2658df89be7076f50547.etc2.ctex"]
 
 [params]
 

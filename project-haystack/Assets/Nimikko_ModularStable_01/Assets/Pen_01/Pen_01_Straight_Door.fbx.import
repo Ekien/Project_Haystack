@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cnxkmabsg3xl6"
-path="res://.godot/imported/Pen_01_Straight_Door.fbx-c1b72a10b260c403375b7af5e5320ece.scn"
+path="res://.godot/imported/Pen_01_Straight_Door.fbx-f8364651c9f200c776f66f484415eea1.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Straight_Door.fbx"
-dest_files=["res://.godot/imported/Pen_01_Straight_Door.fbx-c1b72a10b260c403375b7af5e5320ece.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Straight_Door.fbx"
+dest_files=["res://.godot/imported/Pen_01_Straight_Door.fbx-f8364651c9f200c776f66f484415eea1.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://bky67dshbtr3g",
 "settings/loop_mode": 0,
@@ -2099,7 +2099,7 @@ _subresources={
 "materials": {
 "Pen_01": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
 "use_external/path": "uid://d3rdfsecag2h3"
 }
 },
@@ -2110,13 +2110,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door.Pen_01_Straight_Door.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door.Pen_01_Straight_Door.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://d3uorplbfpky"
 },
 "Root Scene_Pen_01_Straight_Door": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door.Pen_01_Straight_Door.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door.Pen_01_Straight_Door.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://d3uorplbfpky"
 }

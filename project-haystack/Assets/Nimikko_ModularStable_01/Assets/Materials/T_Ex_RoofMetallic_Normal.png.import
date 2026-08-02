@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lipfa71oc2ik"
-path.s3tc="res://.godot/imported/T_Ex_RoofMetallic_Normal.png-f35b5d764593b47c8f2f8365a37f1c3b.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Ex_RoofMetallic_Normal.png-f35b5d764593b47c8f2f8365a37f1c3b.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Ex_RoofMetallic_Normal.png-37dd6165a42e8a9be9df70761943b7b1.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Ex_RoofMetallic_Normal.png-37dd6165a42e8a9be9df70761943b7b1.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_RoofMetallic_Normal.png"
-dest_files=["res://.godot/imported/T_Ex_RoofMetallic_Normal.png-f35b5d764593b47c8f2f8365a37f1c3b.s3tc.ctex", "res://.godot/imported/T_Ex_RoofMetallic_Normal.png-f35b5d764593b47c8f2f8365a37f1c3b.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_RoofMetallic_Normal.png"
+dest_files=["res://.godot/imported/T_Ex_RoofMetallic_Normal.png-37dd6165a42e8a9be9df70761943b7b1.s3tc.ctex", "res://.godot/imported/T_Ex_RoofMetallic_Normal.png-37dd6165a42e8a9be9df70761943b7b1.etc2.ctex"]
 
 [params]
 

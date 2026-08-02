@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dxw5yxx21x23f"
-path="res://.godot/imported/Pen_01_Wall_Door_Door.fbx-1780b0c82d16862a13328a1f2547ee3b.scn"
+path="res://.godot/imported/Pen_01_Wall_Door_Door.fbx-8e5ad523c51a4bb8895e06aeedee132e.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Wall_Door_Door.fbx"
-dest_files=["res://.godot/imported/Pen_01_Wall_Door_Door.fbx-1780b0c82d16862a13328a1f2547ee3b.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Wall_Door_Door.fbx"
+dest_files=["res://.godot/imported/Pen_01_Wall_Door_Door.fbx-8e5ad523c51a4bb8895e06aeedee132e.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door_Door.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door_Door.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://ck2jimwyiyuki",
 "settings/loop_mode": 0,
@@ -2099,12 +2099,12 @@ _subresources={
 "materials": {
 "08 - Default": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Glass.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Glass.material",
 "use_external/path": "uid://crcqc0ylrptog"
 },
 "Pen_01": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
 "use_external/path": "uid://d3rdfsecag2h3"
 }
 },
@@ -2115,13 +2115,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door_Door.Pen_01_Wall_Door_Door.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door_Door.Pen_01_Wall_Door_Door.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://bpj88kjvhensl"
 },
 "Root Scene_Pen_01_Wall_Door_Door": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door_Door.Pen_01_Wall_Door_Door.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Wall_Door_Door.Pen_01_Wall_Door_Door.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://bpj88kjvhensl"
 }

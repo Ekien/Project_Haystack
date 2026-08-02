@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://di0fjjfektgp2"]
 
-[ext_resource type="PackedScene" uid="uid://bqu2brfhtbiwc" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Wall_Door_Door.prefab.scn" id="1_yfy6t"]
-[ext_resource type="Material" uid="uid://bmuiaiow2r1xe" path="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Old.material" id="2_ox7rb"]
+[ext_resource type="PackedScene" uid="uid://bqu2brfhtbiwc" path="res://assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Wall_Door_Door.prefab.scn" id="1_yfy6t"]
+[ext_resource type="Material" uid="uid://bmuiaiow2r1xe" path="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Old.material" id="2_ox7rb"]
 
 [node name="StableDoor" type="Node3D" unique_id=995651868]
 

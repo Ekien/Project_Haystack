@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dn3d02vgutm4r"
-path.s3tc="res://.godot/imported/T_Structure_01_Dusty_Masks.png-0c79f7450ee4423dfd30cbb1ac6ad327.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Structure_01_Dusty_Masks.png-0c79f7450ee4423dfd30cbb1ac6ad327.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Structure_01_Dusty_Masks.png-9631f675fc643173ba5e7111a91569ab.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Structure_01_Dusty_Masks.png-9631f675fc643173ba5e7111a91569ab.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Textures/T_Structure_01_Dusty_Masks.png"
-dest_files=["res://.godot/imported/T_Structure_01_Dusty_Masks.png-0c79f7450ee4423dfd30cbb1ac6ad327.s3tc.ctex", "res://.godot/imported/T_Structure_01_Dusty_Masks.png-0c79f7450ee4423dfd30cbb1ac6ad327.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Structure/Textures/T_Structure_01_Dusty_Masks.png"
+dest_files=["res://.godot/imported/T_Structure_01_Dusty_Masks.png-9631f675fc643173ba5e7111a91569ab.s3tc.ctex", "res://.godot/imported/T_Structure_01_Dusty_Masks.png-9631f675fc643173ba5e7111a91569ab.etc2.ctex"]
 
 [params]
 

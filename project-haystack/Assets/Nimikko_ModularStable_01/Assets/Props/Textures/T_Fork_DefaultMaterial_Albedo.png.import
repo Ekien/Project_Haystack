@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bukt5x52dj47j"
-path.s3tc="res://.godot/imported/T_Fork_DefaultMaterial_Albedo.png-72e9a6c7f6cb07a885acdbba6ef2a282.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Fork_DefaultMaterial_Albedo.png-72e9a6c7f6cb07a885acdbba6ef2a282.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Fork_DefaultMaterial_Albedo.png-2e732b3bed61bdd69b882aaf0e841102.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Fork_DefaultMaterial_Albedo.png-2e732b3bed61bdd69b882aaf0e841102.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Fork_DefaultMaterial_Albedo.png"
-dest_files=["res://.godot/imported/T_Fork_DefaultMaterial_Albedo.png-72e9a6c7f6cb07a885acdbba6ef2a282.s3tc.ctex", "res://.godot/imported/T_Fork_DefaultMaterial_Albedo.png-72e9a6c7f6cb07a885acdbba6ef2a282.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Fork_DefaultMaterial_Albedo.png"
+dest_files=["res://.godot/imported/T_Fork_DefaultMaterial_Albedo.png-2e732b3bed61bdd69b882aaf0e841102.s3tc.ctex", "res://.godot/imported/T_Fork_DefaultMaterial_Albedo.png-2e732b3bed61bdd69b882aaf0e841102.etc2.ctex"]
 
 [params]
 

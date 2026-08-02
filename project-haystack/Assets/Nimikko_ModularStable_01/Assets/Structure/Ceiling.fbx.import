@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bhu035qg8jv5x"
-path="res://.godot/imported/Ceiling.fbx-c97ddabe942dab08a5816f58641d3caf.scn"
+path="res://.godot/imported/Ceiling.fbx-89a47c111815c4ab9a61983db475d323.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Ceiling.fbx"
-dest_files=["res://.godot/imported/Ceiling.fbx-c97ddabe942dab08a5816f58641d3caf.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Structure/Ceiling.fbx"
+dest_files=["res://.godot/imported/Ceiling.fbx-89a47c111815c4ab9a61983db475d323.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Ceiling.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Ceiling.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://cjydxxmlml2ji",
 "settings/loop_mode": 0,
@@ -2099,7 +2099,7 @@ _subresources={
 "materials": {
 "Material #25": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/Materials/M_Ceiling_01.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/Materials/M_Ceiling_01.material",
 "use_external/path": "uid://k41oqohil17t"
 }
 },
@@ -2110,13 +2110,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Ceiling.Ceiling.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Ceiling.Ceiling.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://bbwjlegeksy2l"
 },
 "Root Scene_Ceiling": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Ceiling.Ceiling.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Ceiling.Ceiling.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://bbwjlegeksy2l"
 }

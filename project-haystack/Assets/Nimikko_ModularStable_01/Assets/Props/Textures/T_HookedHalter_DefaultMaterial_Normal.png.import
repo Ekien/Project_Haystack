@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5aod1bg7j20b"
-path.s3tc="res://.godot/imported/T_HookedHalter_DefaultMaterial_Normal.png-3f9a131dd749b6992dd036d7d4b53a9f.s3tc.ctex"
-path.etc2="res://.godot/imported/T_HookedHalter_DefaultMaterial_Normal.png-3f9a131dd749b6992dd036d7d4b53a9f.etc2.ctex"
+path.s3tc="res://.godot/imported/T_HookedHalter_DefaultMaterial_Normal.png-f2cfe4dc3ed1ae53cd9fc37dd9a06a26.s3tc.ctex"
+path.etc2="res://.godot/imported/T_HookedHalter_DefaultMaterial_Normal.png-f2cfe4dc3ed1ae53cd9fc37dd9a06a26.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_HookedHalter_DefaultMaterial_Normal.png"
-dest_files=["res://.godot/imported/T_HookedHalter_DefaultMaterial_Normal.png-3f9a131dd749b6992dd036d7d4b53a9f.s3tc.ctex", "res://.godot/imported/T_HookedHalter_DefaultMaterial_Normal.png-3f9a131dd749b6992dd036d7d4b53a9f.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_HookedHalter_DefaultMaterial_Normal.png"
+dest_files=["res://.godot/imported/T_HookedHalter_DefaultMaterial_Normal.png-f2cfe4dc3ed1ae53cd9fc37dd9a06a26.s3tc.ctex", "res://.godot/imported/T_HookedHalter_DefaultMaterial_Normal.png-f2cfe4dc3ed1ae53cd9fc37dd9a06a26.etc2.ctex"]
 
 [params]
 

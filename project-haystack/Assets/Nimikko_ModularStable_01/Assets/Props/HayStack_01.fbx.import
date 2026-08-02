@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bfmu6vljfo0k3"
-path="res://.godot/imported/HayStack_01.fbx-e7499e79e2a77ad3c6dc136e55506c40.scn"
+path="res://.godot/imported/HayStack_01.fbx-996fc5fbea80b3d66d905b0cd6091484.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/HayStack_01.fbx"
-dest_files=["res://.godot/imported/HayStack_01.fbx-e7499e79e2a77ad3c6dc136e55506c40.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/HayStack_01.fbx"
+dest_files=["res://.godot/imported/HayStack_01.fbx-996fc5fbea80b3d66d905b0cd6091484.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://gdkgsbw5bimf",
 "settings/loop_mode": 0,
@@ -2113,13 +2113,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.HayStack_01.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.HayStack_01.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://cnspltdadjqwi"
 },
 "Root Scene_HayStack_01": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.HayStack_01.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.HayStack_01.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://cnspltdadjqwi"
 }

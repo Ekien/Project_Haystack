@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://dn68rjlg4bblh"]
+
+[ext_resource type="Script" uid="uid://qddmihbi62ed" path="res://Scripts/Levels/interactable_horse_grooming.gd" id="1_nwa7l"]
+[ext_resource type="PackedScene" uid="uid://b0r6edl74ddo7" path="res://addons/godot-xr-tools/interactables/interactable_slider.tscn" id="1_qdvdk"]
+[ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="2_ytnly"]
+[ext_resource type="Texture2D" uid="uid://8s03ra8tp0hr" path="res://addons/godot-xr-tools/images/ring.png" id="5_0arji"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="5_t26w7"]
+[ext_resource type="PackedScene" uid="uid://bddj5m7ull6g0" path="res://addons/godot-xr-tools/interactables/interactable_handle.tscn" id="6_32jfj"]
+[ext_resource type="PackedScene" uid="uid://ca3daqmpo0tua" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_redirect.tscn" id="8_uum6g"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_y85uf"]
+size = Vector3(0.1, 0.1, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y85uf"]
+albedo_color = Color(0.810401, 0.31084174, 0.25096384, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fabng"]
+size = Vector3(0.1, 0.1, 0.1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_gfmqu"]
+size = Vector2(0.1, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sqtay"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("5_0arji")
+billboard_mode = 1
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_32jfj"]
+
+[node name="InteractableHorseGrooming" type="Node3D" unique_id=1007815259]
+script = ExtResource("1_nwa7l")
+rotation_angle = null
+
+[node name="Brush" type="Node3D" parent="." unique_id=1007597841]
+
+[node name="BrushSlider" parent="Brush" unique_id=170299167 instance=ExtResource("1_qdvdk")]
+unique_name_in_owner = true
+slider_limit_min = -0.3
+slider_limit_max = 0.3
+default_on_release = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Brush/BrushSlider" unique_id=152617279]
+
+[node name="BrushMesh" type="MeshInstance3D" parent="Brush/BrushSlider/StaticBody3D" unique_id=1158320251]
+mesh = SubResource("BoxMesh_y85uf")
+surface_material_override/0 = SubResource("StandardMaterial3D_y85uf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Brush/BrushSlider/StaticBody3D" unique_id=1750388667]
+shape = SubResource("BoxShape3D_fabng")
+
+[node name="CHighlighMesh" type="MeshInstance3D" parent="Brush/BrushSlider/StaticBody3D" unique_id=509215179]
+mesh = SubResource("QuadMesh_gfmqu")
+surface_material_override/0 = SubResource("StandardMaterial3D_sqtay")
+
+[node name="GrabPointHandLeft" parent="Brush/BrushSlider/StaticBody3D/CHighlighMesh" unique_id=816286346 instance=ExtResource("2_ytnly")]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.05, 0, -0.05)
+
+[node name="GrabPointHandRight" parent="Brush/BrushSlider/StaticBody3D/CHighlighMesh" unique_id=1590076875 instance=ExtResource("5_t26w7")]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.05, 0, -0.05)
+
+[node name="HandleOrigin" type="Node3D" parent="Brush/BrushSlider" unique_id=1532254292]
+
+[node name="InteractableHandle" parent="Brush/BrushSlider/HandleOrigin" unique_id=1640298559 instance=ExtResource("6_32jfj")]
+snap_distance = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Brush/BrushSlider/HandleOrigin/InteractableHandle" unique_id=525553608]
+shape = SubResource("SphereShape3D_32jfj")
+
+[node name="GrabPointRedirectLeft" parent="Brush/BrushSlider/HandleOrigin/InteractableHandle" unique_id=1849103710 node_paths=PackedStringArray("target") instance=ExtResource("8_uum6g")]
+target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandLeft")
+
+[node name="GrabPointRedirectRight" parent="Brush/BrushSlider/HandleOrigin/InteractableHandle" unique_id=717758378 node_paths=PackedStringArray("target") instance=ExtResource("8_uum6g")]
+target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandRight")

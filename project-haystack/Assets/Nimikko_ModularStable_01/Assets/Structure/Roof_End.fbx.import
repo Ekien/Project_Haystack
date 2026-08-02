@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c2gu5hd21cytx"
-path="res://.godot/imported/Roof_End.fbx-e0ecd0934f79769531f443173afe9e2f.scn"
+path="res://.godot/imported/Roof_End.fbx-42a0ae2b338e4a1a54a89e4b7635b034.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Roof_End.fbx"
-dest_files=["res://.godot/imported/Roof_End.fbx-e0ecd0934f79769531f443173afe9e2f.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Structure/Roof_End.fbx"
+dest_files=["res://.godot/imported/Roof_End.fbx-42a0ae2b338e4a1a54a89e4b7635b034.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_End.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_End.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://bo51375vfca4p",
 "settings/loop_mode": 0,
@@ -2113,13 +2113,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_End.Roof_End.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_End.Roof_End.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://vnryrhkjnyan"
 },
 "Root Scene_Roof_End": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_End.Roof_End.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_End.Roof_End.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://vnryrhkjnyan"
 }

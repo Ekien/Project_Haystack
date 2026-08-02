@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ble5pwku8dhl"
-path="res://.godot/imported/Wheelbarrow.fbx-c8b640be7c93ad5e8c2c6fa05d318639.scn"
+path="res://.godot/imported/Wheelbarrow.fbx-0605c7313bbd6d42f8bf62afe63eb2b2.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Wheelbarrow.fbx"
-dest_files=["res://.godot/imported/Wheelbarrow.fbx-c8b640be7c93ad5e8c2c6fa05d318639.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Wheelbarrow.fbx"
+dest_files=["res://.godot/imported/Wheelbarrow.fbx-0605c7313bbd6d42f8bf62afe63eb2b2.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Wheelbarrow.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Wheelbarrow.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://c1tvp5g8gq3k5",
 "settings/loop_mode": 0,
@@ -2109,7 +2109,7 @@ _subresources={
 "meshes": {
 "Root Scene_Wheelbarrow": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Wheelbarrow.Wheelbarrow.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Wheelbarrow.Wheelbarrow.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://bafdk67c5riph"
 },
@@ -2119,7 +2119,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Wheelbarrow.Wheelbarrow.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Wheelbarrow.Wheelbarrow.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://bafdk67c5riph"
 }

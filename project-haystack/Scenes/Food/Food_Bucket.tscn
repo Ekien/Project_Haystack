@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dq5n1ye1w61br"]
 
 [ext_resource type="Script" uid="uid://bg83bd0rc6y4x" path="res://Scripts/Food/food_bucket.gd" id="1_fuwct"]
-[ext_resource type="ArrayMesh" uid="uid://bcnsrvjcbf67h" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Bucket.Bucket.mesh" id="1_jdxcd"]
-[ext_resource type="Material" uid="uid://bjx1gyfyovllg" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Bucket_01.material" id="2_krj5y"]
-[ext_resource type="ArrayMesh" uid="uid://cnspltdadjqwi" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.HayStack_01.mesh" id="3_2036a"]
-[ext_resource type="Material" uid="uid://bjacaaefh0qg6" path="res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Hay_01.material" id="4_fuwct"]
+[ext_resource type="ArrayMesh" uid="uid://bcnsrvjcbf67h" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Bucket.Bucket.mesh" id="1_jdxcd"]
+[ext_resource type="Material" uid="uid://bjx1gyfyovllg" path="res://assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Bucket_01.material" id="2_krj5y"]
+[ext_resource type="ArrayMesh" uid="uid://cnspltdadjqwi" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.HayStack_01.mesh" id="3_2036a"]
+[ext_resource type="Material" uid="uid://bjacaaefh0qg6" path="res://assets/Nimikko_ModularStable_01/Assets/Materials/M_Hay_01.material" id="4_fuwct"]
 [ext_resource type="PackedScene" uid="uid://clx0uipop4bsb" path="res://Scenes/Food/SnapZones/bucket_snap_zone.tscn" id="6_81l67"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_tk6at"]

@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyis7p2tk1a5b"
-path.s3tc="res://.godot/imported/T_Structure_01_Dusty_Albedo.png-1e471dec0680564481b9d07eac4108ba.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Structure_01_Dusty_Albedo.png-1e471dec0680564481b9d07eac4108ba.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Structure_01_Dusty_Albedo.png-625c3b509e289609bad4614923ae7f6a.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Structure_01_Dusty_Albedo.png-625c3b509e289609bad4614923ae7f6a.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Textures/T_Structure_01_Dusty_Albedo.png"
-dest_files=["res://.godot/imported/T_Structure_01_Dusty_Albedo.png-1e471dec0680564481b9d07eac4108ba.s3tc.ctex", "res://.godot/imported/T_Structure_01_Dusty_Albedo.png-1e471dec0680564481b9d07eac4108ba.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Structure/Textures/T_Structure_01_Dusty_Albedo.png"
+dest_files=["res://.godot/imported/T_Structure_01_Dusty_Albedo.png-625c3b509e289609bad4614923ae7f6a.s3tc.ctex", "res://.godot/imported/T_Structure_01_Dusty_Albedo.png-625c3b509e289609bad4614923ae7f6a.etc2.ctex"]
 
 [params]
 

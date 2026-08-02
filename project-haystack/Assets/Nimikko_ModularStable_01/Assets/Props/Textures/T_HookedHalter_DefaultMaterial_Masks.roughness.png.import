@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c570r4hj3wb8l"
-path.s3tc="res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.roughness.png-9305c41a2fe992b750b953f0ff612f31.s3tc.ctex"
-path.etc2="res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.roughness.png-9305c41a2fe992b750b953f0ff612f31.etc2.ctex"
+path.s3tc="res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.roughness.png-1b0e0dfb594a8275d2fa03de6fdd8b30.s3tc.ctex"
+path.etc2="res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.roughness.png-1b0e0dfb594a8275d2fa03de6fdd8b30.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_HookedHalter_DefaultMaterial_Masks.roughness.png"
-dest_files=["res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.roughness.png-9305c41a2fe992b750b953f0ff612f31.s3tc.ctex", "res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.roughness.png-9305c41a2fe992b750b953f0ff612f31.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_HookedHalter_DefaultMaterial_Masks.roughness.png"
+dest_files=["res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.roughness.png-1b0e0dfb594a8275d2fa03de6fdd8b30.s3tc.ctex", "res://.godot/imported/T_HookedHalter_DefaultMaterial_Masks.roughness.png-1b0e0dfb594a8275d2fa03de6fdd8b30.etc2.ctex"]
 
 [params]
 

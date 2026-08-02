@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2ce6aq7j7hm7"
-path.s3tc="res://.godot/imported/T_Ex_RoofMetallic_Masks.roughness.png-a62aa0e668a8ab2196fbb1e9f1246e44.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Ex_RoofMetallic_Masks.roughness.png-a62aa0e668a8ab2196fbb1e9f1246e44.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Ex_RoofMetallic_Masks.roughness.png-ea95f6d146bf3770ad8db7ef6084c9fd.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Ex_RoofMetallic_Masks.roughness.png-ea95f6d146bf3770ad8db7ef6084c9fd.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_RoofMetallic_Masks.roughness.png"
-dest_files=["res://.godot/imported/T_Ex_RoofMetallic_Masks.roughness.png-a62aa0e668a8ab2196fbb1e9f1246e44.s3tc.ctex", "res://.godot/imported/T_Ex_RoofMetallic_Masks.roughness.png-a62aa0e668a8ab2196fbb1e9f1246e44.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_RoofMetallic_Masks.roughness.png"
+dest_files=["res://.godot/imported/T_Ex_RoofMetallic_Masks.roughness.png-ea95f6d146bf3770ad8db7ef6084c9fd.s3tc.ctex", "res://.godot/imported/T_Ex_RoofMetallic_Masks.roughness.png-ea95f6d146bf3770ad8db7ef6084c9fd.etc2.ctex"]
 
 [params]
 

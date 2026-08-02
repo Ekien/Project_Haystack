@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_8p1jv"]
 [ext_resource type="PackedScene" uid="uid://dq5n1ye1w61br" path="res://Scenes/Food/food_bucket.tscn" id="2_ii7ja"]
-[ext_resource type="ArrayMesh" uid="uid://bcnsrvjcbf67h" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Bucket.Bucket.mesh" id="2_om6jr"]
+[ext_resource type="ArrayMesh" uid="uid://bcnsrvjcbf67h" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Bucket.Bucket.mesh" id="2_om6jr"]
 [ext_resource type="Script" uid="uid://0b7wkxi4vymb" path="res://addons/godot-xr-tools/objects/highlight/highlight_visible.gd" id="4_om6jr"]
 [ext_resource type="Material" uid="uid://dtjf4niof8a2u" path="res://Materials/Highlight_Material.tres" id="5_qgshm"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="9_pttv7"]

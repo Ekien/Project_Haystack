@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bsd3b5pqpugo5"
-path="res://.godot/imported/Hays.fbx-4a348d6f203938b5887ec8524b661ed3.scn"
+path="res://.godot/imported/Hays.fbx-917c84b7400c3e27359b1356869611ec.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Hays.fbx"
-dest_files=["res://.godot/imported/Hays.fbx-4a348d6f203938b5887ec8524b661ed3.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Hays.fbx"
+dest_files=["res://.godot/imported/Hays.fbx-917c84b7400c3e27359b1356869611ec.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Hays.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Hays.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://v2fiinvpoh8n",
 "settings/loop_mode": 0,
@@ -2113,13 +2113,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Hays.Hays.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Hays.Hays.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://bfq7jmy7c1dm0"
 },
 "Root Scene_Hays": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Hays.Hays.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Hays.Hays.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://bfq7jmy7c1dm0"
 }

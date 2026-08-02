@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dm87vy4ujml3q"]
 
-[ext_resource type="ArrayMesh" uid="uid://dickl1idcn4bg" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayBale.HayBale.mesh" id="1_6qa1i"]
-[ext_resource type="Material" uid="uid://nlo66bvkmuek" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Haybale.material" id="2_sntct"]
+[ext_resource type="ArrayMesh" uid="uid://dickl1idcn4bg" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayBale.HayBale.mesh" id="1_6qa1i"]
+[ext_resource type="Material" uid="uid://nlo66bvkmuek" path="res://assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Haybale.material" id="2_sntct"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sntct"]
 size = Vector3(0.5132686, 0.4025151, 0.95118755)

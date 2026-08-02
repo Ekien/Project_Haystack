@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ee532b4v0jhl"
-path.s3tc="res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.png-62d0d375a15537124b410882171832ac.s3tc.ctex"
-path.etc2="res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.png-62d0d375a15537124b410882171832ac.etc2.ctex"
+path.s3tc="res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.png-aa3c45b790e483ff4b0d22933bc67958.s3tc.ctex"
+path.etc2="res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.png-aa3c45b790e483ff4b0d22933bc67958.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_WarpStorage_DefaultMaterial_Masks.png"
-dest_files=["res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.png-62d0d375a15537124b410882171832ac.s3tc.ctex", "res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.png-62d0d375a15537124b410882171832ac.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_WarpStorage_DefaultMaterial_Masks.png"
+dest_files=["res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.png-aa3c45b790e483ff4b0d22933bc67958.s3tc.ctex", "res://.godot/imported/T_WarpStorage_DefaultMaterial_Masks.png-aa3c45b790e483ff4b0d22933bc67958.etc2.ctex"]
 
 [params]
 

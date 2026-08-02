@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dss6nx14h5cos"
-path.s3tc="res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-15af504efa8386a2bc7ccfdc3753b281.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-15af504efa8386a2bc7ccfdc3753b281.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-2387c64e0aa1e9ef4d667c8d4d84cfc8.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-2387c64e0aa1e9ef4d667c8d4d84cfc8.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Wheelbarrow_Green_Albedo.png"
-dest_files=["res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-15af504efa8386a2bc7ccfdc3753b281.s3tc.ctex", "res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-15af504efa8386a2bc7ccfdc3753b281.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Wheelbarrow_Green_Albedo.png"
+dest_files=["res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-2387c64e0aa1e9ef4d667c8d4d84cfc8.s3tc.ctex", "res://.godot/imported/T_Wheelbarrow_Green_Albedo.png-2387c64e0aa1e9ef4d667c8d4d84cfc8.etc2.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://csxbli4w80vit"]
 
-[ext_resource type="ArrayMesh" uid="uid://bfq7jmy7c1dm0" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Hays.Hays.mesh" id="1_cvf70"]
-[ext_resource type="Material" uid="uid://bjacaaefh0qg6" path="res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Hay_01.material" id="2_gjrii"]
+[ext_resource type="ArrayMesh" uid="uid://bfq7jmy7c1dm0" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Hays.Hays.mesh" id="1_cvf70"]
+[ext_resource type="Material" uid="uid://bjacaaefh0qg6" path="res://assets/Nimikko_ModularStable_01/Assets/Materials/M_Hay_01.material" id="2_gjrii"]
 
 [node name="StableHayFloor" type="Node3D" unique_id=765973295]
 

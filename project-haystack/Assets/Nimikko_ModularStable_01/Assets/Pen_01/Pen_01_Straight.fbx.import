@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b3oyji2nyhms"
-path="res://.godot/imported/Pen_01_Straight.fbx-fc2864e8a7e9052dcb03eb03a99df169.scn"
+path="res://.godot/imported/Pen_01_Straight.fbx-d00ff679492e431fdec9d0d881a2011b.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Straight.fbx"
-dest_files=["res://.godot/imported/Pen_01_Straight.fbx-fc2864e8a7e9052dcb03eb03a99df169.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Straight.fbx"
+dest_files=["res://.godot/imported/Pen_01_Straight.fbx-d00ff679492e431fdec9d0d881a2011b.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://4qayl78xgj2r",
 "settings/loop_mode": 0,
@@ -2099,7 +2099,7 @@ _subresources={
 "materials": {
 "Pen_01": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
 "use_external/path": "uid://d3rdfsecag2h3"
 }
 },
@@ -2110,13 +2110,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight.Pen_01_Straight.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight.Pen_01_Straight.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://3gq058d1730s"
 },
 "Root Scene_Pen_01_Straight": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight.Pen_01_Straight.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight.Pen_01_Straight.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://3gq058d1730s"
 }

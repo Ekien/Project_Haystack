@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gbpwxx3eh0hj"
-path.s3tc="res://.godot/imported/T_WarpStorage_DefaultMaterial_Albedo.png-3be2645dca462e44facadbeacd075829.s3tc.ctex"
-path.etc2="res://.godot/imported/T_WarpStorage_DefaultMaterial_Albedo.png-3be2645dca462e44facadbeacd075829.etc2.ctex"
+path.s3tc="res://.godot/imported/T_WarpStorage_DefaultMaterial_Albedo.png-d63841dcf2223250ba24df4b7337d6cc.s3tc.ctex"
+path.etc2="res://.godot/imported/T_WarpStorage_DefaultMaterial_Albedo.png-d63841dcf2223250ba24df4b7337d6cc.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_WarpStorage_DefaultMaterial_Albedo.png"
-dest_files=["res://.godot/imported/T_WarpStorage_DefaultMaterial_Albedo.png-3be2645dca462e44facadbeacd075829.s3tc.ctex", "res://.godot/imported/T_WarpStorage_DefaultMaterial_Albedo.png-3be2645dca462e44facadbeacd075829.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_WarpStorage_DefaultMaterial_Albedo.png"
+dest_files=["res://.godot/imported/T_WarpStorage_DefaultMaterial_Albedo.png-d63841dcf2223250ba24df4b7337d6cc.s3tc.ctex", "res://.godot/imported/T_WarpStorage_DefaultMaterial_Albedo.png-d63841dcf2223250ba24df4b7337d6cc.etc2.ctex"]
 
 [params]
 

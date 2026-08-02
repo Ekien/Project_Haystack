@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccmcg4d2wcvor"
-path.s3tc="res://.godot/imported/Lightmap-6_comp_dir.png-23d43a0dc9d2cbf1f1a9de64da5e75f8.s3tc.ctex"
-path.etc2="res://.godot/imported/Lightmap-6_comp_dir.png-23d43a0dc9d2cbf1f1a9de64da5e75f8.etc2.ctex"
+path.s3tc="res://.godot/imported/Lightmap-6_comp_dir.png-ee4d99804b8f94d37032c1f687112765.s3tc.ctex"
+path.etc2="res://.godot/imported/Lightmap-6_comp_dir.png-ee4d99804b8f94d37032c1f687112765.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Scenes/Stable_01/Lightmap-6_comp_dir.png"
-dest_files=["res://.godot/imported/Lightmap-6_comp_dir.png-23d43a0dc9d2cbf1f1a9de64da5e75f8.s3tc.ctex", "res://.godot/imported/Lightmap-6_comp_dir.png-23d43a0dc9d2cbf1f1a9de64da5e75f8.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Scenes/Stable_01/Lightmap-6_comp_dir.png"
+dest_files=["res://.godot/imported/Lightmap-6_comp_dir.png-ee4d99804b8f94d37032c1f687112765.s3tc.ctex", "res://.godot/imported/Lightmap-6_comp_dir.png-ee4d99804b8f94d37032c1f687112765.etc2.ctex"]
 
 [params]
 

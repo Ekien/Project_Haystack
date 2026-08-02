@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b1viv1ygi2ocf"]
 
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_t52pl"]
-[ext_resource type="ArrayMesh" uid="uid://dickl1idcn4bg" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayBale.HayBale.mesh" id="2_3pu30"]
-[ext_resource type="Material" uid="uid://nlo66bvkmuek" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Haybale.material" id="3_kahts"]
+[ext_resource type="ArrayMesh" uid="uid://dickl1idcn4bg" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayBale.HayBale.mesh" id="2_3pu30"]
+[ext_resource type="Material" uid="uid://nlo66bvkmuek" path="res://assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Haybale.material" id="3_kahts"]
 [ext_resource type="Script" uid="uid://0b7wkxi4vymb" path="res://addons/godot-xr-tools/objects/highlight/highlight_visible.gd" id="4_3pu30"]
 [ext_resource type="Material" uid="uid://dtjf4niof8a2u" path="res://Materials/Highlight_Material.tres" id="5_kahts"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="6_np35j"]

@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmysllskbamw6"
-path.s3tc="res://.godot/imported/T_Ex_Planks_New_Masks.png-36f3af8e0b1445c8fd52257dca9eb5eb.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Ex_Planks_New_Masks.png-36f3af8e0b1445c8fd52257dca9eb5eb.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Ex_Planks_New_Masks.png-5948e07ea8ff76ba8e81918547cd6d77.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Ex_Planks_New_Masks.png-5948e07ea8ff76ba8e81918547cd6d77.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_Planks_New_Masks.png"
-dest_files=["res://.godot/imported/T_Ex_Planks_New_Masks.png-36f3af8e0b1445c8fd52257dca9eb5eb.s3tc.ctex", "res://.godot/imported/T_Ex_Planks_New_Masks.png-36f3af8e0b1445c8fd52257dca9eb5eb.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_Planks_New_Masks.png"
+dest_files=["res://.godot/imported/T_Ex_Planks_New_Masks.png-5948e07ea8ff76ba8e81918547cd6d77.s3tc.ctex", "res://.godot/imported/T_Ex_Planks_New_Masks.png-5948e07ea8ff76ba8e81918547cd6d77.etc2.ctex"]
 
 [params]
 

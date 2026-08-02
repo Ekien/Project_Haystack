@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bia4k171dil32"
-path="res://.godot/imported/Pen_01_Straight_Door_Narrow_Hole.fbx-2b69ceee4ce52d00fe314c57817471a5.scn"
+path="res://.godot/imported/Pen_01_Straight_Door_Narrow_Hole.fbx-d959a8941a3d19f8a5166404b90ee402.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Straight_Door_Narrow_Hole.fbx"
-dest_files=["res://.godot/imported/Pen_01_Straight_Door_Narrow_Hole.fbx-2b69ceee4ce52d00fe314c57817471a5.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Pen_01_Straight_Door_Narrow_Hole.fbx"
+dest_files=["res://.godot/imported/Pen_01_Straight_Door_Narrow_Hole.fbx-d959a8941a3d19f8a5166404b90ee402.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door_Narrow_Hole.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door_Narrow_Hole.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://dij5a1kq3f3fr",
 "settings/loop_mode": 0,
@@ -2099,7 +2099,7 @@ _subresources={
 "materials": {
 "Pen_01": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01.material",
 "use_external/path": "uid://d3rdfsecag2h3"
 }
 },
@@ -2110,13 +2110,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door_Narrow_Hole.Pen_01_Straight_Door_Narrow_Hole.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door_Narrow_Hole.Pen_01_Straight_Door_Narrow_Hole.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://b1nyoou00am2j"
 },
 "Root Scene_Pen_01_Straight_Door_Narrow_Hole": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door_Narrow_Hole.Pen_01_Straight_Door_Narrow_Hole.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Pen_01/extracted/Pen_01_Straight_Door_Narrow_Hole.Pen_01_Straight_Door_Narrow_Hole.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://b1nyoou00am2j"
 }

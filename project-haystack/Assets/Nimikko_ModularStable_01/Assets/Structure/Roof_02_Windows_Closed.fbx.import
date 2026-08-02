@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cm0a15yecf7ud"
-path="res://.godot/imported/Roof_02_Windows_Closed.fbx-d61d0a0f24f6740bc1da152bc23711d8.scn"
+path="res://.godot/imported/Roof_02_Windows_Closed.fbx-97a27f37eea840bce19a3ab6f02000ff.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Roof_02_Windows_Closed.fbx"
-dest_files=["res://.godot/imported/Roof_02_Windows_Closed.fbx-d61d0a0f24f6740bc1da152bc23711d8.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Structure/Roof_02_Windows_Closed.fbx"
+dest_files=["res://.godot/imported/Roof_02_Windows_Closed.fbx-97a27f37eea840bce19a3ab6f02000ff.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_02_Windows_Closed.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_02_Windows_Closed.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://rxf1bbo1nbn2",
 "settings/loop_mode": 0,
@@ -2099,22 +2099,22 @@ _subresources={
 "materials": {
 "Metal": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Steel_01.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Materials/M_Steel_01.material",
 "use_external/path": "uid://dvbytj5yq8na2"
 },
 "Roof": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Roof_01.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Materials/M_Roof_01.material",
 "use_external/path": "uid://bef54feenl7ke"
 },
 "Roof_inner": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_VinylMembrane.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Materials/M_VinylMembrane.material",
 "use_external/path": "uid://bq4qbjnkv50ak"
 },
 "Wood": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Materials/M_Planks_01_Old.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Materials/M_Planks_01_Old.material",
 "use_external/path": "uid://ciiuwe1r0lhyn"
 }
 },
@@ -2125,13 +2125,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_02_Windows_Closed.Roof_02_Windows_Closed.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_02_Windows_Closed.Roof_02_Windows_Closed.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://byy3f0x3b0sfj"
 },
 "Root Scene_Roof_02_Windows_Closed": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_02_Windows_Closed.Roof_02_Windows_Closed.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Roof_02_Windows_Closed.Roof_02_Windows_Closed.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://byy3f0x3b0sfj"
 }

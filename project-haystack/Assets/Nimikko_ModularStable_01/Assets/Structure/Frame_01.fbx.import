@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://im7vf4jkaye1"
-path="res://.godot/imported/Frame_01.fbx-7141131acd44e76c2652132f386d2bab.scn"
+path="res://.godot/imported/Frame_01.fbx-132164241b9b1876dd0d698e6bd2ee57.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Frame_01.fbx"
-dest_files=["res://.godot/imported/Frame_01.fbx-7141131acd44e76c2652132f386d2bab.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Structure/Frame_01.fbx"
+dest_files=["res://.godot/imported/Frame_01.fbx-132164241b9b1876dd0d698e6bd2ee57.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Frame_01.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Frame_01.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://dmchu83x2r27j",
 "settings/loop_mode": 0,
@@ -2113,13 +2113,13 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Frame_01.Frame_01.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Frame_01.Frame_01.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://dq5vtnxi85nyi"
 },
 "Root Scene_Frame_01": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Frame_01.Frame_01.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Frame_01.Frame_01.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://dq5vtnxi85nyi"
 }

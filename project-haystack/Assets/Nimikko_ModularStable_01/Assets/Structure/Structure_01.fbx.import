@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://facgfvbnq2wd"
-path="res://.godot/imported/Structure_01.fbx-16a849d06f5a12e3f635b2dbd9fb06f6.scn"
+path="res://.godot/imported/Structure_01.fbx-e5ce3a716cf968e15a0fb2274986283f.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Structure_01.fbx"
-dest_files=["res://.godot/imported/Structure_01.fbx-16a849d06f5a12e3f635b2dbd9fb06f6.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Structure/Structure_01.fbx"
+dest_files=["res://.godot/imported/Structure_01.fbx-e5ce3a716cf968e15a0fb2274986283f.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Structure_01.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Structure_01.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://cac57ea1gtni8",
 "settings/loop_mode": 0,
@@ -2099,14 +2099,14 @@ _subresources={
 "materials": {
 "MI_Struct_01": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/Materials/M_Structure_01.material",
+"use_external/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/Materials/M_Structure_01.material",
 "use_external/path": "uid://6afdi5uv2kl5"
 }
 },
 "meshes": {
 "Root Scene_Structure_01": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Structure_01.Structure_01.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Structure_01.Structure_01.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://veen272umviq"
 },
@@ -2116,7 +2116,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Structure_01.Structure_01.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Structure/extracted/Structure_01.Structure_01.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://veen272umviq"
 }

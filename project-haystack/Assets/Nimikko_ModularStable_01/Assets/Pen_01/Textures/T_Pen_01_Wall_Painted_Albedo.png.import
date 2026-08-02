@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmwfuls8s5ist"
-path.s3tc="res://.godot/imported/T_Pen_01_Wall_Painted_Albedo.png-a29aa8f5e5df0f622c4e2b61b442ebee.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Pen_01_Wall_Painted_Albedo.png-a29aa8f5e5df0f622c4e2b61b442ebee.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Pen_01_Wall_Painted_Albedo.png-161836cce50f8d13e3e3fea60449d1d0.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Pen_01_Wall_Painted_Albedo.png-161836cce50f8d13e3e3fea60449d1d0.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Textures/T_Pen_01_Wall_Painted_Albedo.png"
-dest_files=["res://.godot/imported/T_Pen_01_Wall_Painted_Albedo.png-a29aa8f5e5df0f622c4e2b61b442ebee.s3tc.ctex", "res://.godot/imported/T_Pen_01_Wall_Painted_Albedo.png-a29aa8f5e5df0f622c4e2b61b442ebee.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Textures/T_Pen_01_Wall_Painted_Albedo.png"
+dest_files=["res://.godot/imported/T_Pen_01_Wall_Painted_Albedo.png-161836cce50f8d13e3e3fea60449d1d0.s3tc.ctex", "res://.godot/imported/T_Pen_01_Wall_Painted_Albedo.png-161836cce50f8d13e3e3fea60449d1d0.etc2.ctex"]
 
 [params]
 

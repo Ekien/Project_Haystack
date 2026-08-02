@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cfnu6ace61xce"]
 
-[ext_resource type="ArrayMesh" uid="uid://cav5uu0djct43" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Fork.Fork.mesh" id="1_j45vt"]
-[ext_resource type="Material" uid="uid://qxa7hqidox6f" path="res://Assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Fork.material" id="2_dgecp"]
+[ext_resource type="ArrayMesh" uid="uid://cav5uu0djct43" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Fork.Fork.mesh" id="1_j45vt"]
+[ext_resource type="Material" uid="uid://qxa7hqidox6f" path="res://assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Fork.material" id="2_dgecp"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j45vt"]
 points = PackedVector3Array(0.12805028, 0.12115568, -0.0777518, -0.033179834, -0.02891919, -0.07219759, -0.033179834, -0.02891919, -0.061079353, 0.033562742, 0.9383798, 0.011194035, 0.033562742, 0.33239713, 0.011194035, 0.12247919, -0.045679808, -0.05551534, -0.033179834, 0.087827116, -0.08887982, 0.055768184, 0.9383798, -0.011052219, 0.12805028, 0.08224025, -0.08887982, 0.055768184, 0.9383798, 0.011194035, 0.12805028, 0.015486807, -0.08887982, -0.027592964, -0.045679808, -0.05551534, 0.05470635, 0.33237684, 0.004818035, 0.033562742, 0.9383798, -0.011052219, -0.033179834, 0.12674254, -0.06662378, -0.033179834, 0.015486807, -0.08887982, 0.12805028, 0.12115568, -0.06662378, 0.12247919, -0.006668031, -0.083306015, -0.027592964, -0.045679808, -0.06662378, -0.027592964, -0.006668031, -0.083306015, -0.033179834, 0.12115568, -0.0777518, 0.12805028, -0.012254894, -0.07219759, 0.12805028, 0.110078275, -0.083306015, 0.12247919, -0.034506053, -0.05551534, -0.033179834, 0.110078275, -0.083306015, -0.033179834, -0.017841786, -0.061079353, 0.12805028, 0.09890452, -0.06662378, -0.033179834, -0.017841786, -0.0777518)

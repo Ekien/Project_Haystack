@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnp08g34wwubv"
-path.s3tc="res://.godot/imported/T_Ex_Planks_New_Normal.png-b8ad90ace785fae1f43671e4053ac991.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Ex_Planks_New_Normal.png-b8ad90ace785fae1f43671e4053ac991.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Ex_Planks_New_Normal.png-fd513822b68d3f1d4690c26a3fc963bf.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Ex_Planks_New_Normal.png-fd513822b68d3f1d4690c26a3fc963bf.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_Planks_New_Normal.png"
-dest_files=["res://.godot/imported/T_Ex_Planks_New_Normal.png-b8ad90ace785fae1f43671e4053ac991.s3tc.ctex", "res://.godot/imported/T_Ex_Planks_New_Normal.png-b8ad90ace785fae1f43671e4053ac991.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Materials/T_Ex_Planks_New_Normal.png"
+dest_files=["res://.godot/imported/T_Ex_Planks_New_Normal.png-fd513822b68d3f1d4690c26a3fc963bf.s3tc.ctex", "res://.godot/imported/T_Ex_Planks_New_Normal.png-fd513822b68d3f1d4690c26a3fc963bf.etc2.ctex"]
 
 [params]
 

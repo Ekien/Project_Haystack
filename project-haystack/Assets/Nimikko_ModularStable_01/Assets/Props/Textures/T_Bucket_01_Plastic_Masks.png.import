@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8asbf16srmnp"
-path.s3tc="res://.godot/imported/T_Bucket_01_Plastic_Masks.png-3fccb713c47f866ba918ac7993c4b136.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Bucket_01_Plastic_Masks.png-3fccb713c47f866ba918ac7993c4b136.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Bucket_01_Plastic_Masks.png-635ad9cbd009b67198a3d9703739284c.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Bucket_01_Plastic_Masks.png-635ad9cbd009b67198a3d9703739284c.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Bucket_01_Plastic_Masks.png"
-dest_files=["res://.godot/imported/T_Bucket_01_Plastic_Masks.png-3fccb713c47f866ba918ac7993c4b136.s3tc.ctex", "res://.godot/imported/T_Bucket_01_Plastic_Masks.png-3fccb713c47f866ba918ac7993c4b136.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Textures/T_Bucket_01_Plastic_Masks.png"
+dest_files=["res://.godot/imported/T_Bucket_01_Plastic_Masks.png-635ad9cbd009b67198a3d9703739284c.s3tc.ctex", "res://.godot/imported/T_Bucket_01_Plastic_Masks.png-635ad9cbd009b67198a3d9703739284c.etc2.ctex"]
 
 [params]
 

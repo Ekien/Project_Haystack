@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bf8y677nfm132"
-path="res://.godot/imported/Saltstone.fbx-8b62d0d58103295bdb82052ef4ce9f4a.scn"
+path="res://.godot/imported/Saltstone.fbx-dc4c7dd73aca0e33ae7b8c4245b24ee2.scn"
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Props/Saltstone.fbx"
-dest_files=["res://.godot/imported/Saltstone.fbx-8b62d0d58103295bdb82052ef4ce9f4a.scn"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Props/Saltstone.fbx"
+dest_files=["res://.godot/imported/Saltstone.fbx-dc4c7dd73aca0e33ae7b8c4245b24ee2.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 &"Take 001": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Saltstone.anim",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Saltstone.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://bdoe22qnn5p85",
 "settings/loop_mode": 0,
@@ -2109,7 +2109,7 @@ _subresources={
 "meshes": {
 "Root Scene_Saltstone": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Saltstone.Saltstone.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Saltstone.Saltstone.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://cpgcrdkxxklgo"
 },
@@ -2119,7 +2119,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Assets/Nimikko_ModularStable_01/Assets/Props/extracted/Saltstone.Saltstone.mesh",
+"save_to_file/fallback_path": "res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Saltstone.Saltstone.mesh",
 "save_to_file/make_streamable": "",
 "save_to_file/path": "uid://cpgcrdkxxklgo"
 }

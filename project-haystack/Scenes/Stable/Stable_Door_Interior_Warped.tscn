@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cqwpt6xtr1j3f"]
 
-[ext_resource type="PackedScene" uid="uid://bj7p7qreo3ban" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Straight_Door_Narrow_Hole.prefab.scn" id="1_l51j0"]
-[ext_resource type="Material" uid="uid://bmuiaiow2r1xe" path="res://Assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Old.material" id="2_bgit3"]
-[ext_resource type="PackedScene" uid="uid://qw0200rjukr1" path="res://Assets/Nimikko_ModularStable_01/Prefabs/Props/WarpStorage.prefab.scn" id="3_uvdyn"]
+[ext_resource type="PackedScene" uid="uid://bj7p7qreo3ban" path="res://assets/Nimikko_ModularStable_01/Prefabs/Pen_01/Pen_01_Straight_Door_Narrow_Hole.prefab.scn" id="1_l51j0"]
+[ext_resource type="Material" uid="uid://bmuiaiow2r1xe" path="res://assets/Nimikko_ModularStable_01/Assets/Pen_01/Materials/M_Pen_01_Old.material" id="2_bgit3"]
+[ext_resource type="PackedScene" uid="uid://qw0200rjukr1" path="res://assets/Nimikko_ModularStable_01/Prefabs/Props/WarpStorage.prefab.scn" id="3_uvdyn"]
 
 [node name="StableDoorInteriorWarped" type="Node3D" unique_id=1110258618]
 

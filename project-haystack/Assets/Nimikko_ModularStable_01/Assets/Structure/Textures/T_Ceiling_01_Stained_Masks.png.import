@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct5557b6c51ca"
-path.s3tc="res://.godot/imported/T_Ceiling_01_Stained_Masks.png-ef1f146b67f9beb5691d7229a36b273c.s3tc.ctex"
-path.etc2="res://.godot/imported/T_Ceiling_01_Stained_Masks.png-ef1f146b67f9beb5691d7229a36b273c.etc2.ctex"
+path.s3tc="res://.godot/imported/T_Ceiling_01_Stained_Masks.png-730115b738155af05b2c6574fdd9bbfd.s3tc.ctex"
+path.etc2="res://.godot/imported/T_Ceiling_01_Stained_Masks.png-730115b738155af05b2c6574fdd9bbfd.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Nimikko_ModularStable_01/Assets/Structure/Textures/T_Ceiling_01_Stained_Masks.png"
-dest_files=["res://.godot/imported/T_Ceiling_01_Stained_Masks.png-ef1f146b67f9beb5691d7229a36b273c.s3tc.ctex", "res://.godot/imported/T_Ceiling_01_Stained_Masks.png-ef1f146b67f9beb5691d7229a36b273c.etc2.ctex"]
+source_file="res://assets/Nimikko_ModularStable_01/Assets/Structure/Textures/T_Ceiling_01_Stained_Masks.png"
+dest_files=["res://.godot/imported/T_Ceiling_01_Stained_Masks.png-730115b738155af05b2c6574fdd9bbfd.s3tc.ctex", "res://.godot/imported/T_Ceiling_01_Stained_Masks.png-730115b738155af05b2c6574fdd9bbfd.etc2.ctex"]
 
 [params]
 
