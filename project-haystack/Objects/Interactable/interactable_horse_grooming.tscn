@@ -31,7 +31,7 @@ billboard_mode = 1
 
 [node name="InteractableHorseGrooming" type="Node3D" unique_id=1007815259]
 script = ExtResource("1_nwa7l")
-rotation_angle = null
+chance_to_rotate = 0.67
 
 [node name="Brush" type="Node3D" parent="." unique_id=1007597841]
 
@@ -73,3 +73,5 @@ target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandLeft")
 
 [node name="GrabPointRedirectRight" parent="Brush/BrushSlider/HandleOrigin/InteractableHandle" unique_id=717758378 node_paths=PackedStringArray("target") instance=ExtResource("8_uum6g")]
 target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandRight")
+
+[connection signal="made_progress" from="." to="." method="_on_made_progress"]

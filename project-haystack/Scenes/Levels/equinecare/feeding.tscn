@@ -91,4 +91,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.853867, 0.9284471, 2.29392
 
 [node name="InteractableHorseGrooming" parent="TESTING&DEBUG" index="0" unique_id=1007815259 instance=ExtResource("7_x6b7i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41122043, 0)
-rotation_angle = 45

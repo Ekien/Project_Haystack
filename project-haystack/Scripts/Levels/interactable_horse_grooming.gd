@@ -1,53 +1,101 @@
-extends Node3D#
+extends Node3D
 
-@export var rotation_angle: int = 45: 
-	set(new_value):
-		rotation_angle = new_value
+var brush_grabbed: bool = false
+#var slider_position
 
 @onready var BSlider = %BrushSlider
+
+## The amount that will be progressed as a result of the player being successful.
+@export_range(0.0, 1.0, 0.01) var progress: float = 0.1
+
+## Angle to rotation the brush when one of the limits have been reached. Clamped between 10-90.
+@export_range(10, 90) var rotation_angle: int = 45: 
+	set(new_value):
+		#new_value = clamp(new_value, 10, 90)
+		rotation_angle = new_value
+	
+## Percentage chance for the brush to rotate each time a limit has been reached.
+@export_range(0.0, 1.0, 0.01) var chance_to_rotate: float = .25:
+	set(new_value):
+		chance_to_rotate = new_value
 
 enum BrushStates{
 	START,
 	GO_TO_MAX,
-	GO_TO_MIN,
-	debug
+	GO_TO_MIN
 }
+var state : BrushStates
 
-var state = BrushStates.START
-var brush_grabbed: bool = false
-var slider_position
+signal made_progress(amount:float)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	# CONNECTIONS
 	BSlider.released.connect(_on_brush_released)
 	BSlider.grabbed.connect(_on_brush_grabbed)
 	BSlider.slider_moved.connect(_on_slider_moved)
+	
+	# Initialise the start state
+	state = BrushStates.START
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	# Make sure that its the player grabbing it, and not an external force moving it
+func _process(_delta: float) -> void:
 	pass
-	#if not brush_grabbed:
-		#return
-	
-	
-	
-func _on_slider_moved(postion: Variant):
-	slider_position = postion
-	
-	if BSlider.slider_position == BSlider.slider_limit_min \
-	or \
-	BSlider.slider_position == BSlider.slider_limit_max:
-		print("You hit a limit")
-		# Proof of concept rotation
+
+
+func _on_slider_moved(_postion: Variant):
+	# This will allow the player to go either direction when they start.
+	if state == BrushStates.START:
+		if BSlider.slider_position == BSlider.slider_limit_min:
+			state = BrushStates.GO_TO_MAX
+			rotate_slider()
+		elif BSlider.slider_position == BSlider.slider_limit_max:
+			state = BrushStates.GO_TO_MIN
+			rotate_slider()
+		
+	if state == BrushStates.GO_TO_MAX and BSlider.slider_position == BSlider.slider_limit_max:
+		rotate_slider()
+		
+		state = BrushStates.GO_TO_MIN
+	elif state == BrushStates.GO_TO_MIN and BSlider.slider_position == BSlider.slider_limit_min:
+		rotate_slider()
+		
+		state = BrushStates.GO_TO_MAX
+
+
+
+func rotate_slider() -> void:
+	progress_emit()
+	if rotate_check():
+		var duration: float = 0.25
+		
+		var final_val: float
+		final_val = randf_range(-rotation_angle, rotation_angle)
+		
 		var tween = get_tree().create_tween()
-		tween.tween_property($Brush, "rotation_degrees:z", $Brush.rotation_degrees.z + rotation_angle, 0.5)
+		tween.tween_property($Brush, "rotation_degrees:z", $Brush.rotation_degrees.z + final_val, duration)
+
+func rotate_check() -> bool:
+	var rand_float: float = randf()
+	var chance: float  = snappedf(rand_float, 0.01)
+
+	if chance <= chance_to_rotate:
+		return true
+		
+	return false
 
 func _on_brush_grabbed(_interactable: Variant):
 	brush_grabbed = true
 
 func _on_brush_released(_interactable: Variant):
 	brush_grabbed = false
-	# TODO: Clear the brushstate
-	
+	state = BrushStates.START
+
+func progress_emit() -> void:
+	made_progress.emit(progress)
+
+func _on_made_progress(_amount: float) -> void:
+	#print("PROGRESS HAS BEEN MADE " + str(_amount))
+	return
