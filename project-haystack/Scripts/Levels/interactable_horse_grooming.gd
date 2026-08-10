@@ -86,6 +86,7 @@ func rotate_check() -> bool:
 		
 	return false
 
+
 func _on_brush_grabbed(_interactable: Variant):
 	brush_grabbed = true
 
@@ -93,6 +94,7 @@ func _on_brush_released(_interactable: Variant):
 	brush_grabbed = false
 	state = BrushStates.START
 
+# Emit the progress the player has made
 func progress_emit() -> void:
 	made_progress.emit(progress)
 

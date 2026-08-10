@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b33kky4cc7uj7"
-path="res://.godot/imported/CobModel.glb-ae3e0290a9d7df52ff1e3324c7589f95.scn"
+uid="uid://c53xkg2epvf07"
+path="res://.godot/imported/WelshCob_SectionC.glb-e08738a7817dccbf463643336a263d3e.scn"
 
 [deps]
 
-source_file="res://assets/models/CobModel.glb"
-dest_files=["res://.godot/imported/CobModel.glb-ae3e0290a9d7df52ff1e3324c7589f95.scn"]
+source_file="res://assets/models/horses/WelshCob_SectionC.glb"
+dest_files=["res://.godot/imported/WelshCob_SectionC.glb-e08738a7817dccbf463643336a263d3e.scn"]
 
 [params]
 

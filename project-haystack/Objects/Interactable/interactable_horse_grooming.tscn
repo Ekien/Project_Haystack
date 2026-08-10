@@ -3,16 +3,14 @@
 [ext_resource type="Script" uid="uid://qddmihbi62ed" path="res://Scripts/Levels/interactable_horse_grooming.gd" id="1_nwa7l"]
 [ext_resource type="PackedScene" uid="uid://b0r6edl74ddo7" path="res://addons/godot-xr-tools/interactables/interactable_slider.tscn" id="1_qdvdk"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="2_ytnly"]
+[ext_resource type="ArrayMesh" uid="uid://cmuj6qy03s6jq" path="res://assets/models/brush/Horse_Brush_Rough_Circle_001.res" id="3_uum6g"]
 [ext_resource type="Texture2D" uid="uid://8s03ra8tp0hr" path="res://addons/godot-xr-tools/images/ring.png" id="5_0arji"]
 [ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="5_t26w7"]
 [ext_resource type="PackedScene" uid="uid://bddj5m7ull6g0" path="res://addons/godot-xr-tools/interactables/interactable_handle.tscn" id="6_32jfj"]
+[ext_resource type="Animation" uid="uid://di384xtde8ydf" path="res://addons/godot-xr-tools/hands/animations/left/Grip 2.res" id="6_fabng"]
+[ext_resource type="Script" uid="uid://dvobm6vcfnqe8" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="6_y85uf"]
 [ext_resource type="PackedScene" uid="uid://ca3daqmpo0tua" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_redirect.tscn" id="8_uum6g"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_y85uf"]
-size = Vector3(0.1, 0.1, 0.1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y85uf"]
-albedo_color = Color(0.810401, 0.31084174, 0.25096384, 1)
+[ext_resource type="Animation" uid="uid://r8hleealhrqt" path="res://addons/godot-xr-tools/hands/animations/right/Grip 2.res" id="9_fabng"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fabng"]
 size = Vector3(0.1, 0.1, 0.1)
@@ -24,8 +22,19 @@ size = Vector2(0.1, 0.1)
 resource_local_to_scene = true
 transparency = 1
 shading_mode = 0
+albedo_color = Color(1, 1, 1, 0)
 albedo_texture = ExtResource("5_0arji")
 billboard_mode = 1
+
+[sub_resource type="Resource" id="Resource_fabng"]
+script = ExtResource("6_y85uf")
+closed_pose = ExtResource("6_fabng")
+metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
+
+[sub_resource type="Resource" id="Resource_f4pfj"]
+script = ExtResource("6_y85uf")
+closed_pose = ExtResource("9_fabng")
+metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_32jfj"]
 
@@ -43,9 +52,9 @@ default_on_release = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Brush/BrushSlider" unique_id=152617279]
 
-[node name="BrushMesh" type="MeshInstance3D" parent="Brush/BrushSlider/StaticBody3D" unique_id=1158320251]
-mesh = SubResource("BoxMesh_y85uf")
-surface_material_override/0 = SubResource("StandardMaterial3D_y85uf")
+[node name="BrushMesh" type="MeshInstance3D" parent="Brush/BrushSlider/StaticBody3D" unique_id=1406312570]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("3_uum6g")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Brush/BrushSlider/StaticBody3D" unique_id=1750388667]
 shape = SubResource("BoxShape3D_fabng")
@@ -55,10 +64,12 @@ mesh = SubResource("QuadMesh_gfmqu")
 surface_material_override/0 = SubResource("StandardMaterial3D_sqtay")
 
 [node name="GrabPointHandLeft" parent="Brush/BrushSlider/StaticBody3D/CHighlighMesh" unique_id=816286346 instance=ExtResource("2_ytnly")]
-transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.05, 0, -0.05)
+transform = Transform3D(-4.371139e-08, 1, 0, 4.371139e-08, 1.9106855e-15, -1, -1, -4.371139e-08, -4.371139e-08, 0.05, 0.11196986, 0.022066332)
+hand_pose = SubResource("Resource_fabng")
 
 [node name="GrabPointHandRight" parent="Brush/BrushSlider/StaticBody3D/CHighlighMesh" unique_id=1590076875 instance=ExtResource("5_t26w7")]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.05, 0, -0.05)
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, -1, 1, -4.371139e-08, -4.371139e-08, -0.05, 0.112, 0.022)
+hand_pose = SubResource("Resource_f4pfj")
 
 [node name="HandleOrigin" type="Node3D" parent="Brush/BrushSlider" unique_id=1532254292]
 

@@ -363,12 +363,10 @@ surface_material_override/0 = ExtResource("9_qmgg6")
 
 [node name="Roof_02_Windows_Closed" parent="Scene" unique_id=347451679 instance=ExtResource("20_hjq3p")]
 transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, -0.2889037, -2.531586, -1.3958923)
-visible = false
 metadata/_edit_group_ = true
 
 [node name="Roof_02_Windows_Closed2" parent="Scene" unique_id=39209442 instance=ExtResource("20_hjq3p")]
 transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, 6.7110963, -2.531586, -1.3958913)
-visible = false
 metadata/_edit_group_ = true
 
 [node name="Frame_01" parent="Scene" unique_id=581464067 instance=ExtResource("11_du5hh")]
@@ -384,7 +382,6 @@ surface_material_override/0 = ExtResource("9_qmgg6")
 
 [node name="Roof_02_Windows_Closed3" parent="Scene" unique_id=1722662769 instance=ExtResource("20_hjq3p")]
 transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, 3.2110963, -2.531586, -1.3958918)
-visible = false
 metadata/_edit_group_ = true
 
 [node name="CollisionShape3D" parent="Scene/Roof_02_Windows_Closed3/MeshCollider" parent_id_path=PackedInt32Array(1722662769, 1608225929) index="0" unique_id=1121993005]
@@ -409,12 +406,10 @@ transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -5.278
 
 [node name="Roof_02_Windows_Closed4" parent="Scene" unique_id=1184685254 instance=ExtResource("20_hjq3p")]
 transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, 10.211098, -2.531586, -1.3958908)
-visible = false
 metadata/_edit_group_ = true
 
 [node name="Roof_02_Windows_Closed5" parent="Scene" unique_id=478301407 instance=ExtResource("20_hjq3p")]
 transform = Transform3D(-1.6292068e-07, 3.4183844e-15, -1, -4.371139e-08, 1, 1.0539874e-14, 1, 4.371139e-08, -1.6292068e-07, -3.7889037, -2.531586, -1.3958925)
-visible = false
 metadata/_edit_group_ = true
 
 [node name="WaterBucket_01" parent="Scene" unique_id=1878358638 instance=ExtResource("22_6d2k5")]

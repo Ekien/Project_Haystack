@@ -2,8 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bnqnnnet4dw12" path="res://addons/godot-xr-tools/staging/staging.tscn" id="1_b0uk2"]
 [ext_resource type="Texture2D" uid="uid://263xgdhtelwn" path="res://assets/images/Staging_Splash_Screen_1.png" id="2_b0uk2"]
+[ext_resource type="Script" uid="uid://b17rg2buao6ca" path="res://Scenes/Levels/main_staging.gd" id="2_hbjfm"]
 
 [node name="MainStaging" unique_id=1326111572 instance=ExtResource("1_b0uk2")]
+script = ExtResource("2_hbjfm")
 main_scene = "uid://tx6vk2ehl22r"
 
 [node name="LoadingScreen" parent="." index="2"]
