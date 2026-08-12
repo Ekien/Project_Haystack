@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" uid="uid://qddmihbi62ed" path="res://Scripts/Levels/interactable_horse_grooming.gd" id="1_nwa7l"]
 [ext_resource type="PackedScene" uid="uid://b0r6edl74ddo7" path="res://addons/godot-xr-tools/interactables/interactable_slider.tscn" id="1_qdvdk"]
+[ext_resource type="PackedScene" uid="uid://cmpiw2ncurdn7" path="res://Scenes/UI/progressbar/progress_bar.tscn" id="2_f4pfj"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="2_ytnly"]
-[ext_resource type="ArrayMesh" uid="uid://cmuj6qy03s6jq" path="res://assets/models/brush/Horse_Brush_Rough_Circle_001.res" id="3_uum6g"]
+[ext_resource type="ArrayMesh" uid="uid://bqu0e3jsbk8gq" path="res://assets/models/brush/Horse_Brush_Rough_Circle_001.res" id="3_uum6g"]
 [ext_resource type="Texture2D" uid="uid://8s03ra8tp0hr" path="res://addons/godot-xr-tools/images/ring.png" id="5_0arji"]
 [ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="5_t26w7"]
 [ext_resource type="PackedScene" uid="uid://bddj5m7ull6g0" path="res://addons/godot-xr-tools/interactables/interactable_handle.tscn" id="6_32jfj"]
@@ -11,6 +12,9 @@
 [ext_resource type="Script" uid="uid://dvobm6vcfnqe8" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="6_y85uf"]
 [ext_resource type="PackedScene" uid="uid://ca3daqmpo0tua" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_redirect.tscn" id="8_uum6g"]
 [ext_resource type="Animation" uid="uid://r8hleealhrqt" path="res://addons/godot-xr-tools/hands/animations/right/Grip 2.res" id="9_fabng"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_f4pfj"]
+viewport_path = NodePath("Brush/ProgressBar/SubViewport")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fabng"]
 size = Vector3(0.1, 0.1, 0.1)
@@ -40,9 +44,24 @@ metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
 
 [node name="InteractableHorseGrooming" type="Node3D" unique_id=1007815259]
 script = ExtResource("1_nwa7l")
-chance_to_rotate = 0.67
+chance_to_rotate = 0.0
 
 [node name="Brush" type="Node3D" parent="." unique_id=1007597841]
+
+[node name="ProgressBar" type="Node3D" parent="Brush" unique_id=1145360977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24773258, 0)
+
+[node name="SubViewport" type="SubViewport" parent="Brush/ProgressBar" unique_id=501591932]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(75, 15)
+
+[node name="ProgressBar" parent="Brush/ProgressBar/SubViewport" unique_id=1921069967 instance=ExtResource("2_f4pfj")]
+unique_name_in_owner = true
+value = 67.0
+
+[node name="Sprite3D" type="Sprite3D" parent="Brush/ProgressBar" unique_id=515240574]
+texture = SubResource("ViewportTexture_f4pfj")
 
 [node name="BrushSlider" parent="Brush" unique_id=170299167 instance=ExtResource("1_qdvdk")]
 unique_name_in_owner = true
@@ -85,4 +104,5 @@ target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandLeft")
 [node name="GrabPointRedirectRight" parent="Brush/BrushSlider/HandleOrigin/InteractableHandle" unique_id=717758378 node_paths=PackedStringArray("target") instance=ExtResource("8_uum6g")]
 target = NodePath("../../../StaticBody3D/CHighlighMesh/GrabPointHandRight")
 
+[connection signal="completed_brushing" from="." to="." method="end_brushing"]
 [connection signal="made_progress" from="." to="." method="_on_made_progress"]

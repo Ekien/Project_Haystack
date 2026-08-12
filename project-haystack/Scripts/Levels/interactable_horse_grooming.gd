@@ -8,6 +8,8 @@ var brush_grabbed: bool = false
 ## The amount that will be progressed as a result of the player being successful.
 @export_range(0.0, 1.0, 0.01) var progress: float = 0.1
 
+var progress_int : int = progress * 100 
+
 ## Angle to rotation the brush when one of the limits have been reached. Clamped between 10-90.
 @export_range(10, 90) var rotation_angle: int = 45: 
 	set(new_value):
@@ -26,7 +28,11 @@ enum BrushStates{
 }
 var state : BrushStates
 
+var brushing_completed : bool = false
+
 signal made_progress(amount:float)
+signal completed_brushing
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -38,6 +44,8 @@ func _ready() -> void:
 	# Initialise the start state
 	state = BrushStates.START
 	
+	# Initialise the progress bar
+	%ProgressBar.value = %ProgressBar.min_value
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -46,6 +54,10 @@ func _process(_delta: float) -> void:
 
 
 func _on_slider_moved(_postion: Variant):
+	# Return early if brushing has been completed
+	if brushing_completed:
+		return
+		
 	# This will allow the player to go either direction when they start.
 	if state == BrushStates.START:
 		if BSlider.slider_position == BSlider.slider_limit_min:
@@ -100,4 +112,22 @@ func progress_emit() -> void:
 
 func _on_made_progress(_amount: float) -> void:
 	#print("PROGRESS HAS BEEN MADE " + str(_amount))
-	return
+	
+	# Only increment if the brushing has not be completed yet.
+	if brushing_completed:
+		# Return early.
+		return
+	
+	# Increment the progress
+	%ProgressBar.value = %ProgressBar.value + progress_int
+
+	if %ProgressBar.value >= %ProgressBar.max_value:
+		brushing_completed = true
+		completed_brushing.emit()
+
+
+func end_brushing():
+	# TODO: Add all effects and signal emissions before removing
+	
+	# Delete the brush from the scene
+	queue_free()

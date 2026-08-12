@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cmpiw2ncurdn7"]
+
+[ext_resource type="Script" uid="uid://dwnuhwvact5cm" path="res://Scenes/UI/progressbar/progress_bar.gd" id="1_w0f8d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w0f8d"]
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mtrq"]
+bg_color = Color(0.40751204, 0.6852925, 0.2533262, 1)
+anti_aliasing = false
+
+[node name="ProgressBar" type="ProgressBar" unique_id=1921069967]
+offset_right = 75.0
+offset_bottom = 15.0
+theme_override_styles/background = SubResource("StyleBoxFlat_w0f8d")
+theme_override_styles/fill = SubResource("StyleBoxFlat_7mtrq")
+step = 0.1
+value = 50.0
+show_percentage = false
+script = ExtResource("1_w0f8d")
