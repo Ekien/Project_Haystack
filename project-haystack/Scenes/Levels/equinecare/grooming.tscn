@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://x48yyx2olnmv"]
 
-[ext_resource type="PackedScene" uid="uid://cvtq8g8tlfiy5" path="res://Scenes/SceneBase/main_scene_base.tscn" id="1_rdkfw"]
+[ext_resource type="PackedScene" uid="uid://cvtq8g8tlfiy5" path="res://Scenes/SceneBase/scene_base.tscn" id="1_rdkfw"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="2_18rcc"]
 [ext_resource type="PackedScene" uid="uid://dr7mjryqe4omr" path="res://Scenes/Stable/Stable.tscn" id="3_18rcc"]
 [ext_resource type="PackedScene" uid="uid://c53xkg2epvf07" path="res://assets/models/horses/WelshCob_SectionC.glb" id="4_jqbpp"]
