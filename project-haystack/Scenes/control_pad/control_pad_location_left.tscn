@@ -5,5 +5,5 @@
 [node name="ControlPadLocationLeft" type="Node3D" unique_id=1850334018]
 
 [node name="Position" type="Node3D" parent="." unique_id=542723096]
-transform = Transform3D(1.308015e-07, -1, 7.619402e-09, -0.087155804, -3.809701e-09, 0.9961947, -0.9961947, -1.3096783e-07, -0.087155804, -0.01, 0, 0.3)
+transform = Transform3D(1.9413261e-07, -1, 1.3160107e-08, -0.08715545, -3.8096855e-09, 0.9961947, -0.9961947, -1.9454086e-07, -0.08715545, -0.01, 0, 0.3)
 script = ExtResource("1_6qw4o")

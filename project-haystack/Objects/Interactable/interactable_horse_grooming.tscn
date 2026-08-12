@@ -44,7 +44,7 @@ metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
 
 [node name="InteractableHorseGrooming" type="Node3D" unique_id=1007815259]
 script = ExtResource("1_nwa7l")
-chance_to_rotate = 0.0
+chance_to_rotate = 0.35
 
 [node name="Brush" type="Node3D" parent="." unique_id=1007597841]
 
@@ -58,7 +58,7 @@ size = Vector2i(75, 15)
 
 [node name="ProgressBar" parent="Brush/ProgressBar/SubViewport" unique_id=1921069967 instance=ExtResource("2_f4pfj")]
 unique_name_in_owner = true
-value = 67.0
+value = 1.0
 
 [node name="Sprite3D" type="Sprite3D" parent="Brush/ProgressBar" unique_id=515240574]
 texture = SubResource("ViewportTexture_f4pfj")

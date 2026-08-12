@@ -8,14 +8,16 @@ var brush_grabbed: bool = false
 ## The amount that will be progressed as a result of the player being successful.
 @export_range(0.0, 1.0, 0.01) var progress: float = 0.1
 
-var progress_int : int = progress * 100 
-
 ## Angle to rotation the brush when one of the limits have been reached. Clamped between 10-90.
 @export_range(10, 90) var rotation_angle: int = 45: 
 	set(new_value):
 		#new_value = clamp(new_value, 10, 90)
 		rotation_angle = new_value
-	
+
+# TESTING POSSBILE WAYS TO CLAMP THE TWEEN TO ENSURE IT DOES NOT GO FUTHER THAN MIN OR MAX ROTATION
+#@export var min_rotation: float = -45
+#@export var max_rotation: float = 45
+
 ## Percentage chance for the brush to rotate each time a limit has been reached.
 @export_range(0.0, 1.0, 0.01) var chance_to_rotate: float = .25:
 	set(new_value):
@@ -86,8 +88,16 @@ func rotate_slider() -> void:
 		var final_val: float
 		final_val = randf_range(-rotation_angle, rotation_angle)
 		
+		# TESTING POSSBILE WAYS TO CLAMP THE TWEEN TO ENSURE IT DOES NOT GO FUTHER THAN MIN OR MAX ROTATION
+		#var difference: float 
+		#if $Brush.rotation_degrees.z + final_val >= max_rotation:
+			#difference =  $Brush.rotation_degrees.z + final_val - max_rotation
+			#final_val = difference
+		
 		var tween = get_tree().create_tween()
 		tween.tween_property($Brush, "rotation_degrees:z", $Brush.rotation_degrees.z + final_val, duration)
+
+
 
 func rotate_check() -> bool:
 	var rand_float: float = randf()
@@ -119,7 +129,7 @@ func _on_made_progress(_amount: float) -> void:
 		return
 	
 	# Increment the progress
-	%ProgressBar.value = %ProgressBar.value + progress_int
+	%ProgressBar.value = %ProgressBar.value + progress
 
 	if %ProgressBar.value >= %ProgressBar.max_value:
 		brushing_completed = true

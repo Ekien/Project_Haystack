@@ -9,6 +9,12 @@ signal main_menu
 ## Signal emitted when the quit game button is pressed.
 signal quit
 
+## Signal emitted when the player wants to switch to the Feeding scene.
+signal scene_switch_feeding
+
+## Signal emitted when the player wants to switch to the Grooming scene.
+signal scene_switch_grooming
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -35,3 +41,11 @@ func _on_main_menu_pressed() -> void:
 # Emitting the quit game event.
 func _on_quit_pressed() -> void:
 	quit.emit()
+
+# Emitting the Feeding switch scene event.
+func _on_feeding_pressed() -> void:
+	scene_switch_feeding.emit()
+
+# Emitting the Grooming switch scene event.
+func _on_grooming_pressed() -> void:
+	scene_switch_grooming.emit()

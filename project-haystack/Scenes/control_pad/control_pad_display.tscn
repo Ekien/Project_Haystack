@@ -2,11 +2,23 @@
 
 [ext_resource type="Script" uid="uid://bn5ba0tvn3i15" path="res://Scenes/control_pad/control_pad_display.gd" id="1_8cjo7"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8cjo7"]
+bg_color = Color(0.33232534, 0.6191097, 0.33753282, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_st23y"]
+bg_color = Color(0.33333334, 0.61960787, 0.3372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6bj4c"]
+bg_color = Color(0.3457436, 0.6570552, 0.689552, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xp0gv"]
+bg_color = Color(0.72673607, 0.34114322, 0.35282013, 1)
+
 [node name="ControlPadDisplay" type="TabContainer" unique_id=1797272710]
 offset_right = 500.0
 offset_bottom = 250.0
 tab_alignment = 1
-current_tab = 1
+current_tab = 0
 script = ExtResource("1_8cjo7")
 
 [node name="RefreshTimer" type="Timer" parent="." unique_id=333171898]
@@ -15,7 +27,6 @@ one_shot = true
 autostart = true
 
 [node name="Settings" type="MarginContainer" parent="." unique_id=2145342045]
-visible = false
 layout_mode = 2
 theme_override_constants/margin_left = 5
 theme_override_constants/margin_top = 15
@@ -54,7 +65,38 @@ text = "Right
 "
 
 [node name="VPadding" type="Control" parent="Settings/VBoxContainer" unique_id=1890419452]
-custom_minimum_size = Vector2(0, 50)
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="LevelSelect" type="HBoxContainer" parent="Settings/VBoxContainer" unique_id=932258711]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Settings/VBoxContainer/LevelSelect" unique_id=1460027285]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 2
+text = "Level Select:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Settings/VBoxContainer/LevelSelect" unique_id=64927528]
+layout_mode = 2
+
+[node name="Feeding" type="Button" parent="Settings/VBoxContainer/LevelSelect/HBoxContainer" unique_id=154508705]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8cjo7")
+text = "FEEDING"
+
+[node name="HPadding" type="Control" parent="Settings/VBoxContainer/LevelSelect/HBoxContainer" unique_id=1641506622]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Grooming" type="Button" parent="Settings/VBoxContainer/LevelSelect/HBoxContainer" unique_id=65243342]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_st23y")
+text = "GROOMING"
+
+[node name="VPadding2" type="Control" parent="Settings/VBoxContainer" unique_id=1759414926]
+custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 
 [node name="SceneButtons" type="HBoxContainer" parent="Settings/VBoxContainer" unique_id=1237328486]
@@ -64,7 +106,8 @@ alignment = 1
 [node name="MainMenu" type="Button" parent="Settings/VBoxContainer/SceneButtons" unique_id=1830158696]
 custom_minimum_size = Vector2(150, 50)
 layout_mode = 2
-text = "Scene Select"
+theme_override_styles/normal = SubResource("StyleBoxFlat_6bj4c")
+text = "Main Menu"
 
 [node name="HPadding" type="Control" parent="Settings/VBoxContainer/SceneButtons" unique_id=1785283289]
 custom_minimum_size = Vector2(20, 0)
@@ -73,9 +116,11 @@ layout_mode = 2
 [node name="Quit" type="Button" parent="Settings/VBoxContainer/SceneButtons" unique_id=258698578]
 custom_minimum_size = Vector2(150, 50)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_xp0gv")
 text = "Quit Game"
 
 [node name="Objectives" type="MarginContainer" parent="." unique_id=2141630689]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_left = 5
 theme_override_constants/margin_top = 5
@@ -94,5 +139,7 @@ autowrap_mode = 3
 [connection signal="timeout" from="RefreshTimer" to="." method="_on_refresh_timer_timeout"]
 [connection signal="pressed" from="Settings/VBoxContainer/PanelLocation/ButtonContainer/Left" to="." method="_on_left_pressed"]
 [connection signal="pressed" from="Settings/VBoxContainer/PanelLocation/ButtonContainer/Right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="Settings/VBoxContainer/LevelSelect/HBoxContainer/Feeding" to="." method="_on_feeding_pressed"]
+[connection signal="pressed" from="Settings/VBoxContainer/LevelSelect/HBoxContainer/Grooming" to="." method="_on_grooming_pressed"]
 [connection signal="pressed" from="Settings/VBoxContainer/SceneButtons/MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="Settings/VBoxContainer/SceneButtons/Quit" to="." method="_on_quit_pressed"]

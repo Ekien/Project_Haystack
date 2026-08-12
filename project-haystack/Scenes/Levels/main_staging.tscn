@@ -6,7 +6,7 @@
 
 [node name="MainStaging" unique_id=1326111572 instance=ExtResource("1_b0uk2")]
 script = ExtResource("2_hbjfm")
-main_scene = "uid://tx6vk2ehl22r"
+main_scene = "uid://cm0ckpqhqnrey"
 
 [node name="LoadingScreen" parent="." index="2"]
 splash_screen = ExtResource("2_b0uk2")
