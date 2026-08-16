@@ -40,7 +40,7 @@ metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
 [node name="Cube" unique_id=192508180 instance=ExtResource("1_tr4cj")]
 collision_layer = 5242884
 
-[node name="CollisionShape3D" parent="." index="0"]
+[node name="CollisionShape3D" parent="." index="0" unique_id=991838861]
 shape = SubResource("BoxShape3D_oayol")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." index="1" unique_id=1612947115]
