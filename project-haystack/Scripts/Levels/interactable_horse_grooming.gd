@@ -1,4 +1,5 @@
 extends Node3D
+class_name InteractableHorseGrooming
 
 var brush_grabbed: bool = false
 #var slider_position

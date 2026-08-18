@@ -9,67 +9,74 @@
 [ext_resource type="Script" uid="uid://60hg63qkiydn" path="res://Scenes/Levels/equinecare/grooming/grooming_sub_task.gd" id="6_pqkbk"]
 [ext_resource type="PackedScene" uid="uid://dn68rjlg4bblh" path="res://Objects/Interactable/interactable_horse_grooming.tscn" id="7_beyko"]
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_pqkbk"]
+animation = &"Grip"
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_yiwqc"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3jdmc"]
-animation = &"Grip"
-
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_46ppo"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_3jdmc"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Little_Distal_L", "Armature/Skeleton3D:Little_Intermediate_L", "Armature/Skeleton3D:Little_Metacarpal_L", "Armature/Skeleton3D:Little_Proximal_L", "Armature/Skeleton3D:Middle_Distal_L", "Armature/Skeleton3D:Middle_Intermediate_L", "Armature/Skeleton3D:Middle_Metacarpal_L", "Armature/Skeleton3D:Middle_Proximal_L", "Armature/Skeleton3D:Ring_Distal_L", "Armature/Skeleton3D:Ring_Intermediate_L", "Armature/Skeleton3D:Ring_Metacarpal_L", "Armature/Skeleton3D:Ring_Proximal_L", "Armature/Skeleton3D:Thumb_Distal_L", "Armature/Skeleton3D:Thumb_Metacarpal_L", "Armature/Skeleton3D:Thumb_Proximal_L", "Armature/Skeleton:Little_Distal_L", "Armature/Skeleton:Little_Intermediate_L", "Armature/Skeleton:Little_Proximal_L", "Armature/Skeleton:Middle_Distal_L", "Armature/Skeleton:Middle_Intermediate_L", "Armature/Skeleton:Middle_Proximal_L", "Armature/Skeleton:Ring_Distal_L", "Armature/Skeleton:Ring_Intermediate_L", "Armature/Skeleton:Ring_Proximal_L", "Armature/Skeleton:Thumb_Distal_L", "Armature/Skeleton:Thumb_Proximal_L"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_or2lj"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_46ppo"]
 animation = &"Grip 5"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_beyko"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_or2lj"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Index_Distal_L", "Armature/Skeleton3D:Index_Intermediate_L", "Armature/Skeleton3D:Index_Metacarpal_L", "Armature/Skeleton3D:Index_Proximal_L", "Armature/Skeleton:Index_Distal_L", "Armature/Skeleton:Index_Intermediate_L", "Armature/Skeleton:Index_Proximal_L"]
 
-[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_fwj0s"]
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_beyko"]
 graph_offset = Vector2(-536, 11)
-nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_yiwqc")
+nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_pqkbk")
 nodes/ClosedHand1/position = Vector2(-600, 300)
-nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_3jdmc")
+nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_yiwqc")
 nodes/ClosedHand2/position = Vector2(-360, 300)
-nodes/Grip/node = SubResource("AnimationNodeBlend2_46ppo")
+nodes/Grip/node = SubResource("AnimationNodeBlend2_3jdmc")
 nodes/Grip/position = Vector2(0, 20)
-nodes/OpenHand/node = SubResource("AnimationNodeAnimation_or2lj")
+nodes/OpenHand/node = SubResource("AnimationNodeAnimation_46ppo")
 nodes/OpenHand/position = Vector2(-600, 100)
-nodes/Trigger/node = SubResource("AnimationNodeBlend2_beyko")
+nodes/Trigger/node = SubResource("AnimationNodeBlend2_or2lj")
 nodes/Trigger/position = Vector2(-360, 20)
 node_connections = [&"output", 0, &"Grip", &"Grip", 0, &"Trigger", &"Grip", 1, &"ClosedHand2", &"Trigger", 0, &"OpenHand", &"Trigger", 1, &"ClosedHand1"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_fwj0s"]
+animation = &"Grip"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_52rdt"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_yfusm"]
-animation = &"Grip"
-
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_qimrr"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_yfusm"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Little_Distal_R", "Armature/Skeleton3D:Little_Intermediate_R", "Armature/Skeleton3D:Little_Metacarpal_R", "Armature/Skeleton3D:Little_Proximal_R", "Armature/Skeleton3D:Middle_Distal_R", "Armature/Skeleton3D:Middle_Intermediate_R", "Armature/Skeleton3D:Middle_Metacarpal_R", "Armature/Skeleton3D:Middle_Proximal_R", "Armature/Skeleton3D:Ring_Distal_R", "Armature/Skeleton3D:Ring_Intermediate_R", "Armature/Skeleton3D:Ring_Metacarpal_R", "Armature/Skeleton3D:Ring_Proximal_R", "Armature/Skeleton3D:Thumb_Distal_R", "Armature/Skeleton3D:Thumb_Metacarpal_R", "Armature/Skeleton3D:Thumb_Proximal_R", "Armature/Skeleton:Little_Distal_R", "Armature/Skeleton:Little_Intermediate_R", "Armature/Skeleton:Little_Proximal_R", "Armature/Skeleton:Middle_Distal_R", "Armature/Skeleton:Middle_Intermediate_R", "Armature/Skeleton:Middle_Proximal_R", "Armature/Skeleton:Ring_Distal_R", "Armature/Skeleton:Ring_Intermediate_R", "Armature/Skeleton:Ring_Proximal_R", "Armature/Skeleton:Thumb_Distal_R", "Armature/Skeleton:Thumb_Proximal_R"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4s8wn"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qimrr"]
 animation = &"Grip 5"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_74hkj"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_4s8wn"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Index_Distal_R", "Armature/Skeleton3D:Index_Intermediate_R", "Armature/Skeleton3D:Index_Metacarpal_R", "Armature/Skeleton3D:Index_Proximal_R", "Armature/Skeleton:Index_Distal_R", "Armature/Skeleton:Index_Intermediate_R", "Armature/Skeleton:Index_Proximal_R"]
 
-[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_lq8ni"]
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_74hkj"]
 graph_offset = Vector2(-552.664, 107.301)
-nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_52rdt")
+nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_fwj0s")
 nodes/ClosedHand1/position = Vector2(-600, 300)
-nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_yfusm")
+nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_52rdt")
 nodes/ClosedHand2/position = Vector2(-360, 300)
-nodes/Grip/node = SubResource("AnimationNodeBlend2_qimrr")
+nodes/Grip/node = SubResource("AnimationNodeBlend2_yfusm")
 nodes/Grip/position = Vector2(0, 40)
-nodes/OpenHand/node = SubResource("AnimationNodeAnimation_4s8wn")
+nodes/OpenHand/node = SubResource("AnimationNodeAnimation_qimrr")
 nodes/OpenHand/position = Vector2(-600, 100)
-nodes/Trigger/node = SubResource("AnimationNodeBlend2_74hkj")
+nodes/Trigger/node = SubResource("AnimationNodeBlend2_4s8wn")
 nodes/Trigger/position = Vector2(-360, 40)
 node_connections = [&"output", 0, &"Grip", &"Grip", 0, &"Trigger", &"Grip", 1, &"ClosedHand2", &"Trigger", 0, &"OpenHand", &"Trigger", 1, &"ClosedHand1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lq8ni"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("4_3jdmc")
+billboard_mode = 1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5wvv8"]
 resource_local_to_scene = true
@@ -92,13 +99,6 @@ shading_mode = 0
 albedo_texture = ExtResource("4_3jdmc")
 billboard_mode = 1
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmhqd"]
-resource_local_to_scene = true
-transparency = 1
-shading_mode = 0
-albedo_texture = ExtResource("4_3jdmc")
-billboard_mode = 1
-
 [node name="Grooming" unique_id=300486180 instance=ExtResource("1_fqvts")]
 
 [node name="StartXR" parent="." index="0" unique_id=1646039485 instance=ExtResource("2_pqkbk")]
@@ -108,10 +108,10 @@ transform = Transform3D(-5.9604645e-08, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-08, 16
 metadata/_edit_group_ = true
 
 [node name="AnimationTree" parent="XROrigin3D/LeftHand/LeftHand" parent_id_path=PackedInt32Array(291188129) index="1"]
-tree_root = SubResource("AnimationNodeBlendTree_fwj0s")
+tree_root = SubResource("AnimationNodeBlendTree_beyko")
 
 [node name="AnimationTree" parent="XROrigin3D/RightHand/RightHand" parent_id_path=PackedInt32Array(705595339) index="1"]
-tree_root = SubResource("AnimationNodeBlendTree_lq8ni")
+tree_root = SubResource("AnimationNodeBlendTree_74hkj")
 
 [node name="Stable" parent="." index="2" unique_id=1731673158 instance=ExtResource("3_yiwqc")]
 
@@ -120,28 +120,28 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0)
 slider_position = -1.4
 
 [node name="CHighlighMesh" parent="Stable/Doors/Interior Doors/Normal/Interactable_Stable_Door_Interior2/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 2092317226, 561692497) index="2" unique_id=146505628]
-surface_material_override/0 = SubResource("StandardMaterial3D_5wvv8")
+surface_material_override/0 = SubResource("StandardMaterial3D_lq8ni")
 
 [node name="InteractableSlider" parent="Stable/Doors/Interior Doors/Normal/Interactable_Stable_Door_Interior3/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1049233276, 708182180) index="0" unique_id=111420183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0)
 slider_position = -1.4
 
 [node name="CHighlighMesh" parent="Stable/Doors/Interior Doors/Normal/Interactable_Stable_Door_Interior3/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1049233276, 561692497) index="2" unique_id=146505628]
-surface_material_override/0 = SubResource("StandardMaterial3D_tuuis")
+surface_material_override/0 = SubResource("StandardMaterial3D_5wvv8")
 
 [node name="InteractableSlider" parent="Stable/Doors/Interior Doors/Warped/Interactable_Stable_Door_Interior_Warped2/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1413941675, 708182180) index="0" unique_id=111420183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0)
 slider_position = -1.4
 
 [node name="CHighlighMesh" parent="Stable/Doors/Interior Doors/Warped/Interactable_Stable_Door_Interior_Warped2/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1413941675, 561692497) index="4" unique_id=146505628]
-surface_material_override/0 = SubResource("StandardMaterial3D_svxsa")
+surface_material_override/0 = SubResource("StandardMaterial3D_tuuis")
 
 [node name="InteractableSlider" parent="Stable/Doors/Interior Doors/Warped/Interactable_Stable_Door_Interior_Warped3/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1574009757, 708182180) index="0" unique_id=111420183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0)
 slider_position = -1.4
 
 [node name="CHighlighMesh" parent="Stable/Doors/Interior Doors/Warped/Interactable_Stable_Door_Interior_Warped3/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1574009757, 561692497) index="4" unique_id=146505628]
-surface_material_override/0 = SubResource("StandardMaterial3D_lmhqd")
+surface_material_override/0 = SubResource("StandardMaterial3D_svxsa")
 
 [node name="GroomingTasks" type="Node3D" parent="." index="3" unique_id=198031504]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12.588277, 0.39067596, -1.4781041)
@@ -156,6 +156,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16976666, -0.39067596, -0.3
 [node name="InteractableHorseGrooming" parent="GroomingTasks/Task1" index="1" unique_id=1007815259 instance=ExtResource("7_beyko")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22099257, 0.947625, 0.08044052)
 
+[node name="Reasons" type="Label3D" parent="GroomingTasks/Task1" index="2" unique_id=465333063]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.6841655, 1.6192777, 0.61318684)
+visible = false
+billboard = 2
+text = "Other than for cleanliness, a thorough grooming session will aid in a horse's health and prevent disease. Spending quality time with the horse can also build trust and increase the bond you share."
+autowrap_mode = 3
+
+[node name="ReasonsTimer" type="Timer" parent="GroomingTasks/Task1" index="3" unique_id=1382724708]
+wait_time = 25.0
+one_shot = true
+
 [node name="Task2" type="Node3D" parent="GroomingTasks" index="1" unique_id=1394155734]
 script = ExtResource("6_pqkbk")
 
@@ -167,6 +178,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5357966, 1.0137227, -0.013
 
 [node name="InteractableHorseGrooming2" parent="GroomingTasks/Task2" index="2" unique_id=1285256845 instance=ExtResource("7_beyko")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -7.5069413, 1.0137227, -0.70001316)
+
+[node name="Reasons2" type="Label3D" parent="GroomingTasks/Task2" index="3" unique_id=413449227]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -4.4097433, 1.6664791, -1.3156958)
+visible = false
+billboard = 2
+text = "The time spent grooming is an ideal time to perform a physical examination to assess the horse's health. Early detection of any abnormalities can prevent further complications from arising."
+autowrap_mode = 3
+
+[node name="ReasonsTimer2" type="Timer" parent="GroomingTasks/Task2" index="4" unique_id=710579712]
+wait_time = 25.0
+one_shot = true
 
 [node name="Task3" type="Node3D" parent="GroomingTasks" index="2" unique_id=484165162]
 script = ExtResource("6_pqkbk")
@@ -180,11 +202,36 @@ transform = Transform3D(1, 3.090862e-08, 1.2802769e-08, -3.090862e-08, 0.7071067
 [node name="InteractableHorseGrooming2" parent="GroomingTasks/Task3" index="2" unique_id=943330898 instance=ExtResource("7_beyko")]
 transform = Transform3D(-5.194742e-15, -4.371138e-08, -0.9999999, -0.99999994, -4.371138e-08, -7.1054274e-15, -4.3711378e-08, 0.9999998, -4.371138e-08, -0.19373667, 0.79084903, -7.291112)
 
+[node name="Reasons3" type="Label3D" parent="GroomingTasks/Task3" index="3" unique_id=1478662595]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.7472506, 1.5118213, -6.5353627)
+visible = false
+billboard = 2
+text = "The massaging of various muscle groups during a thorough grooming session can help circulate and increase blood flow to the surface of the equine's skin."
+autowrap_mode = 3
+
+[node name="ReasonsTimer3" type="Timer" parent="GroomingTasks/Task3" index="4" unique_id=1969163254]
+wait_time = 25.0
+one_shot = true
+
 [node name="Task4" type="Node3D" parent="GroomingTasks" index="3" unique_id=1689048556]
 script = ExtResource("6_pqkbk")
 
 [node name="WelshCob_SectionC4" parent="GroomingTasks/Task4" index="0" unique_id=1874090858 instance=ExtResource("6_or2lj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6702522, -0.39067596, -7.26592)
+
+[node name="InteractableHorseGrooming" parent="GroomingTasks/Task4" index="1" unique_id=107684320 instance=ExtResource("7_beyko")]
+transform = Transform3D(0.8660254, 1.1313336e-08, 0.49999997, -0.12940952, 0.9659258, 0.22414386, -0.48296288, -0.258819, 0.83651614, -7.490023, 1.0254922, -10.349341)
+
+[node name="Reasons4" type="Label3D" parent="GroomingTasks/Task4" index="2" unique_id=423292699]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -4.140016, 1.6051157, -11.323277)
+visible = false
+billboard = 2
+text = "Regular grooming will not only improve the overall appearance of the horse, but also improve your own fitness!"
+autowrap_mode = 3
+
+[node name="ReasonsTimer4" type="Timer" parent="GroomingTasks/Task4" index="3" unique_id=886366178]
+wait_time = 25.0
+one_shot = true
 
 [editable path="XROrigin3D/LeftHand/LeftHand"]
 [editable path="XROrigin3D/LeftHand/LeftHand/Hand_low_L"]

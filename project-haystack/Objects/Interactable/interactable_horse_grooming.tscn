@@ -41,6 +41,7 @@ closed_pose = ExtResource("9_fabng")
 metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_32jfj"]
+radius = 0.11138974
 
 [node name="InteractableHorseGrooming" type="Node3D" unique_id=1007815259]
 script = ExtResource("1_nwa7l")
