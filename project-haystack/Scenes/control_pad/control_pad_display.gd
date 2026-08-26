@@ -15,12 +15,15 @@ signal scene_switch_feeding
 ## Signal emitted when the player wants to switch to the Grooming scene.
 signal scene_switch_grooming
 
+@onready var label_node := %Label
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
 
-# Have this here incase you want to update the screen display to display any live info.
+# Have this here incase I want to update the screen display to display any live info.
 # REMEMBER TO TURN OFF ONE SHOT if you need to use this timeout function.
 func _on_refresh_timer_timeout() -> void:
 	print("Control Pad Display Timer One-Shot Completed")

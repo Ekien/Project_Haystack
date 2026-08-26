@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dcovut24edyne"]
+
+[ext_resource type="Script" uid="uid://ch21gq4r2kcll" path="res://misc/objectives_info.gd" id="1_kk4ns"]
+
+[node name="ObjectivesInfo" type="Node" unique_id=1182064971 groups=["objective_info"]]
+script = ExtResource("1_kk4ns")

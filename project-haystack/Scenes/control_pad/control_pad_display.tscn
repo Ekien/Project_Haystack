@@ -129,9 +129,11 @@ theme_override_constants/margin_bottom = 5
 metadata/_tab_index = 1
 
 [node name="Label" type="Label" parent="Objectives" unique_id=481120480]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 165)
 layout_mode = 2
-text = "TEST TEXT. I AM TESTING THE TEXT. HAHAHAHAHAHAHAHAHAHAHAHAHHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+text = "TEST TEXT. I AM TESTING THE TEXT. 
+If you see this then the text on the labal did not update properly. This is just placeholder text to make sure that the text wraps correctly."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3

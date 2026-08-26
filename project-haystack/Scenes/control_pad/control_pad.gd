@@ -5,8 +5,13 @@ extends Node3D
 @export_file('*.tscn') var Feeding_Scene : String
 @export_file('*.tscn') var Grooming_Scene : String
 
+@export_group("Info")
+# @export_file('*.tscn') var Objectives_Info : ObjectivesInfo
+
 # The default hand to use is in the main staging scene.
 var _staging : MainStaging
+
+@onready var objective_info : ObjectivesInfo = get_tree().current_scene.find_child("ObjectivesInfo", true, false)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -20,8 +25,20 @@ func _ready() -> void:
 	%Viewport2Din3D.connect_scene_signal("scene_switch_feeding", _on_scene_switch_feeding)
 	%Viewport2Din3D.connect_scene_signal("scene_switch_grooming", _on_scene_switch_grooming)
 	
+	
+	if objective_info:
+		# Connecting signal to update objective text
+		objective_info.display_objective.connect(_on_display_objective)
+	else:
+		push_error("ControlPad.tscn could not find ObjectivesInfo")
+	
 	# Set the location when everything is ready.
 	_update_location.call_deferred()
+	
+
+# Updating the objective text
+func _on_display_objective(text : String) -> void:
+	%Viewport2Din3D.scene_node.label_node.text = text
 
 # Handle switch hands of the control pad
 func _on_switch_hand(hand : String) -> void:
