@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" uid="uid://ch21gq4r2kcll" path="res://misc/objectives_info.gd" id="1_kk4ns"]
 
-[node name="ObjectivesInfo" type="Node" unique_id=1182064971 groups=["objective_info"]]
+[node name="ObjectivesInfo" type="Node" unique_id=1182064971]
 script = ExtResource("1_kk4ns")
