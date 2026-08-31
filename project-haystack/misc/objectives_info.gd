@@ -14,14 +14,16 @@ var objective_dict : Dictionary = {
 		When you are ready to move on, select a level from the Settings panel.",
 	
 	Levels.LEVEL_FEEDING : "Feeding Task:
-		
+		- Each horses requires a certain amount of feed as detailed by the hint next to them.
+		- Find a feeding bucket and place in it the correct amount of feed for each of the horses.
+		- Correctly feeding a horse will provide you with information about feeding a horse. The task is complete when all the horses have been fed.
 		",
 	
 	Levels.LEVEL_GROOMING : "Grooming Task:
 		- Each of the horses in the stable requires grooming. 
 		- Interact with the brushes on the horses to begin grooming (some horses may have multiple brushes).
 		- You must alternate your brush strokes to make progress.
-		- Completing the grooming of a horse will provide you with a reason why grooming is important. The task is completed once all horses have been thoroughly groomed.",
+		- Completing the grooming of a horse will provide you with a reason why grooming is important. The task is complete once all horses have been thoroughly groomed.",
 }
 
 ## Text to be displayed on the control pad
