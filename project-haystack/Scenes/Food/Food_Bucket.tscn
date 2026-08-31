@@ -2,18 +2,22 @@
 
 [ext_resource type="Script" uid="uid://bg83bd0rc6y4x" path="res://Scripts/Food/food_bucket.gd" id="1_fuwct"]
 [ext_resource type="ArrayMesh" uid="uid://bcnsrvjcbf67h" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Bucket.Bucket.mesh" id="1_jdxcd"]
+[ext_resource type="PackedScene" uid="uid://b1viv1ygi2ocf" path="res://Objects/Pickable/TempObjects/hay.tscn" id="2_64wj5"]
 [ext_resource type="Material" uid="uid://bjx1gyfyovllg" path="res://assets/Nimikko_ModularStable_01/Assets/Props/Materials/M_Bucket_01.material" id="2_krj5y"]
 [ext_resource type="ArrayMesh" uid="uid://cnspltdadjqwi" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/HayStack_01.HayStack_01.mesh" id="3_2036a"]
 [ext_resource type="Material" uid="uid://bjacaaefh0qg6" path="res://assets/Nimikko_ModularStable_01/Assets/Materials/M_Hay_01.material" id="4_fuwct"]
 [ext_resource type="PackedScene" uid="uid://clx0uipop4bsb" path="res://Scenes/Food/SnapZones/bucket_snap_zone.tscn" id="6_81l67"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="7_eskep"]
+[ext_resource type="PackedScene" uid="uid://buaw274warpny" path="res://Objects/Pickable/Food/clear_button.tscn" id="8_64wj5"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_tk6at"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_ykr3y"]
 resource_local_to_scene = true
 radius = 0.3
 
 [node name="foodbucket" type="Node3D" unique_id=1895514048 node_paths=PackedStringArray("bucket_snap_zone")]
 script = ExtResource("1_fuwct")
 bucket_snap_zone = NodePath("BucketSnapZone")
+Item_To_Drop = ExtResource("2_64wj5")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=362583744]
 transform = Transform3D(1.478664, 0, 0, 0, 0.49303132, 0, 0, 0, 1.478664, 0, 0, 0)
@@ -54,9 +58,18 @@ surface_material_override/0 = ExtResource("4_fuwct")
 [node name="BucketSnapZone" parent="." unique_id=722567211 instance=ExtResource("6_81l67")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19241256, 0)
 
-[node name="CollisionShape3D" parent="BucketSnapZone" index="0"]
+[node name="CollisionShape3D" parent="BucketSnapZone" index="0" unique_id=1106074557]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, -0.010077387, 0)
-shape = SubResource("SphereShape3D_tk6at")
+shape = SubResource("SphereShape3D_ykr3y")
+
+[node name="Viewport2Din3D" parent="." unique_id=528492962 instance=ExtResource("7_eskep")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37558967, 0.06358801, 0)
+screen_size = Vector2(0.2, 0.1)
+scene = ExtResource("8_64wj5")
+viewport_size = Vector2(250, 100)
+transparent = 1
+scene_properties_keys = PackedStringArray("clear_button.gd")
 
 [connection signal="has_picked_up" from="BucketSnapZone" to="." method="_on_bucket_snap_zone_has_picked_up"]
 

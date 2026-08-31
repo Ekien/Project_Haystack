@@ -28,7 +28,7 @@ metadata/_custom_type_script = "uid://dvobm6vcfnqe8"
 [node name="Hay" unique_id=1528068358 groups=["Hay"] instance=ExtResource("1_t52pl")]
 collision_layer = 5242884
 
-[node name="CollisionShape3D" parent="." index="0"]
+[node name="CollisionShape3D" parent="." index="0" unique_id=991838861]
 shape = SubResource("BoxShape3D_t52pl")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." index="1" unique_id=1251104885]

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dfptk5w2ybeb0"]
+
+[ext_resource type="PackedScene" uid="uid://ce7vysyvondf8" path="res://addons/godot-xr-tools/objects/snap_zone.tscn" id="1_fppvc"]
+[ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="2_8xlgl"]
+[ext_resource type="Texture2D" uid="uid://8s03ra8tp0hr" path="res://addons/godot-xr-tools/images/ring.png" id="3_p44iq"]
+[ext_resource type="ArrayMesh" uid="uid://bcnsrvjcbf67h" path="res://assets/Nimikko_ModularStable_01/Assets/Props/extracted/Bucket.Bucket.mesh" id="4_c1xom"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8xlgl"]
+resource_local_to_scene = true
+radius = 0.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p44iq"]
+resource_local_to_scene = true
+transparency = 1
+no_depth_test = true
+shading_mode = 0
+albedo_texture = ExtResource("3_p44iq")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8cw1j"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="FoodBucketSnapZone" unique_id=678858973 instance=ExtResource("1_fppvc")]
+snap_mode = 1
+
+[node name="CollisionShape3D" parent="." index="0" unique_id=1106074557]
+shape = SubResource("SphereShape3D_8xlgl")
+
+[node name="HighlightRing" parent="." index="2" unique_id=1933695240 instance=ExtResource("2_8xlgl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.085907966, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_p44iq")
+
+[node name="FoodBucket" type="MeshInstance3D" parent="." index="3" unique_id=65998056]
+transform = Transform3D(1.478664, 0, 0, 0, 0.49303132, 0, 0, 0, 1.478664, 0, 0, 0)
+mesh = ExtResource("4_c1xom")
+surface_material_override/0 = SubResource("StandardMaterial3D_8cw1j")

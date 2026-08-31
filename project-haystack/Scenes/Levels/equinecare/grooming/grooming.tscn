@@ -101,6 +101,48 @@ shading_mode = 0
 albedo_texture = ExtResource("4_3jdmc")
 billboard_mode = 1
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lti08"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("4_3jdmc")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ip3e8"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("4_3jdmc")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vt6p"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("4_3jdmc")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lbo4r"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("4_3jdmc")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_54u2c"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("4_3jdmc")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bhlci"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("4_3jdmc")
+billboard_mode = 1
+
 [node name="Grooming" unique_id=300486180 instance=ExtResource("1_fqvts")]
 script = ExtResource("2_3jdmc")
 
@@ -118,33 +160,63 @@ tree_root = SubResource("AnimationNodeBlendTree_5wvv8")
 
 [node name="Stable" parent="." index="2" unique_id=1731673158 instance=ExtResource("3_yiwqc")]
 
+[node name="InteractableSlider" parent="Stable/Doors/Exterior Doors/InteractableLargerStableDoor/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1767579955, 1287169884) index="0" unique_id=170299167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0, 0)
+slider_position = 1.15
+
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableLargerStableDoor/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1767579955, 908878955) index="2" unique_id=54770495]
+surface_material_override/0 = SubResource("StandardMaterial3D_tuuis")
+
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableLargerStableDoor/SlideDoor2/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1767579955, 1166376559) index="2" unique_id=1372609883]
+surface_material_override/0 = SubResource("StandardMaterial3D_svxsa")
+
+[node name="InteractableSlider" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1214870691, 1287169884) index="0" unique_id=170299167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05, 0, 0)
+slider_position = 1.05
+
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1214870691, 908878955) index="2" unique_id=54770495]
+surface_material_override/0 = SubResource("StandardMaterial3D_lmhqd")
+
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor/SlideDoor2/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1214870691, 1166376559) index="2" unique_id=1372609883]
+surface_material_override/0 = SubResource("StandardMaterial3D_igneh")
+
+[node name="InteractableSlider" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor2/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 351094190, 1287169884) index="0" unique_id=170299167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05, 0, 0)
+slider_position = 1.05
+
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor2/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 351094190, 908878955) index="2" unique_id=54770495]
+surface_material_override/0 = SubResource("StandardMaterial3D_lti08")
+
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor2/SlideDoor2/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 351094190, 1166376559) index="2" unique_id=1372609883]
+surface_material_override/0 = SubResource("StandardMaterial3D_ip3e8")
+
 [node name="InteractableSlider" parent="Stable/Doors/Interior Doors/Normal/Interactable_Stable_Door_Interior2/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 2092317226, 708182180) index="0" unique_id=111420183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0)
 slider_position = -1.4
 
 [node name="CHighlighMesh" parent="Stable/Doors/Interior Doors/Normal/Interactable_Stable_Door_Interior2/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 2092317226, 561692497) index="2" unique_id=146505628]
-surface_material_override/0 = SubResource("StandardMaterial3D_tuuis")
+surface_material_override/0 = SubResource("StandardMaterial3D_5vt6p")
 
 [node name="InteractableSlider" parent="Stable/Doors/Interior Doors/Normal/Interactable_Stable_Door_Interior3/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1049233276, 708182180) index="0" unique_id=111420183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0)
 slider_position = -1.4
 
 [node name="CHighlighMesh" parent="Stable/Doors/Interior Doors/Normal/Interactable_Stable_Door_Interior3/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1049233276, 561692497) index="2" unique_id=146505628]
-surface_material_override/0 = SubResource("StandardMaterial3D_svxsa")
+surface_material_override/0 = SubResource("StandardMaterial3D_lbo4r")
 
 [node name="InteractableSlider" parent="Stable/Doors/Interior Doors/Warped/Interactable_Stable_Door_Interior_Warped2/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1413941675, 708182180) index="0" unique_id=111420183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0)
 slider_position = -1.4
 
 [node name="CHighlighMesh" parent="Stable/Doors/Interior Doors/Warped/Interactable_Stable_Door_Interior_Warped2/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1413941675, 561692497) index="4" unique_id=146505628]
-surface_material_override/0 = SubResource("StandardMaterial3D_lmhqd")
+surface_material_override/0 = SubResource("StandardMaterial3D_54u2c")
 
 [node name="InteractableSlider" parent="Stable/Doors/Interior Doors/Warped/Interactable_Stable_Door_Interior_Warped3/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1574009757, 708182180) index="0" unique_id=111420183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0)
 slider_position = -1.4
 
 [node name="CHighlighMesh" parent="Stable/Doors/Interior Doors/Warped/Interactable_Stable_Door_Interior_Warped3/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1574009757, 561692497) index="4" unique_id=146505628]
-surface_material_override/0 = SubResource("StandardMaterial3D_igneh")
+surface_material_override/0 = SubResource("StandardMaterial3D_bhlci")
 
 [node name="GroomingTasks" type="Node3D" parent="." index="3" unique_id=198031504]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12.588277, 0.39067596, -1.4781041)
@@ -226,7 +298,7 @@ script = ExtResource("6_pqkbk")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6702522, -0.39067596, -7.26592)
 
 [node name="InteractableHorseGrooming" parent="GroomingTasks/Task4" index="1" unique_id=107684320 instance=ExtResource("7_beyko")]
-transform = Transform3D(0.8110429, -0.5846728, -0.019156205, 0.06415245, 0.056346446, 0.9963479, -0.5814583, -0.80930996, 0.08320743, -8.054173, 1.2728055, -10.593425)
+transform = Transform3D(-0.9134105, 0.2088798, -0.34935737, 0.019968174, 0.8802495, 0.47409087, 0.40654963, 0.42606336, -0.8081999, -7.9861746, 1.1888123, -10.764023)
 
 [node name="InteractableHorseGrooming2" parent="GroomingTasks/Task4" index="2" unique_id=1645745909 instance=ExtResource("7_beyko")]
 transform = Transform3D(0.9226725, 0, 0.3855839, 0, 0.9999999, 0, -0.38558397, 0, 0.9226724, -7.3102326, 0.87874717, -10.406283)
@@ -330,6 +402,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6950955, 2.6030211, 5.91657
 [editable path="Stable/Scene/WaterBucket_01 (1)"]
 [editable path="Stable/Scene/WaterBucket_01 (2)"]
 [editable path="Stable/Scene/WaterBucket_01 (3)"]
+[editable path="Stable/Doors/Exterior Doors/InteractableLargerStableDoor"]
+[editable path="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor"]
+[editable path="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor2"]
 [editable path="Stable/Doors/Interior Doors/Normal/Interactable_Stable_Door_Interior2"]
 [editable path="Stable/Doors/Interior Doors/Normal/Interactable_Stable_Door_Interior3"]
 [editable path="Stable/Doors/Interior Doors/Warped/Interactable_Stable_Door_Interior_Warped2"]

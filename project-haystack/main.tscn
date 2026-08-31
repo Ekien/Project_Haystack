@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://db2to4m5t6bmj" path="res://Scenes/Testing/hay_snap_zone.tscn" id="4_7mycd"]
 [ext_resource type="PackedScene" uid="uid://dq5n1ye1w61br" path="res://Scenes/Food/food_bucket.tscn" id="5_272bh"]
 [ext_resource type="PackedScene" uid="uid://b1viv1ygi2ocf" path="res://Objects/Pickable/TempObjects/hay.tscn" id="5_lquwl"]
-[ext_resource type="PackedScene" uid="uid://dpfc34m3wgxv6" path="res://Objects/Pickable/pickable_food_bucket.tscn" id="6_5vw27"]
+[ext_resource type="PackedScene" uid="uid://dpfc34m3wgxv6" path="res://Objects/Pickable/Food/pickable_food_bucket.tscn" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://b52b1vcl0451y" path="res://Objects/Interactable/interactable_stable_door_interior.scn" id="9_kek77"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="10_4c57u"]
 [ext_resource type="PackedScene" uid="uid://dug01s034nxa0" path="res://Scenes/UI/main_menu.tscn" id="11_efxa6"]

@@ -28,7 +28,7 @@ collision_layer = 5242884
 
 [node name="FoodBucket" parent="." index="0" unique_id=1895514048 instance=ExtResource("2_ii7ja")]
 
-[node name="CollisionShape3D" parent="." index="1"]
+[node name="CollisionShape3D" parent="." index="1" unique_id=991838861]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.06404114, 0)
 shape = SubResource("BoxShape3D_6ny74")
 

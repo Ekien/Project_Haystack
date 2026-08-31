@@ -69,11 +69,13 @@ func _on_slider_moved(_postion: Variant):
 		elif BSlider.slider_position == BSlider.slider_limit_max:
 			state = BrushStates.GO_TO_MIN
 			rotate_slider()
-		
+	
+	# Ensuring that the brush strokes are being alternated.
 	if state == BrushStates.GO_TO_MAX and BSlider.slider_position == BSlider.slider_limit_max:
 		rotate_slider()
 		
 		state = BrushStates.GO_TO_MIN
+
 	elif state == BrushStates.GO_TO_MIN and BSlider.slider_position == BSlider.slider_limit_min:
 		rotate_slider()
 		

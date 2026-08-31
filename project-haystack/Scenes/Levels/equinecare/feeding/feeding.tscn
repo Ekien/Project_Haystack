@@ -5,91 +5,118 @@
 [ext_resource type="Script" uid="uid://2lcffqtsfu05" path="res://Scenes/Levels/equinecare/feeding/feeding_scene_base.gd" id="2_ixuge"]
 [ext_resource type="PackedScene" uid="uid://dr7mjryqe4omr" path="res://Scenes/Stable/Stable.tscn" id="3_ixuge"]
 [ext_resource type="PackedScene" uid="uid://b1viv1ygi2ocf" path="res://Objects/Pickable/TempObjects/hay.tscn" id="4_66xiw"]
-[ext_resource type="PackedScene" uid="uid://dpfc34m3wgxv6" path="res://Objects/Pickable/pickable_food_bucket.tscn" id="5_d70q1"]
-[ext_resource type="PackedScene" uid="uid://frndya3mmnse" path="res://Objects/Pickable/TempObjects/cube.tscn" id="6_tvthf"]
-[ext_resource type="PackedScene" uid="uid://dn68rjlg4bblh" path="res://Objects/Interactable/interactable_horse_grooming.tscn" id="7_cd7x0"]
-[ext_resource type="PackedScene" uid="uid://c53xkg2epvf07" path="res://assets/models/horses/WelshCob_SectionC.glb" id="8_xya7t"]
+[ext_resource type="PackedScene" uid="uid://dpfc34m3wgxv6" path="res://Objects/Pickable/Food/pickable_food_bucket.tscn" id="5_d70q1"]
+[ext_resource type="PackedScene" uid="uid://d1olksh8ilanf" path="res://assets/Nimikko_ModularStable_01/Prefabs/Props/Wheelbarrow.prefab.scn" id="6_66xiw"]
+[ext_resource type="PackedScene" uid="uid://dfptk5w2ybeb0" path="res://Scenes/Food/SnapZones/food_bucket_snap_zone.tscn" id="7_d70q1"]
+[ext_resource type="PackedScene" uid="uid://dm87vy4ujml3q" path="res://Scenes/Stable/Stable_Hay_Bale.tscn" id="7_tvthf"]
+[ext_resource type="Texture2D" uid="uid://8s03ra8tp0hr" path="res://addons/godot-xr-tools/images/ring.png" id="8_tvthf"]
+[ext_resource type="Script" uid="uid://b62n5ip8pe40t" path="res://Scenes/Levels/equinecare/feeding/feeding_tasks.gd" id="9_d70q1"]
 [ext_resource type="Script" uid="uid://ch21gq4r2kcll" path="res://misc/objectives_info.gd" id="10_ixuge"]
+[ext_resource type="Script" uid="uid://slcifnk7uk0o" path="res://Scenes/Levels/equinecare/feeding/feeding_sub_task.gd" id="10_tvthf"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ixuge"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tvthf"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_66xiw"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cd7x0"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_d70q1"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_xya7t"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Little_Distal_L", "Armature/Skeleton3D:Little_Intermediate_L", "Armature/Skeleton3D:Little_Metacarpal_L", "Armature/Skeleton3D:Little_Proximal_L", "Armature/Skeleton3D:Middle_Distal_L", "Armature/Skeleton3D:Middle_Intermediate_L", "Armature/Skeleton3D:Middle_Metacarpal_L", "Armature/Skeleton3D:Middle_Proximal_L", "Armature/Skeleton3D:Ring_Distal_L", "Armature/Skeleton3D:Ring_Intermediate_L", "Armature/Skeleton3D:Ring_Metacarpal_L", "Armature/Skeleton3D:Ring_Proximal_L", "Armature/Skeleton3D:Thumb_Distal_L", "Armature/Skeleton3D:Thumb_Metacarpal_L", "Armature/Skeleton3D:Thumb_Proximal_L", "Armature/Skeleton:Little_Distal_L", "Armature/Skeleton:Little_Intermediate_L", "Armature/Skeleton:Little_Proximal_L", "Armature/Skeleton:Middle_Distal_L", "Armature/Skeleton:Middle_Intermediate_L", "Armature/Skeleton:Middle_Proximal_L", "Armature/Skeleton:Ring_Distal_L", "Armature/Skeleton:Ring_Intermediate_L", "Armature/Skeleton:Ring_Proximal_L", "Armature/Skeleton:Thumb_Distal_L", "Armature/Skeleton:Thumb_Proximal_L"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tvthf"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_n76ji"]
 animation = &"Grip 5"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_cd7x0"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_ykuxb"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Index_Distal_L", "Armature/Skeleton3D:Index_Intermediate_L", "Armature/Skeleton3D:Index_Metacarpal_L", "Armature/Skeleton3D:Index_Proximal_L", "Armature/Skeleton:Index_Distal_L", "Armature/Skeleton:Index_Intermediate_L", "Armature/Skeleton:Index_Proximal_L"]
 
-[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_xya7t"]
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_jqqrx"]
 graph_offset = Vector2(-536, 11)
-nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_ixuge")
+nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_tvthf")
 nodes/ClosedHand1/position = Vector2(-600, 300)
-nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_66xiw")
+nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_cd7x0")
 nodes/ClosedHand2/position = Vector2(-360, 300)
-nodes/Grip/node = SubResource("AnimationNodeBlend2_d70q1")
+nodes/Grip/node = SubResource("AnimationNodeBlend2_xya7t")
 nodes/Grip/position = Vector2(0, 20)
-nodes/OpenHand/node = SubResource("AnimationNodeAnimation_tvthf")
+nodes/OpenHand/node = SubResource("AnimationNodeAnimation_n76ji")
 nodes/OpenHand/position = Vector2(-600, 100)
-nodes/Trigger/node = SubResource("AnimationNodeBlend2_cd7x0")
+nodes/Trigger/node = SubResource("AnimationNodeBlend2_ykuxb")
 nodes/Trigger/position = Vector2(-360, 20)
 node_connections = [&"output", 0, &"Grip", &"Grip", 0, &"Trigger", &"Grip", 1, &"ClosedHand2", &"Trigger", 0, &"OpenHand", &"Trigger", 1, &"ClosedHand1"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_n76ji"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ub80y"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ykuxb"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_x3tpn"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_jqqrx"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_7aehs"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Little_Distal_R", "Armature/Skeleton3D:Little_Intermediate_R", "Armature/Skeleton3D:Little_Metacarpal_R", "Armature/Skeleton3D:Little_Proximal_R", "Armature/Skeleton3D:Middle_Distal_R", "Armature/Skeleton3D:Middle_Intermediate_R", "Armature/Skeleton3D:Middle_Metacarpal_R", "Armature/Skeleton3D:Middle_Proximal_R", "Armature/Skeleton3D:Ring_Distal_R", "Armature/Skeleton3D:Ring_Intermediate_R", "Armature/Skeleton3D:Ring_Metacarpal_R", "Armature/Skeleton3D:Ring_Proximal_R", "Armature/Skeleton3D:Thumb_Distal_R", "Armature/Skeleton3D:Thumb_Metacarpal_R", "Armature/Skeleton3D:Thumb_Proximal_R", "Armature/Skeleton:Little_Distal_R", "Armature/Skeleton:Little_Intermediate_R", "Armature/Skeleton:Little_Proximal_R", "Armature/Skeleton:Middle_Distal_R", "Armature/Skeleton:Middle_Intermediate_R", "Armature/Skeleton:Middle_Proximal_R", "Armature/Skeleton:Ring_Distal_R", "Armature/Skeleton:Ring_Intermediate_R", "Armature/Skeleton:Ring_Proximal_R", "Armature/Skeleton:Thumb_Distal_R", "Armature/Skeleton:Thumb_Proximal_R"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ub80y"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4tyb8"]
 animation = &"Grip 5"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_x3tpn"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_evug3"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Index_Distal_R", "Armature/Skeleton3D:Index_Intermediate_R", "Armature/Skeleton3D:Index_Metacarpal_R", "Armature/Skeleton3D:Index_Proximal_R", "Armature/Skeleton:Index_Distal_R", "Armature/Skeleton:Index_Intermediate_R", "Armature/Skeleton:Index_Proximal_R"]
 
-[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_7aehs"]
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_0hnhq"]
 graph_offset = Vector2(-552.664, 107.301)
-nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_n76ji")
+nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_ub80y")
 nodes/ClosedHand1/position = Vector2(-600, 300)
-nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_ykuxb")
+nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_x3tpn")
 nodes/ClosedHand2/position = Vector2(-360, 300)
-nodes/Grip/node = SubResource("AnimationNodeBlend2_jqqrx")
+nodes/Grip/node = SubResource("AnimationNodeBlend2_7aehs")
 nodes/Grip/position = Vector2(0, 40)
-nodes/OpenHand/node = SubResource("AnimationNodeAnimation_ub80y")
+nodes/OpenHand/node = SubResource("AnimationNodeAnimation_4tyb8")
 nodes/OpenHand/position = Vector2(-600, 100)
-nodes/Trigger/node = SubResource("AnimationNodeBlend2_x3tpn")
+nodes/Trigger/node = SubResource("AnimationNodeBlend2_evug3")
 nodes/Trigger/position = Vector2(-360, 40)
 node_connections = [&"output", 0, &"Grip", &"Grip", 0, &"Trigger", &"Grip", 1, &"ClosedHand2", &"Trigger", 0, &"OpenHand", &"Trigger", 1, &"ClosedHand1"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_unm8g"]
-size = Vector3(0.5, 0.5, 0.5)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63b43"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("8_tvthf")
+billboard_mode = 1
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_wjg4x"]
-size = Vector3(0.5, 0.5, 0.5)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ntta"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("8_tvthf")
+billboard_mode = 1
 
-[sub_resource type="BoxMesh" id="BoxMesh_01cue"]
-size = Vector3(0.5, 0.5, 0.5)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pi1nw"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("8_tvthf")
+billboard_mode = 1
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ju2j6"]
-size = Vector3(0.5, 0.5, 0.5)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_10c0n"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("8_tvthf")
+billboard_mode = 1
 
-[sub_resource type="BoxMesh" id="BoxMesh_ymsvx"]
-size = Vector3(0.5, 0.5, 0.5)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p6n2v"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("8_tvthf")
+billboard_mode = 1
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ccxgh"]
-size = Vector3(0.5, 0.5, 0.5)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ohvhd"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("8_tvthf")
+billboard_mode = 1
 
 [node name="Feeding" unique_id=300486180 instance=ExtResource("1_5qt6g")]
 script = ExtResource("2_ixuge")
@@ -101,80 +128,239 @@ script = ExtResource("10_ixuge")
 metadata/_custom_type_script = "uid://ch21gq4r2kcll"
 
 [node name="XROrigin3D" parent="." index="2"]
-transform = Transform3D(0.37813166, 0, 0.9257518, 0, 1, 0, -0.9257518, 0, 0.37813166, 26.928808, 0.054292858, 5.851959)
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, 7.7626886, 0.1, 7.7594814)
 
 [node name="AnimationTree" parent="XROrigin3D/LeftHand/LeftHand" parent_id_path=PackedInt32Array(291188129) index="1"]
-tree_root = SubResource("AnimationNodeBlendTree_xya7t")
+tree_root = SubResource("AnimationNodeBlendTree_jqqrx")
 
 [node name="AnimationTree" parent="XROrigin3D/RightHand/RightHand" parent_id_path=PackedInt32Array(705595339) index="1"]
-tree_root = SubResource("AnimationNodeBlendTree_7aehs")
+tree_root = SubResource("AnimationNodeBlendTree_0hnhq")
 
 [node name="Stable" parent="." index="3" unique_id=1731673158 instance=ExtResource("3_ixuge")]
 
-[node name="HayBox" type="MeshInstance3D" parent="." index="4" unique_id=288956580]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.575554, 0.54351664, 6.009809)
-mesh = SubResource("BoxMesh_unm8g")
+[node name="Wheelbarrow2" parent="Stable/Scene" parent_id_path=PackedInt32Array(1731673158, 158560559) index="48" unique_id=1263042036 instance=ExtResource("6_66xiw")]
+transform = Transform3D(-0.9912447, -2.8997015e-08, -0.13203672, -2.4424377e-08, 1, -3.625105e-08, 0.13203672, -3.270874e-08, -0.9912447, 2.8291173, -2.237586, -4.379856)
 metadata/_edit_group_ = true
 
-[node name="StaticBody3D" type="StaticBody3D" parent="HayBox" index="0" unique_id=1244294657]
+[node name="InteractableSlider" parent="Stable/Doors/Exterior Doors/InteractableLargerStableDoor/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1767579955, 1287169884) index="0" unique_id=170299167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0, 0)
+slider_position = 1.15
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="HayBox/StaticBody3D" index="0" unique_id=1248671109]
-shape = SubResource("BoxShape3D_wjg4x")
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableLargerStableDoor/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1767579955, 908878955) index="2" unique_id=54770495]
+surface_material_override/0 = SubResource("StandardMaterial3D_63b43")
 
-[node name="Hay" parent="HayBox" index="1" unique_id=1528068358 instance=ExtResource("4_66xiw")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.3357131, 0.15668392)
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableLargerStableDoor/SlideDoor2/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1767579955, 1166376559) index="2" unique_id=1372609883]
+surface_material_override/0 = SubResource("StandardMaterial3D_3ntta")
 
-[node name="Hay2" parent="HayBox" index="2" unique_id=1301227187 instance=ExtResource("4_66xiw")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.3357131, 0.009674549)
+[node name="InteractableSlider" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 1214870691, 1287169884) index="0" unique_id=170299167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05, 0, 0)
+slider_position = 1.05
 
-[node name="Hay3" parent="HayBox" index="3" unique_id=220711670 instance=ExtResource("4_66xiw")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.3357131, -0.13060808)
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1214870691, 908878955) index="2" unique_id=54770495]
+surface_material_override/0 = SubResource("StandardMaterial3D_pi1nw")
 
-[node name="FoodBucketBox" type="MeshInstance3D" parent="." index="5" unique_id=735261420]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 23.576, 0.544, 5.27)
-mesh = SubResource("BoxMesh_01cue")
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor/SlideDoor2/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 1214870691, 1166376559) index="2" unique_id=1372609883]
+surface_material_override/0 = SubResource("StandardMaterial3D_10c0n")
+
+[node name="InteractableSlider" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor2/SlideDoor" parent_id_path=PackedInt32Array(1731673158, 351094190, 1287169884) index="0" unique_id=170299167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05, 0, 0)
+slider_position = 1.05
+
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor2/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 351094190, 908878955) index="2" unique_id=54770495]
+surface_material_override/0 = SubResource("StandardMaterial3D_p6n2v")
+
+[node name="CHighlighMesh" parent="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor2/SlideDoor2/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1731673158, 351094190, 1166376559) index="2" unique_id=1372609883]
+surface_material_override/0 = SubResource("StandardMaterial3D_ohvhd")
+
+[node name="StableHaybale5" parent="Stable/Haybales" parent_id_path=PackedInt32Array(1731673158, 286682254) index="2" unique_id=1635338174 instance=ExtResource("7_tvthf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.7443466, 0, -7.7382402)
 metadata/_edit_group_ = true
 
-[node name="StaticBody3D" type="StaticBody3D" parent="FoodBucketBox" index="0" unique_id=1823561801]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="FoodBucketBox/StaticBody3D" index="0" unique_id=1721802169]
-shape = SubResource("BoxShape3D_ju2j6")
-
-[node name="Food_Bucket" parent="FoodBucketBox" index="1" unique_id=1959919718 instance=ExtResource("5_d70q1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015055299, 0.25748694, 0)
-
-[node name="CubeBox" type="MeshInstance3D" parent="." index="6" unique_id=465778006]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.576, 0.544, 4.4743633)
-mesh = SubResource("BoxMesh_ymsvx")
+[node name="StableHaybale6" parent="Stable/Haybales" parent_id_path=PackedInt32Array(1731673158, 286682254) index="3" unique_id=2145321007 instance=ExtResource("7_tvthf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.7443466, 0.36803567, -7.7382402)
 metadata/_edit_group_ = true
 
-[node name="StaticBody3D" type="StaticBody3D" parent="CubeBox" index="0" unique_id=1839913382]
+[node name="StableHaybale7" parent="Stable/Haybales" parent_id_path=PackedInt32Array(1731673158, 286682254) index="4" unique_id=368542054 instance=ExtResource("7_tvthf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.7443466, 0.7244959, -7.7382402)
+metadata/_edit_group_ = true
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CubeBox/StaticBody3D" index="0" unique_id=1182320657]
-shape = SubResource("BoxShape3D_ccxgh")
+[node name="StableHaybale11" parent="Stable/Haybales" parent_id_path=PackedInt32Array(1731673158, 286682254) index="5" unique_id=220788895 instance=ExtResource("7_tvthf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.2740784, 0, -4.245758)
+metadata/_edit_group_ = true
 
-[node name="Cube" parent="CubeBox" index="1" unique_id=192508180 instance=ExtResource("6_tvthf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02267456, 0.3345114, 0.12825918)
+[node name="StableHaybale12" parent="Stable/Haybales" parent_id_path=PackedInt32Array(1731673158, 286682254) index="6" unique_id=1504244689 instance=ExtResource("7_tvthf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.2740784, 0.36803567, -4.245758)
+metadata/_edit_group_ = true
 
-[node name="Cube2" parent="CubeBox" index="2" unique_id=1244585532 instance=ExtResource("6_tvthf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02267456, 0.3345114, -0.14218903)
+[node name="StableHaybale13" parent="Stable/Haybales" parent_id_path=PackedInt32Array(1731673158, 286682254) index="7" unique_id=211180148 instance=ExtResource("7_tvthf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.2740784, 0.7244959, -4.245758)
+metadata/_edit_group_ = true
 
-[node name="Cube3" parent="CubeBox" index="3" unique_id=213443308 instance=ExtResource("6_tvthf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14964104, 0.3345114, -0.013693333)
+[node name="StableHaybale8" parent="Stable/Haybales" parent_id_path=PackedInt32Array(1731673158, 286682254) index="8" unique_id=1037298296 instance=ExtResource("7_tvthf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.7134914, 0, -7.7382402)
+metadata/_edit_group_ = true
 
-[node name="TESTING&DEBUG" type="Node3D" parent="." index="7" unique_id=961257221]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.853867, 0.9284471, 2.293923)
+[node name="StableHaybale9" parent="Stable/Haybales" parent_id_path=PackedInt32Array(1731673158, 286682254) index="9" unique_id=403708044 instance=ExtResource("7_tvthf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.7134914, 0.36803567, -7.7382402)
+metadata/_edit_group_ = true
 
-[node name="InteractableHorseGrooming" parent="TESTING&DEBUG" index="0" unique_id=1007815259 instance=ExtResource("7_cd7x0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41122043, 0)
+[node name="StableHaybale10" parent="Stable/Haybales" parent_id_path=PackedInt32Array(1731673158, 286682254) index="10" unique_id=1722003670 instance=ExtResource("7_tvthf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.7134914, 0.7244959, -7.7382402)
+metadata/_edit_group_ = true
 
-[node name="InteractableHorseGrooming2" parent="TESTING&DEBUG" index="1" unique_id=1522789930 instance=ExtResource("7_cd7x0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2032871, 0.41122043, 0)
+[node name="FeedingTasks" type="Node3D" parent="." index="4" unique_id=1407839215]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.735853, 0, 1.7600218)
+script = ExtResource("9_d70q1")
 
-[node name="WelshCob_SectionC" parent="TESTING&DEBUG" index="2" unique_id=537535865 instance=ExtResource("8_xya7t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.305876, -0.87210584, 0)
+[node name="Task1" type="Node3D" parent="FeedingTasks" index="0" unique_id=109280194]
+script = ExtResource("10_tvthf")
+
+[node name="FoodBucketSnapZone" parent="FeedingTasks/Task1" index="0" unique_id=678858973 instance=ExtResource("7_d70q1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5755777, 1.1031193, -1.4061048)
+snap_require = "Bucket_Half_Full"
+
+[node name="Task2" type="Node3D" parent="FeedingTasks" index="1" unique_id=602575308]
+script = ExtResource("10_tvthf")
+
+[node name="FoodBucketSnapZone2" parent="FeedingTasks/Task2" index="0" unique_id=717159814 instance=ExtResource("7_d70q1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0755415, 1.1009387, 2.0863428)
+snap_require = "Bucket_Full"
+
+[node name="Task3" type="Node3D" parent="FeedingTasks" index="2" unique_id=767045849]
+script = ExtResource("10_tvthf")
+
+[node name="FoodBucketSnapZone3" parent="FeedingTasks/Task3" index="0" unique_id=1675536774 instance=ExtResource("7_d70q1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9087486, 1.1031193, -1.4061048)
+snap_require = "Bucket_Third_Full"
+
+[node name="Food" type="Node3D" parent="." index="5" unique_id=1819763130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.735853, 0, 1.7600218)
+
+[node name="Bucket" type="Node3D" parent="Food" index="0" unique_id=507633999]
+
+[node name="Food_Bucket" parent="Food/Bucket" index="0" unique_id=1959919718 instance=ExtResource("5_d70q1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0219183, 0.7484508, -1.3865371)
+
+[node name="Food_Bucket2" parent="Food/Bucket" index="1" unique_id=1808943135 instance=ExtResource("5_d70q1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0219183, 0.7484508, 1.0139087)
+
+[node name="Food_Bucket3" parent="Food/Bucket" index="2" unique_id=392810263 instance=ExtResource("5_d70q1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0219183, 0.7484508, 0.06758559)
+
+[node name="Hay" type="Node3D" parent="Food" index="1" unique_id=1429271948]
+
+[node name="Hay" parent="Food/Hay" index="0" unique_id=1528068358 instance=ExtResource("4_66xiw")]
+transform = Transform3D(-4.371139e-08, 0, 1, -1, -4.371139e-08, -4.371139e-08, 4.371139e-08, -1, 1.9106855e-15, 6.9373093, 0.4159559, -1.1810118)
+
+[node name="Hay3" parent="Food/Hay" index="1" unique_id=1405366121 instance=ExtResource("4_66xiw")]
+transform = Transform3D(-4.3711385e-08, 1, -4.3711392e-08, -1, -4.371139e-08, -4.371139e-08, -4.3711392e-08, 4.371139e-08, 1, 1.3142395, 0.4654181, -4.6759167)
+
+[node name="Hay7" parent="Food/Hay" index="2" unique_id=409635324 instance=ExtResource("4_66xiw")]
+transform = Transform3D(5.6576386e-08, -0.3622266, -0.9320901, -1, -4.371139e-08, -4.371139e-08, -2.4909523e-08, 0.9320901, -0.3622266, 1.3142395, 0.56081206, -4.6759167)
+
+[node name="Hay4" parent="Food/Hay" index="3" unique_id=1652304199 instance=ExtResource("4_66xiw")]
+transform = Transform3D(-4.3711385e-08, 1, -4.3711392e-08, -1, -4.371139e-08, -4.371139e-08, -4.3711392e-08, 4.371139e-08, 1, -3.7106476, 0.38602722, 1.4846746)
+
+[node name="Hay5" parent="Food/Hay" index="4" unique_id=1098136032 instance=ExtResource("4_66xiw")]
+transform = Transform3D(5.971087e-08, -0.5000001, -0.8660254, -1, -4.371139e-08, -4.371139e-08, -1.5999472e-08, 0.8660254, -0.5000001, -3.6780224, 0.4905743, 1.5718621)
+
+[node name="Hay6" parent="Food/Hay" index="5" unique_id=854603048 instance=ExtResource("4_66xiw")]
+transform = Transform3D(3.0908623e-08, 0.25881892, -0.9659259, -1, -4.371139e-08, -4.371139e-08, -5.3535295e-08, 0.9659259, 0.25881892, -3.7644196, 0.4905743, 1.3262571)
+
+[node name="Node3D" type="Node3D" parent="." index="6" unique_id=374527330]
 
 [editable path="XROrigin3D/LeftHand/LeftHand"]
 [editable path="XROrigin3D/LeftHand/LeftHand/Hand_low_L"]
 [editable path="XROrigin3D/RightHand/RightHand"]
 [editable path="XROrigin3D/RightHand/RightHand/Hand_low_R"]
+[editable path="Stable"]
+[editable path="Stable/Scene/Roof_End (1)"]
+[editable path="Stable/Scene/Pen_01_Straight"]
+[editable path="Stable/Scene/Pen_01_Straight2"]
+[editable path="Stable/Scene/Pen_01_Frame_Narrow (1)"]
+[editable path="Stable/Scene/Pen_01_Straight4"]
+[editable path="Stable/Scene/Pen_01_Straight5"]
+[editable path="Stable/Scene/Pen_01_Straight6"]
+[editable path="Stable/Scene/Pen_01_Straight7"]
+[editable path="Stable/Scene/Pen_01_Frame_Narrow (2)"]
+[editable path="Stable/Scene/Pen_01_Frame_Narrow (3)"]
+[editable path="Stable/Scene/Pen_01_Straight10"]
+[editable path="Stable/Scene/Pen_01_Straight11"]
+[editable path="Stable/Scene/Pen_01_Wall_Window_Alt (1)"]
+[editable path="Stable/Scene/Pen_01_Wall_Window_Alt (2)"]
+[editable path="Stable/Scene/Pen_01_Wall_Window_Alt (3)"]
+[editable path="Stable/Scene/Pen_01_Wall (1)"]
+[editable path="Stable/Scene/Pen_01_Straight12"]
+[editable path="Stable/Scene/Frame_01 (1)"]
+[editable path="Stable/Scene/Frame_01 (2)"]
+[editable path="Stable/Scene/Frame_01 (3)"]
+[editable path="Stable/Scene/Frame_01 (4)"]
+[editable path="Stable/Scene/Frame_01 (5)"]
+[editable path="Stable/Scene/Pen_01_Frame_Narrow (4)"]
+[editable path="Stable/Scene/Pen_01_Straight14"]
+[editable path="Stable/Scene/Pen_01_Straight15"]
+[editable path="Stable/Scene/Pen_01_Straight16"]
+[editable path="Stable/Scene/Pen_01_Straight17"]
+[editable path="Stable/Scene/Pen_01_Frame_Narrow (5)"]
+[editable path="Stable/Scene/Pen_01_Frame_Narrow (6)"]
+[editable path="Stable/Scene/Pen_01_Straight20"]
+[editable path="Stable/Scene/Pen_01_Straight21"]
+[editable path="Stable/Scene/Pen_01_Frame_Narrow (7)"]
+[editable path="Stable/Scene/Pen_01_Straight23"]
+[editable path="Stable/Scene/Pen_01_Straight24"]
+[editable path="Stable/Scene/Pen_01_Wall (2)"]
+[editable path="Stable/Scene/Pen_01_Wall_Window_Alt (4)"]
+[editable path="Stable/Scene/Pen_01_Wall_Window_Alt (5)"]
+[editable path="Stable/Scene/Pen_01_Wall_Window_Alt (6)"]
+[editable path="Stable/Scene/Pen_01_Wall_Window_Alt (7)"]
+[editable path="Stable/Scene/Pen_01_Wall (3)"]
+[editable path="Stable/Scene/Pen_01_Wall_Door_Alt (1)"]
+[editable path="Stable/Scene/Pen_01_Straight25"]
+[editable path="Stable/Scene/Wheelbarrow (1)"]
+[editable path="Stable/Scene/Roof_End"]
+[editable path="Stable/Scene/Pen_01_Wall_Alt"]
+[editable path="Stable/Scene/Fork"]
+[editable path="Stable/Scene/Wheelbarrow"]
+[editable path="Stable/Scene/Wheelbarrow2"]
+[editable path="Stable/Scene/Pen_01_Wall_Door_Alt"]
+[editable path="Stable/Scene/Roof_02_Windows_Closed"]
+[editable path="Stable/Scene/Roof_02_Windows_Closed2"]
+[editable path="Stable/Scene/Frame_01"]
+[editable path="Stable/Scene/Pen_01_Wall_Door_Alt2"]
+[editable path="Stable/Scene/Roof_02_Windows_Closed3"]
+[editable path="Stable/Scene/Pen_01_Wall_Window_Alt"]
+[editable path="Stable/Scene/Pen_01_Wall"]
+[editable path="Stable/Scene/Pen_01_Frame_Narrow"]
+[editable path="Stable/Scene/Roof_02_Windows_Closed4"]
+[editable path="Stable/Scene/Roof_02_Windows_Closed5"]
+[editable path="Stable/Scene/WaterBucket_01"]
+[editable path="Stable/Scene/Saltstone (1)"]
+[editable path="Stable/Scene/Saltstone"]
+[editable path="Stable/Scene/Saltstone (2)"]
+[editable path="Stable/Scene/WaterBucket_01 (1)"]
+[editable path="Stable/Scene/WaterBucket_01 (2)"]
+[editable path="Stable/Scene/WaterBucket_01 (3)"]
+[editable path="Stable/Doors/Exterior Doors/InteractableLargerStableDoor"]
+[editable path="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor"]
+[editable path="Stable/Doors/Exterior Doors/InteractableSmallerStableDoor2"]
+[editable path="Stable/Haybales/StableHaybale2"]
+[editable path="Stable/Haybales/StableHaybale3"]
+[editable path="Stable/Haybales/StableHaybale5"]
+[editable path="Stable/Haybales/StableHaybale6"]
+[editable path="Stable/Haybales/StableHaybale7"]
+[editable path="Stable/Haybales/StableHaybale11"]
+[editable path="Stable/Haybales/StableHaybale12"]
+[editable path="Stable/Haybales/StableHaybale13"]
+[editable path="Stable/Haybales/StableHaybale8"]
+[editable path="Stable/Haybales/StableHaybale9"]
+[editable path="Stable/Haybales/StableHaybale10"]
+[editable path="Stable/Haybales/StableHaybale4"]
+[editable path="Stable/Buckets/StableBucket"]
+[editable path="Stable/Hay/StableHayFloor"]
+[editable path="Stable/Hay/StableHayFloor2"]
+[editable path="Stable/Hay/StableHayFloor3"]
+[editable path="Stable/Hay/StableHayFloor4"]
+[editable path="Stable/Hay/StableHayFloor5"]
+[editable path="Stable/Hay/StableHayFloor6"]
+[editable path="Stable/Hay/StableHayFloor7"]
+[editable path="Stable/Hay/StableHayFloor8"]
