@@ -91,7 +91,7 @@ func _on_clear_button_pressed() -> void:
 			0
 		)
 		
-		hay.global_position = global_position + offset
+		hay.global_position = global_transform * offset
 	
 	# Resetting bucket
 	state = hay_states.EMPTY

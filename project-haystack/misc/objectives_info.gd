@@ -13,7 +13,9 @@ var objective_dict : Dictionary = {
 		Here, you can familiarise yourself with some of the environment and interactions present in the experience.
 		When you are ready to move on, select a level from the Settings panel.",
 	
-	Levels.LEVEL_FEEDING : "Testing, if you see this then the FEEDING text is working!",
+	Levels.LEVEL_FEEDING : "Feeding Task:
+		
+		",
 	
 	Levels.LEVEL_GROOMING : "Grooming Task:
 		- Each of the horses in the stable requires grooming. 
