@@ -11,7 +11,9 @@ var objective_dict : Dictionary = {
 	Levels.LEVEL_MAIN_MENU : " Main Menu:
 		This is the main menu/hub area.
 		Here, you can familiarise yourself with some of the environment and interactions present in the experience.
-		When you are ready to move on, select a level from the Settings panel.",
+		When you first enter a level, check this panel again as it'll update with a guide for what you need to do.
+		
+		You can select a level from the Settings panel.",
 	
 	Levels.LEVEL_FEEDING : "Feeding Task:
 		- Each horses requires a certain amount of feed as detailed by the hint next to them.

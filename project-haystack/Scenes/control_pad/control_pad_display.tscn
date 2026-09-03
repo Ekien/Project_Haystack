@@ -18,7 +18,7 @@ bg_color = Color(0.72673607, 0.34114322, 0.35282013, 1)
 offset_right = 500.0
 offset_bottom = 250.0
 tab_alignment = 1
-current_tab = 0
+current_tab = 1
 script = ExtResource("1_8cjo7")
 
 [node name="RefreshTimer" type="Timer" parent="." unique_id=333171898]
@@ -27,6 +27,7 @@ one_shot = true
 autostart = true
 
 [node name="Settings" type="MarginContainer" parent="." unique_id=2145342045]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_left = 5
 theme_override_constants/margin_top = 15
@@ -120,7 +121,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_xp0gv")
 text = "Quit Game"
 
 [node name="Objectives" type="MarginContainer" parent="." unique_id=2141630689]
-visible = false
 layout_mode = 2
 theme_override_constants/margin_left = 5
 theme_override_constants/margin_top = 5
