@@ -32,7 +32,7 @@ var state = hay_states.EMPTY
 func update_bucket() -> void:
 	match hay_amount:
 		1:
-			print("The bucket is one third full")
+			# print("The bucket is one third full")
 			hay_third.visible = true
 			hay_half.visible = false
 			hay_full.visible = false
@@ -42,7 +42,7 @@ func update_bucket() -> void:
 			# Set the state
 			state = hay_states.ONETHIRDFULL
 		2:
-			print("The bucket is half full")
+			# print("The bucket is half full")
 			hay_third.visible = false
 			hay_half.visible = true
 			hay_full.visible = false
@@ -53,7 +53,7 @@ func update_bucket() -> void:
 			# Set the state
 			state = hay_states.HALFFULL
 		3:
-			print("The bucket is FULL!!!")
+			# print("The bucket is FULL!!!")
 			hay_third.visible = false
 			hay_half.visible = false
 			hay_full.visible = true
@@ -98,6 +98,9 @@ func _on_clear_button_pressed() -> void:
 	hay_third.visible = false
 	hay_half.visible = false
 	hay_full.visible = false
+	root.remove_from_group("Bucket_Third_Full")
+	root.remove_from_group("Bucket_Half_Full")
+	root.remove_from_group("Bucket_Full")
 	hay_amount = 0
 
 func _on_bucket_snap_zone_has_picked_up(_what: Variant) -> void:

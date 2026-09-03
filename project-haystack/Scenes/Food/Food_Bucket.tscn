@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="7_eskep"]
 [ext_resource type="PackedScene" uid="uid://buaw274warpny" path="res://Objects/Pickable/Food/clear_button.tscn" id="8_64wj5"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_ykr3y"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_64wj5"]
 resource_local_to_scene = true
 radius = 0.3
 
@@ -60,7 +60,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19241256, 0)
 
 [node name="CollisionShape3D" parent="BucketSnapZone" index="0" unique_id=1106074557]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, -0.010077387, 0)
-shape = SubResource("SphereShape3D_ykr3y")
+shape = SubResource("SphereShape3D_64wj5")
 
 [node name="Viewport2Din3D" parent="." unique_id=528492962 instance=ExtResource("7_eskep")]
 unique_name_in_owner = true

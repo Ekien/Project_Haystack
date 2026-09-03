@@ -5,10 +5,19 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="2_4t6eg"]
 [ext_resource type="Material" uid="uid://b60bt31rkdoj3" path="res://Scenes/Levels/mainmenu/main_menu_walls.tres" id="3_nghdr"]
 [ext_resource type="PackedScene" uid="uid://b1viv1ygi2ocf" path="res://Objects/Pickable/TempObjects/hay.tscn" id="4_4t6eg"]
+[ext_resource type="PackedScene" uid="uid://dbse2xt7athxv" path="res://Scenes/Stable/Stable_Balestack.tscn" id="5_13o5p"]
 [ext_resource type="PackedScene" uid="uid://frndya3mmnse" path="res://Objects/Pickable/TempObjects/cube.tscn" id="5_nghdr"]
+[ext_resource type="PackedScene" uid="uid://dpfc34m3wgxv6" path="res://Objects/Pickable/Food/pickable_food_bucket.tscn" id="6_2t4d4"]
+[ext_resource type="PackedScene" uid="uid://d1olksh8ilanf" path="res://assets/Nimikko_ModularStable_01/Prefabs/Props/Wheelbarrow.prefab.scn" id="6_7gkjq"]
 [ext_resource type="PackedScene" uid="uid://b8lgj7toghq2p" path="res://Objects/Interactable/interactable_stable_door_interior_warped.scn" id="6_26vtu"]
+[ext_resource type="PackedScene" uid="uid://db2to4m5t6bmj" path="res://Scenes/Testing/hay_snap_zone.tscn" id="7_06o06"]
+[ext_resource type="PackedScene" uid="uid://boqjl48dlumrn" path="res://assets/Nimikko_ModularStable_01/Prefabs/Props/HayBale.prefab.scn" id="7_jprl8"]
 [ext_resource type="PackedScene" uid="uid://bray3362gkdkj" path="res://assets/models/horses/welsh_cob_section_c.tscn" id="7_vik2p"]
+[ext_resource type="PackedScene" uid="uid://csxbli4w80vit" path="res://Scenes/Stable/Stable_Hay_Floor.tscn" id="8_v7svt"]
 [ext_resource type="Script" uid="uid://ch21gq4r2kcll" path="res://misc/objectives_info.gd" id="9_g2tus"]
+[ext_resource type="PackedScene" uid="uid://b78ocx3c0qcex" path="res://Objects/Interactable/interactable_larger_stable_door.tscn" id="11_s63sh"]
+[ext_resource type="PackedScene" uid="uid://dfptk5w2ybeb0" path="res://Scenes/Food/SnapZones/food_bucket_snap_zone.tscn" id="12_j3xeu"]
+[ext_resource type="Texture2D" uid="uid://8s03ra8tp0hr" path="res://addons/godot-xr-tools/images/ring.png" id="12_jcc2q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4t6eg"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -101,6 +110,27 @@ size = Vector3(0.5, 0.5, 0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kgiut"]
 size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcc2q"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("12_jcc2q")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u8umi"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("12_jcc2q")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13o5p"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("12_jcc2q")
+billboard_mode = 1
 
 [sub_resource type="BoxMesh" id="BoxMesh_vik2p"]
 size = Vector3(0.5, 0.5, 0.5)
@@ -220,10 +250,37 @@ surface_material_override/0 = ExtResource("3_nghdr")
 transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -7, 2, 0)
 shape = SubResource("BoxShape3D_t475i")
 
+[node name="StableBalestack" parent="Level" index="6" unique_id=1859645046 instance=ExtResource("5_13o5p")]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 5.4205437, 0, -3.8963766)
+
+[node name="StableBalestack2" parent="Level" index="7" unique_id=772122376 instance=ExtResource("5_13o5p")]
+transform = Transform3D(-0.77869236, 0, 0.62740594, 0, 1, 0, -0.62740594, 0, -0.77869236, 4.577404, 0, -4.0907974)
+
+[node name="Wheelbarrow" parent="Level" index="8" unique_id=1263042036 instance=ExtResource("6_7gkjq")]
+transform = Transform3D(-0.50000006, -3.7855173e-08, -0.8660254, 0, 1, -4.371139e-08, 0.8660254, -2.1855696e-08, -0.50000006, 5.1192875, 0.30550122, -1.3545606)
+
+[node name="Wheelbarrow2" parent="Level" index="9" unique_id=251220196 instance=ExtResource("6_7gkjq")]
+transform = Transform3D(0.9659258, 1.131334e-08, 0.25881898, 0, 1, -4.371139e-08, -0.25881898, 4.222196e-08, 0.9659258, 3.5797594, 0.30550122, -4.4050026)
+
+[node name="Wheelbarrow3" parent="Level" index="10" unique_id=2020242012 instance=ExtResource("6_7gkjq")]
+transform = Transform3D(0.9659258, 1.131334e-08, 0.25881898, 0, 1, -4.371139e-08, -0.25881898, 4.222196e-08, 0.9659258, -2.5980525, 0.30550122, -3.0258002)
+
+[node name="HayBale" parent="Level" index="11" unique_id=1924221437 instance=ExtResource("7_jprl8")]
+transform = Transform3D(0.25881907, 4.222196e-08, 0.9659258, 0, 1, -4.371139e-08, -0.9659258, 1.1313341e-08, 0.25881907, -2.8144412, -0.0028440803, -4.91588)
+
+[node name="HayBale3" parent="Level" index="12" unique_id=933865684 instance=ExtResource("7_jprl8")]
+transform = Transform3D(1, -8.881784e-16, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -2.7123108, 0.3632245, -4.52938)
+
+[node name="HayBale2" parent="Level" index="13" unique_id=554517377 instance=ExtResource("7_jprl8")]
+transform = Transform3D(-0.7071068, 3.090862e-08, 0.70710677, 0, 1, -4.371139e-08, -0.70710677, -3.090862e-08, -0.7071068, -2.8144412, -0.0028440803, -4.0624285)
+
+[node name="StableHayFloor" parent="Level" index="14" unique_id=765973295 instance=ExtResource("8_v7svt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.8077016)
+
 [node name="DemoObjects" type="Node3D" parent="." index="6" unique_id=457744963]
 
 [node name="HayBox" type="StaticBody3D" parent="DemoObjects" index="0" unique_id=2020490620]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04459274, 0.26989162, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0318198, 0.26989162, 0)
 metadata/_edit_group_ = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="DemoObjects/HayBox" index="0" unique_id=809591559]
@@ -243,8 +300,77 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0943172, 1.0137575, -0.004
 [node name="Hay3" parent="DemoObjects/HayBox" index="4" unique_id=1397425132 instance=ExtResource("4_4t6eg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9463143, 1.0137575, -0.004850909)
 
-[node name="CubeBox" type="StaticBody3D" parent="DemoObjects" index="1" unique_id=624556291]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6103245, 0.26989162, 0)
+[node name="Label3D" type="Label3D" parent="DemoObjects/HayBox" index="5" unique_id=1043174154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0972471, 1.2357711, -0.023219585)
+pixel_size = 0.003
+modulate = Color(0.8392157, 0.20784314, 0.1254902, 1)
+text = "Hay (Pickable)"
+
+[node name="FoodBucket" type="StaticBody3D" parent="DemoObjects" index="1" unique_id=92462629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.60307, 0.26989162, 0)
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DemoObjects/FoodBucket" index="0" unique_id=1192468122]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0941985, 0.66724336, 0)
+mesh = SubResource("BoxMesh_kgiut")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DemoObjects/FoodBucket" index="1" unique_id=555549996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0941985, 0.66724336, 0)
+shape = SubResource("BoxShape3D_kgiut")
+
+[node name="Pickable_Food_Bucket" parent="DemoObjects/FoodBucket" index="2" unique_id=1959919718 instance=ExtResource("6_2t4d4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0863829, 0.9184643, 0)
+
+[node name="Label3D" type="Label3D" parent="DemoObjects/FoodBucket" index="3" unique_id=432986621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0972471, 1.2357711, -0.023219585)
+pixel_size = 0.003
+modulate = Color(0.8392157, 0.20784314, 0.1254902, 1)
+text = "Food Bucket (Pickable)"
+
+[node name="HaySnapZone" type="StaticBody3D" parent="DemoObjects" index="2" unique_id=1942405085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1247107, 0.26989162, -0.99890125)
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DemoObjects/HaySnapZone" index="0" unique_id=404139895]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0941985, 0.66724336, 0)
+mesh = SubResource("BoxMesh_kgiut")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DemoObjects/HaySnapZone" index="1" unique_id=134411219]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0941985, 0.66724336, 0)
+shape = SubResource("BoxShape3D_kgiut")
+
+[node name="HaySnapZone" parent="DemoObjects/HaySnapZone" index="2" unique_id=1890319466 instance=ExtResource("7_06o06")]
+transform = Transform3D(0.37774384, 0, -0.9259101, 0, 1, 0, 0.9259101, 0, 0.37774384, -2.060356, 1.0077252, 0.06281412)
+
+[node name="Label3D" type="Label3D" parent="DemoObjects/HaySnapZone" index="3" unique_id=1984490464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0972471, 1.2357711, -0.023219585)
+pixel_size = 0.003
+modulate = Color(0.8392157, 0.20784314, 0.1254902, 1)
+text = "Hay Snap Zone"
+
+[node name="BucketSnapZone" type="StaticBody3D" parent="DemoObjects" index="3" unique_id=2134907049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6593866, 0.26989162, -0.99890125)
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DemoObjects/BucketSnapZone" index="0" unique_id=1820838674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0941985, 0.66724336, 0)
+mesh = SubResource("BoxMesh_kgiut")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DemoObjects/BucketSnapZone" index="1" unique_id=145487996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0941985, 0.66724336, 0)
+shape = SubResource("BoxShape3D_kgiut")
+
+[node name="FoodBucketSnapZone" parent="DemoObjects/BucketSnapZone" index="2" unique_id=678858973 instance=ExtResource("12_j3xeu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0913005, 0.9172435, -0.01526618)
+
+[node name="Label3D" type="Label3D" parent="DemoObjects/BucketSnapZone" index="3" unique_id=1422151052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0972471, 1.2357711, -0.023219585)
+pixel_size = 0.003
+modulate = Color(0.8392157, 0.20784314, 0.1254902, 1)
+text = "Food Bucket Snap Zone"
+
+[node name="CubeBox" type="StaticBody3D" parent="DemoObjects" index="4" unique_id=624556291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38265646, 0.26989162, 0)
 metadata/_edit_group_ = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="DemoObjects/CubeBox" index="0" unique_id=1534969607]
@@ -270,12 +396,48 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1818595, 0.98165774, 0.038
 [node name="Cube5" parent="DemoObjects/CubeBox" index="6" unique_id=555243146 instance=ExtResource("5_nghdr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0260773, 0.98165774, 0.10006957)
 
-[node name="Door" type="Node3D" parent="DemoObjects" index="2" unique_id=369801257]
+[node name="Label3D" type="Label3D" parent="DemoObjects/CubeBox" index="7" unique_id=122353313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0972471, 1.2357711, -0.023219585)
+pixel_size = 0.003
+modulate = Color(0.8392157, 0.20784314, 0.1254902, 1)
+text = "Cube (Pickable)"
 
-[node name="Interactable_Stable_Door_Interior_Warped" parent="DemoObjects/Door" index="0" unique_id=1802199284 instance=ExtResource("6_26vtu")]
+[node name="Door" type="Node3D" parent="DemoObjects" index="5" unique_id=369801257]
+
+[node name="OneSlideDoor" type="Node3D" parent="DemoObjects/Door" index="0" unique_id=1002537388]
+
+[node name="Interactable_Stable_Door_Interior_Warped" parent="DemoObjects/Door/OneSlideDoor" index="0" unique_id=1802199284 instance=ExtResource("6_26vtu")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5, 0, 2)
 
-[node name="Cube" type="StaticBody3D" parent="DemoObjects/Door" index="1" unique_id=361489511]
+[node name="CHighlighMesh" parent="DemoObjects/Door/OneSlideDoor/Interactable_Stable_Door_Interior_Warped/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1802199284, 561692497) index="4" unique_id=146505628]
+surface_material_override/0 = SubResource("StandardMaterial3D_jcc2q")
+
+[node name="Label3D" type="Label3D" parent="DemoObjects/Door/OneSlideDoor" index="1" unique_id=38598943]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.017172, 2.8912525, 2.9162903)
+modulate = Color(0.8392157, 0.20784314, 0.1254902, 1)
+text = "One Slide Door (Interactable)"
+
+[node name="TwoSlideDoor" type="Node3D" parent="DemoObjects/Door" index="1" unique_id=994911985]
+
+[node name="InteractableLargerStableDoor" parent="DemoObjects/Door/TwoSlideDoor" index="0" unique_id=1767579955 instance=ExtResource("11_s63sh")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.013891, 0, 0.09465009)
+
+[node name="CHighlighMesh" parent="DemoObjects/Door/TwoSlideDoor/InteractableLargerStableDoor/SlideDoor/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1767579955, 908878955) index="2" unique_id=54770495]
+surface_material_override/0 = SubResource("StandardMaterial3D_u8umi")
+
+[node name="InteractableSlider" parent="DemoObjects/Door/TwoSlideDoor/InteractableLargerStableDoor/SlideDoor2" parent_id_path=PackedInt32Array(1767579955, 526129612) index="0" unique_id=615300282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0, 0)
+slider_position = 1.15
+
+[node name="CHighlighMesh" parent="DemoObjects/Door/TwoSlideDoor/InteractableLargerStableDoor/SlideDoor2/InteractableSlider/StaticBody3D" parent_id_path=PackedInt32Array(1767579955, 1166376559) index="2" unique_id=1372609883]
+surface_material_override/0 = SubResource("StandardMaterial3D_13o5p")
+
+[node name="Label3D" type="Label3D" parent="DemoObjects/Door/TwoSlideDoor" index="1" unique_id=555504883]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.017172, 2.8912525, -1.1675298)
+modulate = Color(0.8392157, 0.20784314, 0.1254902, 1)
+text = "Two Slide Doors (Interactable)"
+
+[node name="Cube" type="StaticBody3D" parent="DemoObjects/Door" index="2" unique_id=361489511]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0813355, 0.2539863, 0.34588808)
 metadata/_edit_group_ = true
 
@@ -286,10 +448,24 @@ surface_material_override/0 = SubResource("StandardMaterial3D_g2tus")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DemoObjects/Door/Cube" index="1" unique_id=817059091]
 shape = SubResource("BoxShape3D_2t4d4")
 
+[node name="Cube2" type="StaticBody3D" parent="DemoObjects/Door" index="3" unique_id=328269152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0813355, 0.2539863, -2.70963)
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DemoObjects/Door/Cube2" index="0" unique_id=22895888]
+mesh = SubResource("BoxMesh_vik2p")
+surface_material_override/0 = SubResource("StandardMaterial3D_g2tus")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DemoObjects/Door/Cube2" index="1" unique_id=2062797998]
+shape = SubResource("BoxShape3D_2t4d4")
+
 [node name="Horse" type="Node3D" parent="." index="7" unique_id=1524344832]
 transform = Transform3D(0.25881907, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, 0.25881907, 3.6939769, 0, 4.068199)
 
 [node name="WelshCob_SectionC" parent="Horse" index="0" unique_id=537535865 instance=ExtResource("7_vik2p")]
+
+[node name="WelshCob_SectionC2" parent="Horse" index="1" unique_id=844960974 instance=ExtResource("7_vik2p")]
+transform = Transform3D(-0.7071067, 0, 0.7071067, 0, 1, 0, -0.7071067, 0, -0.7071067, -9.204144, 2.3841858e-07, 1.444039)
 
 [node name="ObjectivesInfo" type="Node" parent="." index="8" unique_id=260075086]
 script = ExtResource("9_g2tus")
@@ -299,3 +475,5 @@ metadata/_custom_type_script = "uid://ch21gq4r2kcll"
 [editable path="XROrigin3D/LeftHand/LeftHand/Hand_low_L"]
 [editable path="XROrigin3D/RightHand/RightHand"]
 [editable path="XROrigin3D/RightHand/RightHand/Hand_low_R"]
+[editable path="DemoObjects/Door/OneSlideDoor/Interactable_Stable_Door_Interior_Warped"]
+[editable path="DemoObjects/Door/TwoSlideDoor/InteractableLargerStableDoor"]
