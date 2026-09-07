@@ -129,7 +129,7 @@ script = ExtResource("10_ixuge")
 metadata/_custom_type_script = "uid://ch21gq4r2kcll"
 
 [node name="XROrigin3D" parent="." index="2"]
-transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, 7.7626886, 0.1, 7.7594814)
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, 7.7626886, 0.14678761, 7.7594814)
 
 [node name="AnimationTree" parent="XROrigin3D/LeftHand/LeftHand" parent_id_path=PackedInt32Array(291188129) index="1"]
 tree_root = SubResource("AnimationNodeBlendTree_ub80y")

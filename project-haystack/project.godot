@@ -13,6 +13,7 @@ config_version=5
 config/name="Project_Haystack"
 run/main_scene="uid://cpipsxekyeco7"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+run/max_fps=120
 config/icon="res://icon.svg"
 
 [autoload]

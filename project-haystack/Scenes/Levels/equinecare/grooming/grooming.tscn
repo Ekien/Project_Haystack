@@ -149,7 +149,7 @@ script = ExtResource("2_3jdmc")
 [node name="StartXR" parent="." index="0" unique_id=1646039485 instance=ExtResource("2_pqkbk")]
 
 [node name="XROrigin3D" parent="." index="1"]
-transform = Transform3D(-5.9604645e-08, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-08, 16.462961, 0, 1.5637)
+transform = Transform3D(-5.9604645e-08, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-08, 16.462961, 0.3093319, 1.5637)
 metadata/_edit_group_ = true
 
 [node name="AnimationTree" parent="XROrigin3D/LeftHand/LeftHand" parent_id_path=PackedInt32Array(291188129) index="1"]

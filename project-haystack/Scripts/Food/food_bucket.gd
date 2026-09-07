@@ -63,6 +63,7 @@ func update_bucket() -> void:
 			
 			# Set the state
 			state = hay_states.FULL
+			$BucketSnapZone.enabled = false
 	
 
 # Called when the node enters the scene tree for the first time.
@@ -101,6 +102,7 @@ func _on_clear_button_pressed() -> void:
 	root.remove_from_group("Bucket_Third_Full")
 	root.remove_from_group("Bucket_Half_Full")
 	root.remove_from_group("Bucket_Full")
+	$BucketSnapZone.enabled = true
 	hay_amount = 0
 
 func _on_bucket_snap_zone_has_picked_up(_what: Variant) -> void:

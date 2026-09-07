@@ -18,13 +18,31 @@ bg_color = Color(0.72673607, 0.34114322, 0.35282013, 1)
 offset_right = 500.0
 offset_bottom = 250.0
 tab_alignment = 1
-current_tab = 1
+current_tab = 0
 script = ExtResource("1_8cjo7")
 
 [node name="RefreshTimer" type="Timer" parent="." unique_id=333171898]
 wait_time = 0.1
 one_shot = true
 autostart = true
+
+[node name="Objectives" type="MarginContainer" parent="." unique_id=2141630689]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+metadata/_tab_index = 0
+
+[node name="Label" type="Label" parent="Objectives" unique_id=481120480]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 165)
+layout_mode = 2
+text = "TEST TEXT. I AM TESTING THE TEXT. 
+If you see this then the text on the labal did not update properly. This is just placeholder text to make sure that the text wraps correctly."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Settings" type="MarginContainer" parent="." unique_id=2145342045]
 visible = false
@@ -33,7 +51,7 @@ theme_override_constants/margin_left = 5
 theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
-metadata/_tab_index = 0
+metadata/_tab_index = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Settings" unique_id=500450784]
 layout_mode = 2
@@ -119,24 +137,6 @@ custom_minimum_size = Vector2(150, 50)
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_xp0gv")
 text = "Quit Game"
-
-[node name="Objectives" type="MarginContainer" parent="." unique_id=2141630689]
-layout_mode = 2
-theme_override_constants/margin_left = 5
-theme_override_constants/margin_top = 5
-theme_override_constants/margin_right = 5
-theme_override_constants/margin_bottom = 5
-metadata/_tab_index = 1
-
-[node name="Label" type="Label" parent="Objectives" unique_id=481120480]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 165)
-layout_mode = 2
-text = "TEST TEXT. I AM TESTING THE TEXT. 
-If you see this then the text on the labal did not update properly. This is just placeholder text to make sure that the text wraps correctly."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
 
 [connection signal="timeout" from="RefreshTimer" to="." method="_on_refresh_timer_timeout"]
 [connection signal="pressed" from="Settings/VBoxContainer/PanelLocation/ButtonContainer/Left" to="." method="_on_left_pressed"]
